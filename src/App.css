@@ -1,3 +1,12 @@
 .App {
   background-color: var(--bnd-grass);
+  text-align: center;
+}
+
+.App .Logo {
+  height: 75vh;
+}
+
+.App .DownArrow {
+  height: 5vh;
 }
