@@ -1,11 +1,11 @@
 // Components
 import React from 'react';
-import LinkedIn from '../img/linkedin.png';
-import GitHub from '../img/github.png';
-import YouTube from '../img/youtube.png';
-import Instagram from '../img/instagram.png';
-import SoundCloud from '../img/soundcloud.png';
-import Spotify from '../img/spotify.png';
+import LinkedIn from '../img/SocialBar/linkedin.png';
+import GitHub from '../img/SocialBar/github.png';
+import YouTube from '../img/SocialBar/youtube.png';
+import Instagram from '../img/SocialBar/instagram.png';
+import SoundCloud from '../img/SocialBar/soundcloud.png';
+import Spotify from '../img/SocialBar/spotify.png';
 
 // Styles
 import '../css/SocialBar.css';
