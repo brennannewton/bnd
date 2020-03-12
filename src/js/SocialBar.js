@@ -6,6 +6,7 @@ import YouTube from '../img/SocialBar/youtube.png';
 import Instagram from '../img/SocialBar/instagram.png';
 import SoundCloud from '../img/SocialBar/soundcloud.png';
 import Spotify from '../img/SocialBar/spotify.png';
+import Row from 'react-bootstrap/Row';
 
 // Styles
 import '../css/SocialBar.css';

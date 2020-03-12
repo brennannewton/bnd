@@ -5,15 +5,48 @@
   text-align: center;
 }
 
-.App .SocialBar {
-  position: fixed;
-  top: 0;
-}
-
 .App .Logo {
-  height: 86vh;
+  width: 94vw;
 }
 
 .App .DownArrow {
   height: 5vh;
+}
+
+@media (min-width: 320px) {
+  .App .Logo {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .App .Logo {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .App .Logo {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .App .Logo {
+    width: 67vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App .Logo {
+    height: 80vh;
+    width: 80vh;
+  }
+}
+
+@media (min-width: 2560px) {
+  .App .Logo {
+    height: 83vh;
+    width: 83vh;
+  }
 }

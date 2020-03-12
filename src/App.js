@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <SocialBar className="SocialBar"/>
-      <img src={Logo} alt="Brennan Newton Designs logo" className="Logo mt-5"/>
+      <img src={Logo} alt="Brennan Newton Designs logo" className="Logo"/>
       <br/>
       <img src={DownArrow} alt="Downward arrow" className="DownArrow mb-5"/>
       <Graphics className="Graphics"/>

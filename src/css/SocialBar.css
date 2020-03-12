@@ -6,14 +6,57 @@
 }
 
 .SocialBar img {
-  height: 55px;
-  margin: 1.5rem;
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+  height: 42px;
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 
   transition: 0.6s;
 }
 
 .SocialBar img:hover {
-  height: 61px;
+  height: 46px;
+}
+
+@media (min-width: 425px) {
+  .SocialBar img {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .SocialBar img {
+    height: 49px;
+  }
+  
+  .SocialBar img:hover {
+    height: 54px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .SocialBar img {
+    height: 55px;
+    margin: 1.5rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem
+  }
+
+  .SocialBar img:hover {
+    height: 61px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .SocialBar img {
+    height: 100px;
+    margin: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .SocialBar img:hover {
+    height: 110px;
+  }
 }
