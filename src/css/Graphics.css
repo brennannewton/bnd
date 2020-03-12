@@ -1,0 +1,23 @@
+@import "Palette.css";
+@import "Font.css";
+
+.Graphics #outer-box {
+  background-color: var(--bnd-black);
+  border: 1px solid var(--bnd-white);
+  border-radius: 12px;
+  width: 80vw;
+  padding: 0.5rem;
+}
+
+.Graphics #inner-box {
+  background-color: var(--bnd-black);
+  border: 1px solid var(--bnd-white);
+  border-radius: 11px;
+  width: 79vw;
+}
+
+.Graphics h1 {
+  color: var(--bnd-white);
+  font-family: 'pokemon_gbregular';
+  font-size: 1.5rem;
+}

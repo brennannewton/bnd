@@ -1,3 +1,5 @@
+@import "./css/Palette.css";
+
 .App {
   background-color: var(--bnd-grass);
   text-align: center;
