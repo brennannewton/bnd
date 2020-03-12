@@ -11,10 +11,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <SocialBar/>
-      <img src={Logo} alt="Brennan Newton Designs logo" className="Logo"/>
+      <SocialBar className="SocialBar"/>
+      <img src={Logo} alt="Brennan Newton Designs logo" className="Logo mt-5"/>
       <br/>
-      <img src={DownArrow} alt="Downward arrow" className="DownArrow m-3"/>
+      <img src={DownArrow} alt="Downward arrow" className="DownArrow mb-3"/>
     </div>
   );
 }

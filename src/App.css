@@ -3,8 +3,13 @@
   text-align: center;
 }
 
+.App .SocialBar {
+  position: fixed;
+  top: 0;
+}
+
 .App .Logo {
-  height: 75vh;
+  height: 86vh;
 }
 
 .App .DownArrow {
