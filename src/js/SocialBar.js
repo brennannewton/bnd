@@ -14,12 +14,28 @@ export default class SocialBar extends React.Component {
   render() {
     return (
       <div className="SocialBar w-100">
-        <img src={LinkedIn} alt="LinkedIn icon"/>
-        <img src={GitHub} alt="GitHub icon"/>
-        <img src={YouTube} alt="YouTube icon"/>
-        <img src={Instagram} alt="Instagram icon"/>
-        <img src={SoundCloud} alt="SoundCloud icon"/>
-        <img src={Spotify} alt="Spotify icon"/>
+        <a href="https://www.linkedin.com/in/brennan-newton-075238145/"
+          target="_blank"
+        >
+          <img src={LinkedIn} alt="LinkedIn icon"/>
+        </a>
+        <a href="https://github.com/brennannewton" target="_blank">
+          <img src={GitHub} alt="GitHub icon"/>
+        </a>
+        <a href="https://www.youtube.com/channel/UCdbh95QEtoahUYoLvq586-A"
+          target="_blank"
+        >
+          <img src={YouTube} alt="YouTube icon"/>
+        </a>
+        <a href="https://www.instagram.com/newtonbrennan/" target="_blank">
+          <img src={Instagram} alt="Instagram icon"/>
+        </a>
+        <a href="https://soundcloud.com/brennannewton" target="_blank">
+          <img src={SoundCloud} alt="SoundCloud icon"/>
+        </a>
+        <a href="https://open.spotify.com/user/brennannewton" target="_blank">
+          <img src={Spotify} alt="Spotify icon"/>
+        </a>
       </div>
     )
   }
