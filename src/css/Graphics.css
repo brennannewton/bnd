@@ -22,9 +22,14 @@
   font-size: 1.5rem;
 }
 
+.Graphics button {
+  margin: 2rem;
+  border: 0;
+  padding: 0;
+}
+
 .Graphics img {
   width: 32vw;
-  margin: 2rem;
 
   border: solid 7px var(--bnd-lightgreen);
   box-shadow: 0px 10px 0px var(--bnd-deepgreen);
