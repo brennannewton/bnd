@@ -42,7 +42,7 @@ export default class Graphics extends React.Component {
             <h1>Graphics</h1>
           </div>
         </div>
-        <div id="graphics" className="d-flex flex-row align-self-center">
+        <div className="d-flex flex-row align-self-center">
           <div className="d-flex flex-column">
             <div className="B_viewer">
               <button onClick={() => {this.setState({B_visible: true});}}>

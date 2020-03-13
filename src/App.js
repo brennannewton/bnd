@@ -4,6 +4,7 @@ import SocialBar from './js/SocialBar';
 import Logo from './img/bnd_logo_transparent.png';
 import DownArrow from './img/down_arrow.png';
 import Graphics from './js/Graphics';
+import Prototypes from './js/Prototypes';
 
 // Styles
 import './App.css';
@@ -16,7 +17,8 @@ function App() {
       <img src={Logo} alt="Brennan Newton Designs logo" className="Logo"/>
       <br/>
       <img src={DownArrow} alt="Downward arrow" className="DownArrow mb-5"/>
-      <Graphics className="Graphics"/>
+      <Graphics/>
+      <Prototypes/>
     </div>
   );
 }
