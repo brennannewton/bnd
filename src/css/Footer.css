@@ -1,0 +1,12 @@
+@import "Palette.css";
+@import "Font.css";
+
+.Footer {
+  background-color: var(--bnd-earth);
+}
+
+.Footer h1 {
+  color: var(--bnd-white);
+  font-family: 'pokemon_gbregular';
+  font-size: 1.5rem;
+}
