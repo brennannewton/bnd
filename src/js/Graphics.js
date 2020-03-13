@@ -6,7 +6,6 @@ import B from '../img/Graphics/B.png';
 import CreepBeaters from '../img/Graphics/TheCreepBeaters.jpg';
 import emoFonts from '../img/Graphics/fontConcepts.png';
 import Bed from '../img/Graphics/Bed.png';
-import Path from '../img/pokemon-path.png';
 import bndLogo from '../img/Graphics/bnd_logo.png';
 import Marx from '../img/Graphics/MarxRedFlag.gif';
 import Glitch from '../img/Graphics/Glitch.gif';
@@ -25,7 +24,7 @@ export default class Graphics extends React.Component {
           </div>
         </div>
         <div id="graphics" className="d-flex flex-row align-self-center">
-          <div id="col1" className="d-flex flex-column">
+          <div className="d-flex flex-column">
             <img src={B} alt="An animated characted wearing a cotton candy
               sweater, matching sweatpants, and fishnets underneath"
             />
@@ -33,26 +32,19 @@ export default class Graphics extends React.Component {
               The Creep Beaters in stencil lettering"
             />
             <img src={emoFonts} alt="A series of horror fonts that read e.mo"/>
-            <img src={Bed} alt="Two animated women eating popcorn in bed"/>
-          </div>
-          <div id="col2" className="d-flex flex-column">
-            <img src={Path} alt="A soft dirt road"/>
-            <img src={Path} alt="A soft dirt road"/>
-            <img src={Path} alt="A soft dirt road"/>
-            <img src={Path} alt="A soft dirt road"/>
-            <img src={Path} alt="A soft dirt road"/>
-          </div>
-          <div id="col3" className="d-flex flex-column">
             <img src={bndLogo} alt="A logo that reads brennan newton DESIGNS in
               the style of an old video game"
             />
+          </div>
+          <div className="d-flex flex-column">
+            <img src={Bed} alt="Two animated women eating popcorn in bed"/>
             <img src={Marx} alt="A gif of Karl Marx waving a red flag in front
               of a bookshelf"
             />
-            <img src={Glitch} alt="A gif of me glitching"/>
             <img src={B_OC} alt="An animated character with ice on their
               shoulder stares susupiciouly to the side. Their name is B."
             />
+            <img src={Glitch} alt="A gif of me glitching"/>
           </div>
         </div>
       </div>
