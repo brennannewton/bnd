@@ -34,9 +34,6 @@ export default class SocialBar extends React.Component {
         <a href="https://soundcloud.com/brennannewton" target="_blank">
           <img src={SoundCloud} alt="SoundCloud icon"/>
         </a>
-        <a href="https://open.spotify.com/user/brennannewton" target="_blank">
-          <img src={Spotify} alt="Spotify icon"/>
-        </a>
       </div>
     )
   }
