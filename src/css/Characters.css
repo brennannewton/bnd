@@ -58,7 +58,7 @@
 
 .Characters .Container .Text p {
   margin-top: 2em;
-  font-family: Raleway;
+  font-family: 'raleway_semibold';
   color: var(--bnd-palegreen);
 }
 
