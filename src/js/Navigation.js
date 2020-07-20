@@ -34,13 +34,13 @@ export default class Navigation extends React.Component {
               </Nav.Link>
             </Nav>
             <Nav className="External ml-auto align-items-center">
-              <a href="https://www.instagram.com/newtonbrennan/" target="_blank">
+              <a href="https://www.instagram.com/newtonbrennan/" target="_blank" rel="noopener noreferrer">
                 <img id="ig" src={Instagram} alt="Instagram icon"/>
               </a>
-              <a href="https://github.com/brennannewton" target="_blank">
+              <a href="https://github.com/brennannewton" target="_blank" rel="noopener noreferrer">
                 <img id="gh" src={Github} alt="Github icon"/>
               </a>
-              <a href="https://www.linkedin.com/in/brennan-newton-075238145/" target="_blank">
+              <a href="https://www.linkedin.com/in/brennan-newton-075238145/" target="_blank" rel="noopener noreferrer">
                 <img ig="li" src={Linkedin} alt="Linkedin icon"/>
               </a>
             </Nav>
