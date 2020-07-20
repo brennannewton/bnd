@@ -62,7 +62,6 @@
 .Fonts .Container .Text p {
   margin-top: 2em;
   font-family: 'raleway_semibold';
-  font-weight: 500;
   color: var(--bnd-deepgreen);
 }
 
