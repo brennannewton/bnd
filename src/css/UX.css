@@ -1,0 +1,121 @@
+@import "Palette.css";
+@import "Font.css";
+
+.UX .Container {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1.5em;
+  background-color: rgba(251, 251, 252, 0.25);
+}
+
+@media (min-width: 768px) {
+  .UX .Container {
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+}
+
+.UX .Container h1 {
+  font-family: 'pokemon_gbregular';
+  font-size: 18px;
+  color: var(--bnd-pink);
+}
+
+@media (min-width: 768px) {
+  .UX .Container h1 {
+    font-size: 24px;
+  }
+}
+
+.UX .Container button {
+  padding: 0;
+  border: 0;
+}
+
+.UX .Container img {
+  width: 100%;
+}
+
+.UX .Container .Text {
+  padding-left: 2em;
+  padding-top: 3em;
+  padding-right: 1.5em;
+  padding-bottom: 2em;
+  background-color: var(--bnd-pink);
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .UX .Container .Text {
+    padding-left: 4em;
+    padding-top: 10em;
+    padding-right: 2em;
+  }
+}
+
+.UX .Container .Text h1 {
+  font-size: 20px;
+  color: var(--bnd-lightgreen);
+}
+
+@media (min-width: 768px) {
+  .UX .Container .Text h1 {
+    font-size: 32px;
+  }
+}
+
+.UX .Container .Text p {
+  margin-top: 2em;
+  font-family: Raleway;
+  color: var(--bnd-palegreen);
+}
+
+@media (max-width: 768px) {
+  .UX .Container .Text p {
+    margin-top: 1.5em;
+    font-size: 14px;
+  }
+}
+
+.UX .Container .Prototypes-Web {
+  padding-left: 1.5em;
+  padding-top: 2em;
+  padding-right: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .UX .Container .Prototypes-Web {
+    padding: 2em;
+  }
+}
+
+.UX .Container .Prototypes-Web .ELECTRA-Title {
+  margin-top: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .UX .Container .Prototypes-Web .ELECTRA-Title {
+    margin-top: 2em;
+  }
+}
+
+.UX .Container .Prototypes-Web button {
+  margin-top: 1.5em;
+}
+
+.UX .Container .Prototypes-Mobile {
+  padding-left: 1.5em;
+  padding-top: 2em;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .UX .Container .Prototypes-Mobile {
+    padding: 2em;
+  }
+}
+
+.UX .Container .Prototypes-Mobile button {
+  margin-top: 1.5em;
+}

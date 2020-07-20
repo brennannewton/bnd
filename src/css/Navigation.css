@@ -1,0 +1,73 @@
+@import "Palette.css";
+@import "Font.css";
+
+.Navigation {
+  background-color: var(--bnd-sky);
+}
+
+@media (min-width: 768px) {
+  .Navigation .Bar .Internal {
+    margin-left: 5em;
+  }
+
+  .Navigation .Bar .Internal p {
+    margin-right: 1em;
+    font-size: 20px;
+  }
+
+  .Navigation .Bar .Internal p:hover {
+    background-color: var(--bnd-white);
+    color: var(--bnd-sky);
+    border-radius: 32em;
+  }
+}
+
+@media (max-width: 768px) {
+  .Navigation .Bar .Internal p {
+    font-size: 16px;
+  }
+}
+
+.Navigation .Bar .Internal a {
+  margin: 0;
+  padding: 0;
+}
+
+.Navigation .Bar .Internal p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  color: var(--bnd-white);
+  font-family: 'pokemon_gbregular';
+
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .Navigation .Bar .External {
+    margin-right: 5em;
+  }
+
+  .Navigation .Bar .External img {
+    margin-left: 1.5em;
+    height: 32px;
+  }
+
+  .Navigation .Bar .External img:hover {
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Navigation .Bar .External img {
+    height: 24px;
+  }
+}
+
+.Navigation .Bar .External img {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  height: 32px;
+
+  transition: 0.5s;
+}

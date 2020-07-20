@@ -1,14 +1,17 @@
 @import "./css/Palette.css";
 
 .App {
-  background-color: var(--bnd-grass);
+  background-image: linear-gradient(var(--bnd-lightgreen), var(--bnd-deepgreen));
   text-align: center;
 }
 
-.App .Logo {
-  width: 80vh;
+@media (min-width: 768px) {
+  .App .Logo {
+    width: 80vh;
+  }
 }
-
-.App .DownArrow {
-  height: 5vh;
+@media (max-width: 768px) {
+  .App .Logo {
+    width: 80vw;
+  }
 }

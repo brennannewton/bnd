@@ -1,0 +1,121 @@
+@import "Palette.css";
+@import "Font.css";
+
+.Fonts .Container {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1.5em;
+  background-color: rgba(251, 251, 252, 0.25);
+}
+
+@media (min-width: 768px) {
+  .Fonts .Container {
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+}
+
+.Fonts .Container button {
+  padding: 0;
+  border: 0;
+}
+
+.Fonts .Container img {
+    width: 65vw;
+  }
+
+@media (min-width: 768px) {
+  .Fonts .Container img {
+    width: 100%;
+  }
+}
+
+.Fonts .Container .Text {
+  padding-left: 2em;
+  padding-top: 3em;
+  padding-right: 1.5em;
+  padding-bottom: 2em;
+  background-color: var(--bnd-palegreen);
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .Fonts .Container .Text {
+    padding-left: 4em;
+    padding-top: 10em;
+    padding-right: 2em;
+  }
+}
+
+.Fonts .Container .Text h1 {
+  font-size: 20px;
+  font-family: 'pokemon_gbregular';
+  color: var(--bnd-pink);
+}
+
+@media (min-width: 768px) {
+  .Fonts .Container .Text h1 {
+    font-size: 32px;
+  }
+}
+
+.Fonts .Container .Text p {
+  margin-top: 2em;
+  font-family: Raleway;
+  font-weight: 500;
+  color: var(--bnd-deepgreen);
+}
+
+@media (max-width: 768px) {
+  .Fonts .Container .Text p {
+    margin-top: 1.5em;
+    font-size: 14px;
+  }
+}
+
+.Fonts .Container .Fonts-Digital {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+  
+@media (min-width: 768px) {
+  .Fonts .Container .Fonts-Digital {
+    padding-left: 2.5em;
+    padding-top: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .Fonts .Container .Fonts-Digital .emo_viewer {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .Fonts .Container .Fonts-Digital button {
+    margin-top: 1.5em;
+  }
+}
+  
+.Fonts .Container .Fonts-Analog {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+}
+  
+@media (min-width: 768px) {
+  .Fonts .Container .Fonts-Analog {
+    padding-left: 1.5em;
+    padding-top: 2em;
+    padding-right: 2.5em;
+    padding-bottom: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .Fonts .Container .Fonts-Analog .THECREEPBEATERS_viewer {
+    margin-top: 1.5em;
+  }
+}

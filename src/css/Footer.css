@@ -2,11 +2,25 @@
 @import "Font.css";
 
 .Footer {
-  background-color: var(--bnd-earth);
+  position: relative;
+  bottom: 0;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .Footer h1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer h1 {
+    font-size: 12px;
+  }
 }
 
 .Footer h1 {
   color: var(--bnd-white);
   font-family: 'pokemon_gbregular';
-  font-size: 1.5rem;
 }

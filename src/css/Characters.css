@@ -1,0 +1,115 @@
+@import "Palette.css";
+@import "Font.css";
+
+.Characters .Container {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1.5em;
+  background-color: rgba(251, 251, 252, 0.25);
+}
+
+@media (min-width: 768px) {
+  .Characters .Container {
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+}
+
+.Characters .Container h1 {
+  font-family: 'pokemon_gbregular';
+}
+
+.Characters .Container button {
+  padding: 0;
+  border: 0;
+}
+
+.Characters .Container img {
+  width: 100%;
+}
+
+.Characters .Container .Text {
+  padding-left: 2em;
+  padding-top: 3em;
+  padding-right: 1.5em;
+  padding-bottom: 2em;
+  background-color: var(--bnd-pink);
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .Characters .Container .Text {
+    padding-left: 4em;
+    padding-top: 10em;
+    padding-right: 2em;
+  }
+}
+
+.Characters .Container .Text h1 {
+  font-size: 20px;
+  color: var(--bnd-lightgreen);
+}
+
+@media (min-width: 768px) {
+  .Characters .Container .Text h1 {
+    font-size: 32px;
+  }
+}
+
+.Characters .Container .Text p {
+  margin-top: 2em;
+  font-family: Raleway;
+  color: var(--bnd-palegreen);
+}
+
+@media (max-width: 768px) {
+  .Characters .Container .Text p {
+    margin-top: 1.5em;
+    font-size: 14px;
+  }
+}
+
+.Characters .Container .Characters-All .Row {
+  margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+  .Characters .Container .Characters-All .Row {
+    margin-left: 0.5em;
+    margin-top: 2em;
+    margin-right: 0.5em;
+  }
+}
+
+.Characters .Container .Characters-All .Center {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .Characters .Container .Characters-All .Center {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.Characters .Container .Characters-All .Viewer {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 768px) {
+  .Characters .Container .Characters-All .Viewer {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+.Characters .Container .Characters-All .Poster1_viewer {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .Characters .Container .Characters-All .Poster1_viewer {
+    margin-bottom: 2em;
+  }
+}

@@ -1,10 +1,8 @@
 :root {
   --bnd-white: #FBFBFC;
+  --bnd-palegreen: #DEECD8;
   --bnd-lightgreen: #BADBB2;
   --bnd-deepgreen: #79AD75;
-  --bnd-grass: #C1CFAB;
   --bnd-sky: #ACC6D5;
-  --bnd-earth: #591B0C;
-  --bnd-black: #050601;
-  --bnd-pink: #D9969D;
+  --bnd-pink: #D56671;
 }

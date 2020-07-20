@@ -1,12 +1,14 @@
 // Components
 import React from 'react';
-import SocialBar from './js/SocialBar';
-import Logo from './img/bnd_logo_transparent.png';
-import DownArrow from './img/down_arrow.png';
-import Graphics from './js/Graphics';
-import Prototypes from './js/Prototypes';
-import Animations from './js/Animations';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Navigation from './js/Navigation';
 import Footer from './js/Footer';
+
+// Pages
+import Home from './js/Home';
+import UX from './js/UX';
+import Fonts from './js/Fonts';
+import Characters from './js/Characters';
 
 // Styles
 import './App.css';
@@ -15,14 +17,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <SocialBar className="SocialBar"/>
-      <img src={Logo} alt="Brennan Newton Designs logo" className="Logo"/>
-      <br/>
-      <img src={DownArrow} alt="Downward arrow" className="DownArrow mb-5"/>
-      <Graphics/>
-      <Prototypes/>
-      <Animations/>
-      <Footer/>
+      <BrowserRouter>
+        <Navigation/>
+          <Route path="/" exact render={() => <Home/>}/>
+          <Route path="/ux" exact render={() => <UX/>}/>
+          <Route path="/fonts" exact render={() => <Fonts/>}/>
+          <Route path="/characters" exact render={() => <Characters/>}/>
+        <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
