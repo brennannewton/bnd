@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div className="Footer w-100">
-        <h1>brennanmnewton@gmail.com</h1>
+        <h1>thebndesigns@gmail.com</h1>
       </div>
     )
   }
