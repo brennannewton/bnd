@@ -14,19 +14,30 @@ import Characters from './js/Characters';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Navigation/>
-          <Route path="/" exact render={() => <Home/>}/>
-          <Route path="/ux" exact render={() => <UX/>}/>
-          <Route path="/fonts" exact render={() => <Fonts/>}/>
-          <Route path="/characters" exact render={() => <Characters/>}/>
-        <Footer/>
-      </BrowserRouter>
-    </div>
-  );
-}
+export default class App extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      currPage: 'HomePg',
+    };
+  }
 
-export default App;
+  setCurrPage = (curr) => {
+    this.setState({currPage: curr});
+  }
+
+  render() {
+    return (
+      <div className={`App ${this.state.currPage}`}>
+        <BrowserRouter>
+          <Navigation setCurrPage={this.setCurrPage}/>
+            <Route path="/" exact render={() => <Home/>}/>
+            <Route path="/ux" exact render={() => <UX/>}/>
+            <Route path="/fonts" exact render={() => <Fonts/>}/>
+            <Route path="/characters" exact render={() => <Characters/>}/>
+          <Footer currPage={this.state.currPage}/>
+        </BrowserRouter>
+      </div>
+    );
+  }
+}
