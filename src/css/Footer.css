@@ -1,26 +1,32 @@
 @import "Palette.css";
 @import "Font.css";
 
-.Footer {
+.Relative {
   position: relative;
   bottom: 0;
-  padding-bottom: 1em;
-  text-align: center;
+}
+
+.Absolute {
+  position: absolute;
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
-  .Footer h1 {
+  #Email {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .Footer h1 {
+  #Email {
     font-size: 12px;
   }
 }
 
-.Footer h1 {
+#Email {
+  margin: 0;
+  padding-bottom: 1.25em;
   color: var(--bnd-white);
   font-family: 'pokemon_gbregular';
+  text-align: center;
 }
