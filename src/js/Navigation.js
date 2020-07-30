@@ -20,16 +20,16 @@ export default class Navigation extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" className="m-auto"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="Internal mr-auto align-items-center">
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/" onClick={() => this.props.setIsHome(true)}>
                 <p>bn</p>
               </Nav.Link>
-              <Nav.Link as={Link} to="ux">
+              <Nav.Link as={Link} to="ux" onClick={() => this.props.setIsHome(false)}>
                 <p>ux</p>
               </Nav.Link>
-              <Nav.Link as={Link} to="fonts">
+              <Nav.Link as={Link} to="fonts" onClick={() => this.props.setIsHome(false)}>
                 <p>fonts</p>
               </Nav.Link>
-              <Nav.Link as={Link} to="characters">
+              <Nav.Link as={Link} to="characters" onClick={() => this.props.setIsHome(false)}>
                 <p>characters</p>
               </Nav.Link>
             </Nav>
