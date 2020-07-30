@@ -1,17 +1,24 @@
 @import "./css/Palette.css";
 
-.App {
+.View {
+  min-height: 100vh;
+  background-image: linear-gradient(var(--bnd-lightgreen), var(--bnd-deepgreen));
+  text-align: center;
+}
+
+.Content {
+  height: auto;
   background-image: linear-gradient(var(--bnd-lightgreen), var(--bnd-deepgreen));
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  .App .Logo {
+  .Logo {
     width: 80vh;
   }
 }
 @media (max-width: 768px) {
-  .App .Logo {
+  .Logo {
     width: 80vw;
   }
 }
