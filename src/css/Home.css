@@ -1,5 +1,48 @@
+/* Ensure Home component covers the screen on mobile devices */
 @media (max-width: 768px) {
     .Home {
         height: 100vh;
     }
+}
+
+/* Set vendor-specific animation name and duration on .Logo class */
+.Logo {
+	-webkit-animation-name: fadei3n;
+	-webkit-animation-duration: 3s;
+	-moz-animation-name: fadein;
+	-moz-animation-duration: 3s;
+	-ms-animation-name: fadein;
+	-ms-animation-duration: 3s;
+	-o-animation-name: fadein;
+	-o-animation-duration: 3s;
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+
+/* Set vendor-specific keyframes for animation on load */
+/* Delay then slowly fade in */
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-o-keyframes fadein {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadein {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+	100% { opacity: 1; }
 }
