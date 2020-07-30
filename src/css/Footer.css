@@ -1,13 +1,8 @@
 @import "Palette.css";
 @import "Font.css";
 
-.Relative {
+.Footer {
   position: relative;
-  bottom: 0;
-}
-
-.Absolute {
-  position: absolute;
   bottom: 0;
 }
 

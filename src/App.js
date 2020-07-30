@@ -20,7 +20,6 @@ export default class App extends React.Component {
     this.state = {
       isHome: true,
       homeStyle: "View",
-      footerStyle: "Absolute",
     };
   }
 
@@ -32,18 +31,12 @@ export default class App extends React.Component {
     this.setState({homeStyle: y});
   }
 
-  setFooterStyle = (z) => {
-    this.setState({footerStyle: z});
-  }
-
   onComponentDidMount() {
     if (this.state.isHome) {
       this.setHomeStyle("Veiw");
-      this.setFooterStyle("Absolute");
     }
     else {
       this.setHomeStyle("Content");
-      this.setFooterStyle("Relative");
     }
   }
 
@@ -56,7 +49,7 @@ export default class App extends React.Component {
             <Route path="/ux" exact render={() => <UX/>}/>
             <Route path="/fonts" exact render={() => <Fonts/>}/>
             <Route path="/characters" exact render={() => <Characters/>}/>
-          <Footer footerStyle={this.state.footerStyle}/>
+          <Footer/>
         </BrowserRouter>
       </div>
     );
