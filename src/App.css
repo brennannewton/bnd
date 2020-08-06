@@ -12,13 +12,12 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .Logo {
-    width: 80vh;
-  }
+.Logo {
+  width: 100vw;
 }
-@media (max-width: 768px) {
+
+@media (min-width: 1366px) {
   .Logo {
-    width: 80vw;
+    width: 76vh;
   }
 }
