@@ -18,6 +18,12 @@
 
 @media (min-width: 1366px) {
   .Logo {
-    width: 76vh;
+    width: 78vh;
+  }
+}
+
+@media (min-width: 1920px) {
+  .Logo {
+    width: 80vh;
   }
 }
