@@ -2,7 +2,7 @@
 
 .View {
   min-height: 100vh;
-  background-image: linear-gradient(var(--bnd-lightgreen), var(--bnd-deepgreen));
+  background-image: linear-gradient(var(--bnd-light-green), var(--bnd-green));
   text-align: center;
 }
 
