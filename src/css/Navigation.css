@@ -2,72 +2,131 @@
 @import "Font.css";
 
 .Navigation {
-  background-color: var(--bnd-sky);
+  background-color: var(--bnd-blue);
 }
 
-@media (min-width: 768px) {
-  .Navigation .Bar .Internal {
-    margin-left: 5em;
-  }
-
-  .Navigation .Bar .Internal p {
-    margin-right: 1em;
-    font-size: 20px;
-  }
-
-  .Navigation .Bar .Internal p:hover {
-    background-color: var(--bnd-white);
-    color: var(--bnd-sky);
-    border-radius: 32em;
-  }
-}
-
-@media (max-width: 768px) {
-  .Navigation .Bar .Internal p {
-    font-size: 16px;
-  }
-}
-
-.Navigation .Bar .Internal a {
+.Navigation .Bar a {
   margin: 0;
   padding: 0;
 }
 
-.Navigation .Bar .Internal p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  padding: 0.5em;
-  color: var(--bnd-white);
-  font-family: 'pokemon_gbregular';
-
-  transition: 0.5s;
+/* Set responsive style for mobile devices */
+.Navigation {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
+.Navigation .Bar .Menu {
+  border-color: transparent;
+}
+
+.Navigation .Bar .Internal p {
+  margin: 0;
+  margin-top: 32px;
+  padding: 0;
+  font-family: 'pokemon_gbregular';
+  font-size: 16px;
+  color: var(--bnd-white);
+}
+
+.Navigation .Bar .External img {
+  margin: 0;
+  margin-top: 32px;
+  height: 24px;
+}
+
+.Navigation .Bar .External #li {
+  margin-bottom: 24px;
+}
+
+/* Set responsive style for tablet devices */
 @media (min-width: 768px) {
-  .Navigation .Bar .External {
-    margin-right: 5em;
+  .Navigation {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .Navigation .Bar .Internal p {
+    margin: 0;
+    margin-top: 48px;
+    font-size: 32px;
   }
 
   .Navigation .Bar .External img {
-    margin-left: 1.5em;
+    margin: 0;
+    margin-top: 48px;
+    height: 48px;
+  }
+
+  .Navigation .Bar .External #li {
+    margin-bottom: 36px;
+  }
+}
+
+/* Set responsive style for desktop devices */
+@media (min-width: 1366px) {
+  .Navigation .Bar .Internal {
+    margin: 0;
+    margin-left: 136px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    padding: 0;
+  }
+
+  .Navigation .Bar .Internal p {
+    margin: 0;
+    margin-right: 74px;
+    font-size: 24px;
+
+    transition: 0.5s;
+  }
+
+  .Navigation .Bar .Internal p:hover {
+    color: var(--bnd-black);
+  }
+
+  .Navigation .Bar .External {
+    margin-right: 136px;
+  }
+
+  .Navigation .Bar .External img {
+    margin: 0;
+    margin-left: 46px;
     height: 32px;
+
+    transition: 0.5s;
   }
 
   .Navigation .Bar .External img:hover {
     height: 40px;
   }
-}
 
-@media (max-width: 768px) {
-  .Navigation .Bar .External img {
-    height: 24px;
+  .Navigation .Bar .External #li {
+    margin-bottom: 0;
   }
 }
 
-.Navigation .Bar .External img {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  height: 32px;
+/* Set responsive style for large desktop devices */
+@media (min-width: 1920px) {
+  .Navigation .Bar .Internal {
+    margin-left: 271px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
 
-  transition: 0.5s;
+  .Navigation .Bar .Internal p {
+    font-size: 32px;
+  }
+
+  .Navigation .Bar .External {
+    margin-right: 271px;
+  }
+
+  .Navigation .Bar .External img {
+    height: 40px;
+  }
+
+  .Navigation .Bar .External img:hover {
+    height: 48px;
+  }
 }

@@ -9,6 +9,9 @@ import Instagram from '../img/Navigation/instagram.png';
 import Github from '../img/Navigation/github.png';
 import Linkedin from '../img/Navigation/linkedin.png';
 
+// Menu icon
+import Menu from '../img/menu.png';
+
 // Styles
 import '../css/Navigation.css';
 
@@ -16,8 +19,10 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div className="Navigation w-100">
-        <Navbar collapseOnSelect expand="md" className="Bar p-3">
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="m-auto"/>
+        <Navbar collapseOnSelect expand="lg" className="Bar m-0 p-0">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="Menu m-auto">
+            <img src={Menu}/>
+          </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="Internal mr-auto align-items-center">
               <Nav.Link as={Link} to="/" onClick={() => this.props.setIsHome(true)}>
@@ -41,7 +46,7 @@ export default class Navigation extends React.Component {
                 <img id="gh" src={Github} alt="Github icon"/>
               </a>
               <a href="https://www.linkedin.com/in/brennan-newton-075238145/" target="_blank" rel="noopener noreferrer">
-                <img ig="li" src={Linkedin} alt="Linkedin icon"/>
+                <img id="li" src={Linkedin} alt="Linkedin icon"/>
               </a>
             </Nav>
           </Navbar.Collapse>
