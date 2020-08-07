@@ -12,3 +12,8 @@
     font-family: 'raleway_semibold';
     src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'raleway_medium';
+    src: url('../fonts/Raleway-Medium.ttf') format('truetype');
+}
