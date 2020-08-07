@@ -6,22 +6,29 @@
   bottom: 0;
 }
 
+#Email {
+  margin: 0;
+  padding-bottom: 28px;
+  font-family: 'pokemon_gbregular';
+  font-size: 12px;
+  color: var(--bnd-white);
+  text-align: center;
+}
+
 @media (min-width: 768px) {
+  #Email {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1366px) {
   #Email {
     font-size: 16px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1920px) {
   #Email {
-    font-size: 12px;
+    font-size: 20px;
   }
-}
-
-#Email {
-  margin: 0;
-  padding-bottom: 1.25em;
-  color: var(--bnd-white);
-  font-family: 'pokemon_gbregular';
-  text-align: center;
 }
