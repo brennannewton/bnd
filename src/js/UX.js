@@ -2,7 +2,7 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Viewer from 'react-viewer';
+import Modal from 'react-modal';
 
 // Images
 import bnDesigns_Home from '../img/Prototypes/bnDesigns_Home.png';
@@ -24,19 +24,47 @@ export default class UX extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            bnDesigns_Home_visible: false,
-            bnDesigns_UX_visible: false,
-            bnDesigns_Contact_visible: false,
-            ELECTRA_Profile_visible: false,
-            ELECTRA_Comments_visible: false,
-            Topple_Main_visible: false,
-            Topple_Signup_visible: false,
-            Topple_Feed_visible: false,
-            Topple_Event_visible: false,
-            Topple_NewEvent_visible: false,
-            Topple_Profile_visible: false,
-        }
+            showModal1: false,
+            showModal2: false,
+            showModal3: false,
+            showModal4: false,
+        };
+        this.handleOpenModal1 = this.handleOpenModal1.bind(this);
+        this.handleOpenModal2 = this.handleOpenModal2.bind(this);
+        this.handleOpenModal3 = this.handleOpenModal3.bind(this);
+        this.handleOpenModal4 = this.handleOpenModal4.bind(this);
+        this.handleCloseModal1 = this.handleCloseModal1.bind(this);
+        this.handleCloseModal2 = this.handleCloseModal2.bind(this);
+        this.handleCloseModal3 = this.handleCloseModal3.bind(this);
+        this.handleCloseModal4 = this.handleCloseModal4.bind(this);
     }
+
+    handleOpenModal1() {
+        this.setState({showModal1: true});
+    }
+    handleOpenModal2() {
+        this.setState({showModal2: true});
+    }
+    handleOpenModal3() {
+        this.setState({showModal3: true});
+    }
+    handleOpenModal4() {
+        this.setState({showModal4: true});
+    }
+
+    handleCloseModal1() {
+        this.setState({showModal1: false});
+    }
+    handleCloseModal2() {
+        this.setState({showModal2: false});
+    }
+    handleCloseModal3() {
+        this.setState({showModal3: false});
+    }
+    handleCloseModal4() {
+        this.setState({showModal4: false});
+    }
+
     render() {
         return (
             <div className="UX w-100">
@@ -52,16 +80,40 @@ export default class UX extends React.Component {
                     </Col>
                     <Col xl={8} className="Projects">
                         <Row className="Project Project1">
-                            <button>bnDesigns 1.0</button>
+                            <button onClick={this.handleOpenModal1}>bnDesigns 1.0</button>
+                            <Modal
+                                isOpen={this.state.showModal1}
+                                onRequestClose={this.handleCloseModal1}
+                            >
+                                <p>Modal content 1</p>
+                            </Modal>
                         </Row>
                         <Row className="Project Project2">
-                            <button>ELECTRA</button>
+                            <button onClick={this.handleOpenModal2}>ELECTRA</button>
+                            <Modal
+                                isOpen={this.state.showModal2}
+                                onRequestClose={this.handleCloseModal2}
+                            >
+                                <p>Modal content 2</p>
+                            </Modal>
                         </Row>
                         <Row className="Project Project3">
-                            <button>Topple</button>
+                            <button onClick={this.handleOpenModal3}>Topple</button>
+                            <Modal
+                                isOpen={this.state.showModal3}
+                                onRequestClose={this.handleCloseModal3}
+                            >
+                                <p>Modal content 3</p>
+                            </Modal>
                         </Row>
                         <Row className="Project Project4">
-                            <button>Second Sight Design</button>
+                            <button onClick={this.handleOpenModal4}>Second Sight Design</button>
+                            <Modal
+                                isOpen={this.state.showModal4}
+                                onRequestClose={this.handleCloseModal4}
+                            >
+                                <p>Modal content 4</p>
+                            </Modal>
                         </Row>
                     </Col>
                 </Row>
