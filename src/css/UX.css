@@ -29,7 +29,6 @@
   border-radius: 64px;
   font-family: 'pokemon_gbregular';
   color: var(--bnd-black);
-  box-shadow: 0 0 48px var(--bnd-black);
 }
 
 .UX .Container .Projects {
@@ -106,6 +105,7 @@
   padding-right: 15px;
   padding-bottom: 11px;
   font-size: 10px;
+  box-shadow: 0 0 12px var(--bnd-black);
 }
 
 /* Set responsive style for tablet devices */
@@ -149,6 +149,7 @@
     padding-right: 30px;
     padding-bottom: 20px;
     font-size: 16px;
+    box-shadow: 0 0 20px var(--bnd-black);
   }
 }
 
@@ -190,6 +191,7 @@
     padding-right: 35px;
     padding-bottom: 25px;
     font-size: 16px;
+    box-shadow: 0 0 30px var(--bnd-black);
   }
 }
 
