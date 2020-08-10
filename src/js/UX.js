@@ -2,6 +2,7 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Carousel from 'react-bootstrap/Carousel';
 import Modal from 'react-modal';
 
 // Images
@@ -76,9 +77,13 @@ export default class UX extends React.Component {
                         <h1>humanity</h1>
                         <h1>x</h1>
                         <h1>technology</h1>
-                        <p>My designs bring a sense of warmth & humanity to technology - something
-                            we see as cold & unfeeling. By focusing on the user throughout the
-                            design process, I create accessible & engaging user experiences.
+                        <p>My goal as a designer is to humanize the technology we use on a daily
+                            basis. I want to create interfaces, color palettes, and interactions
+                            that mimic our physical world. Right now accessibiligy is a major issue
+                            impeding human-computer interaction. Our natural world is multimoal by
+                            design, so our virtual one should be too. My designs aim to be
+                            accesible to a variety of users and responsive across a variety of
+                            devices.
                         </p>
                     </Col>
                     <Col xl={8} className="Projects">
@@ -96,14 +101,63 @@ export default class UX extends React.Component {
                                             <img src={Close} alt="Exit icon"/>
                                         </button>
                                         <h1>bnDesigns 1.0</h1>
-                                        <p>bnDesigns is my portfolio website. Right now, I'm on my
-                                            fourth iteration, but I think it's important to remember
-                                            where we came from. I've kept the soft color palette and
-                                            organized layout from the origin design.
+                                        <p>bnDesigns is both a way to showcase my work as a
+                                            designer and create a user experience in the process.
+                                            The concept behind my first iteration was to create an
+                                            emotionally engaging experience that was hospitable
+                                            and encouraged exploration. To create the prototypes I
+                                            used Adobe XD and Photoshop. Next I built the site in
+                                            React. Finally I deployed the site with Netlify. 
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
-                                        <p>Modal content</p>
+                                        <Carousel>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="w-100"
+                                                    src={bnDesigns_Home}
+                                                    alt="bnDesigns Home prototype"
+                                                />
+                                                <Carousel.Caption>
+                                                    <h3>Home Prototype</h3>
+                                                </Carousel.Caption>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="w-100"
+                                                    src={bnDesigns_UX}
+                                                    alt="bnDesigns UX prototype"
+                                                />
+                                                <Carousel.Caption>
+                                                    <h3>UX Prototype</h3>
+                                                </Carousel.Caption>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="w-100"
+                                                    src={bnDesigns_Contact}
+                                                    alt="bnDesigns Contact prototype"
+                                                />
+                                                <Carousel.Caption>
+                                                    <h3>Contact Prototype</h3>
+                                                </Carousel.Caption>
+                                            </Carousel.Item>
+                                        </Carousel>
+                                        <a
+                                            href="https://bndesign.netlify.app/"
+                                            target="_blank"
+                                            className="Link d-inline-block"
+                                        >
+                                            bndesign.netlify.app
+                                        </a>
+                                        <br/>
+                                        <a
+                                            href="https://github.com/brennannewton/bndesign"
+                                            target="_blank"
+                                            className="Link d-inline-block"
+                                        >
+                                            GitHub Repository 
+                                        </a>
                                     </Col>
                                 </Row>
                             </Modal>
