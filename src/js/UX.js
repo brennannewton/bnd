@@ -17,6 +17,9 @@ import Topple_Event from '../img/Prototypes/Topple_Event.png';
 import Topple_NewEvent from '../img/Prototypes/Topple_NewEvent.png';
 import Topple_Profile from '../img/Prototypes/Topple_Profile.png';
 
+// Icon
+import Close from '../img/close.png';
+
 // Styles
 import '../css/UX.css';
 
@@ -82,15 +85,34 @@ export default class UX extends React.Component {
                         <Row className="Project Project1">
                             <button onClick={this.handleOpenModal1}>bnDesigns 1.0</button>
                             <Modal
+                                className="Modal"
+                                overlayClassName="Overlay"
                                 isOpen={this.state.showModal1}
                                 onRequestClose={this.handleCloseModal1}
                             >
-                                <p>Modal content 1</p>
+                                <Row>
+                                    <Col xl={4} className="Text">
+                                        <button onClick={this.handleCloseModal1}>
+                                            <img src={Close} alt="Exit icon"/>
+                                        </button>
+                                        <h1>bnDesigns 1.0</h1>
+                                        <p>bnDesigns is my portfolio website. Right now, I'm on my
+                                            fourth iteration, but I think it's important to remember
+                                            where we came from. I've kept the soft color palette and
+                                            organized layout from the origin design.
+                                        </p>
+                                    </Col>
+                                    <Col xl={8} className="Content">
+                                        <p>Modal content</p>
+                                    </Col>
+                                </Row>
                             </Modal>
                         </Row>
                         <Row className="Project Project2">
                             <button onClick={this.handleOpenModal2}>ELECTRA</button>
                             <Modal
+                                className="Modal"
+                                overlayClassName="Overlay"
                                 isOpen={this.state.showModal2}
                                 onRequestClose={this.handleCloseModal2}
                             >
@@ -100,6 +122,8 @@ export default class UX extends React.Component {
                         <Row className="Project Project3">
                             <button onClick={this.handleOpenModal3}>Topple</button>
                             <Modal
+                                className="Modal"
+                                overlayClassName="Overlay"
                                 isOpen={this.state.showModal3}
                                 onRequestClose={this.handleCloseModal3}
                             >
@@ -109,6 +133,8 @@ export default class UX extends React.Component {
                         <Row className="Project Project4">
                             <button onClick={this.handleOpenModal4}>Second Sight Design</button>
                             <Modal
+                                className="Modal"
+                                overlayClassName="Overlay"
                                 isOpen={this.state.showModal4}
                                 onRequestClose={this.handleCloseModal4}
                             >
