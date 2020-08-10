@@ -30,6 +30,13 @@
   outline: none;
   font-family: 'pokemon_gbregular';
   color: var(--bnd-black);
+
+  transition: 0.3s;
+}
+
+.UX .Container .Projects button:hover {
+  background-color: var(--bnd-black);
+  color: var(--bnd-white);
 }
 
 .UX .Container .Projects {
