@@ -259,7 +259,7 @@
     margin-top: 105px;
     width: 1360px;
     border: 0;
-    outline: none;
+    outline: 0;
   }
 
   .Overlay {
@@ -295,7 +295,7 @@
     margin-top: 44px;
     background-color: transparent;
     border: 0;
-    outline: none;
+    outline: 0;
   }
 
   .Modal .Text h1 {
@@ -307,6 +307,8 @@
     font-size: 32px;
     color: var(--bnd-pale-green);
     text-align: right;
+
+    height: 65px;
   }
 
   .Modal .Text p {
@@ -315,10 +317,16 @@
     margin-top: 36px;
     margin-right: 43px;
     margin-bottom: 90px;
+    padding: 0;
+    padding-right: 10px;
     font-family: 'raleway_medium';
     font-size: 24px;
     color: var(--bnd-white);
     text-align: right;
+
+    height: 580px;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .Modal .Content {
@@ -329,6 +337,31 @@
     background-color: var(--bnd-white);
     border: 0;
     box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  }
+
+  .Modal .Content .ScrollArea {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+  }
+
+  .Modal .Content .ScrollArea button {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+  }
+
+  .Modal .Content .ScrollArea .LastBtn {
+    margin-bottom: 0;
+  }
+
+  .Modal .Content .ScrollArea img {
+    width: 100%;
   }
 
   .Modal .Content .Link {
