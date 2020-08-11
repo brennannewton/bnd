@@ -9,6 +9,7 @@ import Modal from 'react-modal';
 import bnDesigns_Home from '../img/Prototypes/bnDesigns_Home.png';
 import bnDesigns_UX from '../img/Prototypes/bnDesigns_UX.png';
 import bnDesigns_Contact from '../img/Prototypes/bnDesigns_Contact.png';
+import ELECTRA_Sketches from '../img/Prototypes/ELECTRA_ProfileSketches.png';
 import ELECTRA_Comments from '../img/Prototypes/ELECTRA_Comments.png';
 import ELECTRA_Profile from '../img/Prototypes/ELECTRA_Profile.png';
 import Topple_Main from '../img/Prototypes/Topple_Main.png';
@@ -114,7 +115,7 @@ export default class UX extends React.Component {
                                         <Carousel>
                                             <Carousel.Item>
                                                 <img
-                                                    className="w-100"
+                                                    className="d-block w-100"
                                                     src={bnDesigns_Home}
                                                     alt="bnDesigns Home prototype"
                                                 />
@@ -124,7 +125,7 @@ export default class UX extends React.Component {
                                             </Carousel.Item>
                                             <Carousel.Item>
                                                 <img
-                                                    className="w-100"
+                                                    className="d-block w-100"
                                                     src={bnDesigns_UX}
                                                     alt="bnDesigns UX prototype"
                                                 />
@@ -134,7 +135,7 @@ export default class UX extends React.Component {
                                             </Carousel.Item>
                                             <Carousel.Item>
                                                 <img
-                                                    className="w-100"
+                                                    className="d-block w-100"
                                                     src={bnDesigns_Contact}
                                                     alt="bnDesigns Contact prototype"
                                                 />
@@ -170,7 +171,73 @@ export default class UX extends React.Component {
                                 isOpen={this.state.showModal2}
                                 onRequestClose={this.handleCloseModal2}
                             >
-                                <p>Modal content 2</p>
+                                <Row>
+                                    <Col xl={4} className="Text">
+                                        <button onClick={this.handleCloseModal2}>
+                                            <img src={Close} alt="Exit icon"/>
+                                        </button>
+                                        <h1>ELECTRA</h1>
+                                        <p>ELECTRA is where digital artists
+                                            collaborate and receive feedback on their work. I was
+                                            the Project Manager for ELECTRA, so I oversaw the
+                                            product from concept to release. We started by
+                                            generating user flows and personas. Then we created the
+                                            brand identity and designed features in Adobe XD that
+                                            would bring the concept to life. Next we developed the
+                                            product using the PERN stack. Finally we released a
+                                            beta-stage product with Netlify.
+                                        </p>
+                                    </Col>
+                                    <Col xl={8} className="Content">
+                                        <Carousel>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="d-block w-100"
+                                                    src={ELECTRA_Sketches}
+                                                    alt="ELECTRA Profile sketches"
+                                                />
+                                                <Carousel.Caption>
+                                                    <h3>Profile Sketches</h3>
+                                                </Carousel.Caption>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="d-block w-100"
+                                                    src={ELECTRA_Profile}
+                                                    alt="ELECTRA Profile prototype"
+                                                />
+                                                <Carousel.Caption>
+                                                    <h3>Profile Prototype</h3>
+                                                </Carousel.Caption>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="d-block w-100"
+                                                    src={ELECTRA_Comments}
+                                                    alt="ELECTRA Comments prototype"
+                                                />
+                                                <Carousel.Caption>
+                                                    <h3>Comments Prototype</h3>
+                                                </Carousel.Caption>
+                                            </Carousel.Item>
+                                        </Carousel>
+                                        <a
+                                            href="https://electrala.netlify.app/"
+                                            target="_blank"
+                                            className="Link d-inline-block"
+                                        >
+                                            electrala.netlify.app
+                                        </a>
+                                        <br/>
+                                        <a
+                                            href="https://github.com/electrala"
+                                            target="_blank"
+                                            className="Link d-inline-block"
+                                        >
+                                            GitHub Organization
+                                        </a>
+                                    </Col>
+                                </Row>
                             </Modal>
                         </Row>
                         <Row className="Project Project3">
