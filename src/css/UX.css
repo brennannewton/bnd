@@ -346,6 +346,8 @@
     border-radius: 64px;
     outline: 0;
     box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+
+    transition: 0.3s;
   }
 
   .Modal .Content .Link:hover {
