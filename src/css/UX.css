@@ -224,7 +224,7 @@
     margin: 0;
     margin-left: 271px;
     margin-right: 271px;
-    height: 77vh;
+    height: 76.75vh;
   }
 
   .UX .Container .Text {
@@ -302,7 +302,7 @@
     margin: 0;
     margin-left: 85px;
     margin-top: 25px;
-    margin-right: 65px;
+    margin-right: 43px;
     font-family: 'pokemon_gbregular';
     font-size: 32px;
     color: var(--bnd-pale-green);
@@ -341,7 +341,7 @@
     margin: 0;
     padding: 0;
     height: 500px;
-    background-color: var(--bnd-light-brown);
+    background-color: var(--bnd-black);
     box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
     overflow-x: hidden;
     overflow-y: auto;
@@ -357,6 +357,14 @@
     padding: 0;
     border: 0;
     outline: 0;
+    opacity: 0.91;
+
+    transition: 0.3s;
+  }
+
+  .Modal .Content .ScrollArea button:hover {
+    opacity: 1;
+    width: 66%;
   }
 
   .Modal .Content .ScrollArea .LastBtn {

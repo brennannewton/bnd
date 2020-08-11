@@ -773,7 +773,10 @@ export default class UX extends React.Component {
                                                 />
                                             </div>
                                             <div className="SSD_WireframeMItem_viewer">
-                                                <button onClick={() => {this.setState({SSD_WireframeMItem_visible: true});}}>
+                                                <button
+                                                    className="LastBtn"
+                                                    onClick={() => {this.setState({SSD_WireframeMItem_visible: true});}}
+                                                >
                                                     <img src={SSD_WireframeMItem} alt=""/>
                                                 </button>
                                                 <Viewer
