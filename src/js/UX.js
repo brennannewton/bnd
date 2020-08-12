@@ -92,29 +92,53 @@ export default class UX extends React.Component {
 
     // Open modal functions
     handleOpenModal1() {
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${window.scrollY}px`;
         this.setState({showModal1: true});
     }
     handleOpenModal2() {
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${window.scrollY}px`;
         this.setState({showModal2: true});
     }
     handleOpenModal3() {
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${window.scrollY}px`;
         this.setState({showModal3: true});
     }
     handleOpenModal4() {
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${window.scrollY}px`;
         this.setState({showModal4: true});
     }
 
     // Close modal functions
     handleCloseModal1() {
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
         this.setState({showModal1: false});
     }
     handleCloseModal2() {
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
         this.setState({showModal2: false});
     }
     handleCloseModal3() {
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
         this.setState({showModal3: false});
     }
     handleCloseModal4() {
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
         this.setState({showModal4: false});
     }
 
@@ -145,7 +169,7 @@ export default class UX extends React.Component {
                                 onRequestClose={this.handleCloseModal1}
                             >
                                 <Row>
-                                    <Col xl={4} className="Text">
+                                    <Col xl={4} xs={12} className="Text">
                                         <button onClick={this.handleCloseModal1}>
                                             <img src={Close} alt="Exit icon"/>
                                         </button>
@@ -160,7 +184,7 @@ export default class UX extends React.Component {
                                             React. Finally I deployed the site with Netlify. 
                                         </p>
                                     </Col>
-                                    <Col xl={8} className="Content">
+                                    <Col xl={8} xs={12} className="Content">
                                         <div className="ScrollArea">
                                             <div className="bnDesigns_Home_viewer">
                                                 <button onClick={() => {this.setState({bnDesigns_Home_visible: true});}}>

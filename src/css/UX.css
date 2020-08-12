@@ -127,6 +127,140 @@
   box-shadow: 0 0 12px var(--bnd-black);
 }
 
+.Modal {
+  margin: auto;
+  margin-top: 50px;
+  width: 286px;
+  border: 0;
+  outline: 0;
+}
+
+.Overlay {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 114vh;
+  background-color: rgba(129, 83, 72, 0.5);
+  backdrop-filter: blur(5px);
+
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-name: fadein;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-name: fadein;
+  -ms-animation-duration: 0.5s;
+  -o-animation-name: fadein;
+  -o-animation-duration: 0.5s;
+  animation-name: fadein;
+  animation-duration: 0.5s;
+}
+
+.Modal .Text {
+  background-color: var(--bnd-black);
+  border: 0;
+  box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+}
+
+.Modal .Text button {
+  margin: 0;
+  padding: 0;
+  margin-left: 6px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.Modal .Text img {
+  width: 35px;
+}
+
+.Modal .Text h1 {
+  margin: 0;
+  margin-top: 8px;
+  font-family: 'pokemon_gbregular';
+  font-size: 18px;
+  color: var(--bnd-pale-green);
+  text-align: center;
+}
+
+.Modal .Text p {
+  margin: 0;
+  margin-left: 37px;
+  margin-top: 12px;
+  margin-right: 37px;
+  margin-bottom: 50px;
+  padding: 0;
+  padding-bottom: 10px;
+  font-family: 'raleway_medium';
+  font-size: 14px;
+  color: var(--bnd-white);
+  text-align: center;
+
+  height: 157px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.Modal .Content {
+  padding: 0;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  height: 360px;
+  background-color: var(--bnd-white);
+  border: 0;
+  box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+}
+
+.Modal .Content .ScrollArea {
+  margin: 0;
+  padding: 0;
+  height: 165px;
+  background-color: var(--bnd-black);
+  box-shadow: 0 0 15px rgba(5, 6, 1, 0.7);
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.Modal .Content .ScrollArea button {
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  width: 80%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.Modal .Content .ScrollArea .LastBtn {
+  margin-bottom: 15px;
+}
+
+.Modal .Content .ScrollArea img {
+  width: 100%;
+}
+
+.Modal .Content .Link {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  font-family: 'raleway_medium';
+  font-size: 16px;
+  color: var(--bnd-black);
+  text-decoration: none;
+  border: 0;
+  border-radius: 64px;
+  outline: 0;
+  box-shadow: 0 0 15px rgba(5, 6, 1, 0.7);
+}
+
 /* Set responsive style for tablet devices */
 @media (min-width: 768px) {
   .UX {
@@ -170,6 +304,80 @@
     font-size: 16px;
     box-shadow: 0 0 20px var(--bnd-black);
   }
+
+  .Modal {
+    margin-top: 55px;
+    width: 600px;
+  }
+
+  .Overlay {
+    height: 114vh;
+  }
+
+  .Modal .Text {
+    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  }
+
+  .Modal .Text button {
+    margin-left: 18px;
+    margin-top: 30px;
+  }
+
+  .Modal .Text img {
+    width: auto;
+  }
+
+  .Modal .Text h1 {
+    margin: 0;
+    margin-left: 78px;
+    margin-right: 78px;
+    font-size: 24px;
+  }
+
+  .Modal .Text p {
+    margin-left: 78px;
+    margin-top: 20px;
+    margin-right: 78px;
+    margin-bottom: 78px;
+    padding-bottom: 10px;
+    font-size: 20px;
+
+    height: 168px;
+  }
+
+  .Modal .Content {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    height: 550px;
+    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  }
+
+  .Modal .Content .ScrollArea {
+    height: 300px;
+    box-shadow: 0 0 25px rgba(5, 6, 1, 0.7);
+  }
+
+  .Modal .Content .ScrollArea button {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 66%;
+  }
+
+  .Modal .Content .ScrollArea .LastBtn {
+    margin-bottom: 15px;
+  }
+
+  .Modal .Content .Link {
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-top: 18px;
+    padding-right: 30px;
+    padding-bottom: 18px;
+    font-size: 20px;
+    box-shadow: 0 0 25px rgba(5, 6, 1, 0.7);
+  }
 }
 
 /* Set responsive style for desktop devices */
@@ -182,13 +390,13 @@
     margin: 0;
     margin-left: 136px;
     margin-right: 136px;
-    height: 75vh;
+    height: 73.05vh;
   }
 
   .UX .Container .Text {
     padding: 0;
     padding-left: 43px;
-    padding-top: 138px;
+    padding-top: 65px;
     padding-right: 43px;
     text-align: right;
   }
@@ -211,6 +419,100 @@
     padding-bottom: 25px;
     font-size: 16px;
     box-shadow: 0 0 30px var(--bnd-black);
+  }
+
+  .Modal {
+    margin-top: 60px;
+    width: 1100px;
+  }
+
+  .Overlay {
+    height: 100vh;
+  }
+
+  .Modal .Text {
+    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  }
+
+  .Modal .Text button {
+    margin-left: 18px;
+    margin-top: 30px;
+  }
+
+  .Modal .Text h1 {
+    margin: 0;
+    margin-left: 85px;
+    margin-top: 20px;
+    margin-right: 43px;
+    font-size: 24px;
+    text-align: right;
+  }
+
+  .Modal .Text p {
+    margin: 0;
+    margin-left: 85px;
+    margin-top: 36px;
+    margin-right: 43px;
+    margin-bottom: 95px;
+    padding: 0;
+    padding-right: 10px;
+    font-size: 16px;
+    text-align: right;
+
+    height: 360px;
+  }
+
+  .Modal .Content {
+    padding: 0;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    height: auto;
+    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  }
+
+  .Modal .Content .ScrollArea {
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  }
+
+  .Modal .Content .ScrollArea button {
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 60%;
+
+    transition: 0.3s;
+  }
+
+  .Modal .Content .ScrollArea button:hover {
+    width: 66%;
+  }
+
+  .Modal .Content .ScrollArea .LastBtn {
+    margin-bottom: 15px;
+  }
+
+  .Modal .Content .Link {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 18px;
+    padding-right: 25px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+
+    transition: 0.3s;
+  }
+
+  .Modal .Content .Link:hover {
+    background-color: var(--bnd-black);
+    color: var(--bnd-white);
   }
 }
 
@@ -255,115 +557,51 @@
   }
 
   .Modal {
-    margin: auto;
     margin-top: 105px;
     width: 1360px;
-    border: 0;
-    outline: 0;
-  }
-
-  .Overlay {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(129, 83, 72, 0.5);
-    backdrop-filter: blur(5px);
-
-    -webkit-animation-name: fadein;
-	  -webkit-animation-duration: 0.5s;
-	  -moz-animation-name: fadein;
-	  -moz-animation-duration: 0.5s;
-	  -ms-animation-name: fadein;
-	  -ms-animation-duration: 0.5s;
-	  -o-animation-name: fadein;
-	  -o-animation-duration: 0.5s;
-	  animation-name: fadein;
-	  animation-duration: 0.5s;
-  }
-
-  .Modal .Text {
-    background-color: var(--bnd-black);
-    border: 0;
-    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   }
 
   .Modal .Text button {
-    margin: 0;
-    padding: 0;
     margin-left: 32px;
     margin-top: 44px;
-    background-color: transparent;
-    border: 0;
-    outline: 0;
   }
 
   .Modal .Text h1 {
-    margin: 0;
     margin-left: 85px;
     margin-top: 25px;
     margin-right: 43px;
-    font-family: 'pokemon_gbregular';
     font-size: 32px;
-    color: var(--bnd-pale-green);
-    text-align: right;
   }
 
   .Modal .Text p {
-    margin: 0;
     margin-left: 85px;
     margin-top: 36px;
     margin-right: 43px;
     margin-bottom: 115px;
-    padding: 0;
     padding-right: 10px;
-    font-family: 'raleway_medium';
     font-size: 24px;
-    color: var(--bnd-white);
-    text-align: right;
 
     height: 580px;
-    overflow-x: hidden;
-    overflow-y: auto;
   }
 
   .Modal .Content {
-    padding: 0;
     padding-left: 44px;
     padding-top: 44px;
     padding-right: 44px;
-    background-color: var(--bnd-white);
-    border: 0;
-    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   }
 
   .Modal .Content .ScrollArea {
-    margin: 0;
-    padding: 0;
     height: 500px;
-    background-color: var(--bnd-black);
-    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
-    overflow-x: hidden;
-    overflow-y: auto;
-    text-align: center;
   }
 
   .Modal .Content .ScrollArea button {
-    margin: 0;
     margin-left: 15px;
     margin-top: 15px;
     margin-right: 15px;
     width: 60%;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    opacity: 0.91;
-
-    transition: 0.3s;
   }
 
   .Modal .Content .ScrollArea button:hover {
-    opacity: 1;
     width: 66%;
   }
 
@@ -371,32 +609,13 @@
     margin-bottom: 15px;
   }
 
-  .Modal .Content .ScrollArea img {
-    width: 100%;
-  }
-
   .Modal .Content .Link {
-    margin: 0;
     margin-top: 45px;
-    padding: 0;
     padding-left: 45px;
     padding-top: 30px;
     padding-right: 45px;
     padding-bottom: 30px;
-    font-family: 'raleway_medium';
     font-size: 24px;
-    color: var(--bnd-black);
-    border: 0;
     border-radius: 64px;
-    outline: 0;
-    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
-
-    transition: 0.3s;
-  }
-
-  .Modal .Content .Link:hover {
-    background-color: var(--bnd-black);
-    color: var(--bnd-white);
-    text-decoration: none;
   }
 }
