@@ -25,14 +25,14 @@ export default class Graphics extends React.Component {
     return (
       <div className="Fonts w-100">
         <Row className="Container">
-          <Col className="Text">
+          <Col xl={4} className="Text">
             <h1>back to the future</h1>
             <p>My fonts bring a vintage feel to the modern digital space. I find inspiration in old
-              video games, anime, & pop culture. As technology rapidly advances, I want to remind
+              video games, anime, & pop culture. As technology rapidly advances, I want
               us to appreciate how far we've come.
             </p>
           </Col>
-          <Col className="Fonts-Digital">
+          <Col xl={4} className="Fonts-Digital">
             <div className="bnDLogo_viewer">
               <button onClick={() => {this.setState({bnDLogo_visible: true});}}>
                 <img src={bnDLogo} alt=""/>
@@ -56,7 +56,7 @@ export default class Graphics extends React.Component {
               />
             </div>
           </Col>
-          <Col className="Fonts-Analog">
+          <Col xl={4} className="Fonts-Analog">
             <div className="THECREEPBEATERS_viewer">
               <button onClick={() => {this.setState({THECREEPBEATERS_visible: true});}}>
                 <img src={THECREEPBEATERS} alt=""/>
