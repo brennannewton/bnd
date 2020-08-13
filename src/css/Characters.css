@@ -1,115 +1,200 @@
 @import "Palette.css";
 @import "Font.css";
 
+/* Set responsive style for mobile devices */
 .Characters .Container {
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 1.5em;
-  background-color: rgba(251, 251, 252, 0.25);
-}
-
-@media (min-width: 768px) {
-  .Characters .Container {
-    margin-left: 7em;
-    margin-right: 7em;
-  }
-}
-
-.Characters .Container h1 {
-  font-family: 'pokemon_gbregular';
-}
-
-.Characters .Container button {
-  padding: 0;
-  border: 0;
-}
-
-.Characters .Container img {
-  width: 100%;
+  margin-left: 37px;
+  margin-right: 37px;
+  margin-bottom: 22px;
+  background-color: var(--bnd-white);
 }
 
 .Characters .Container .Text {
-  padding-left: 2em;
-  padding-top: 3em;
-  padding-right: 1.5em;
-  padding-bottom: 2em;
-  background-color: var(--bnd-pink);
-  text-align: right;
-}
-
-@media (min-width: 768px) {
-  .Characters .Container .Text {
-    padding-left: 4em;
-    padding-top: 10em;
-    padding-right: 2em;
-  }
+  padding-left: 37px;
+  padding-top: 33px;
+  padding-right: 37px;
+  padding-bottom: 33px;
+  background-color: var(--bnd-black);
 }
 
 .Characters .Container .Text h1 {
-  font-size: 20px;
-  color: var(--bnd-lightgreen);
-}
-
-@media (min-width: 768px) {
-  .Characters .Container .Text h1 {
-    font-size: 32px;
-  }
+  font-family: 'pokemon_gbregular';
+  font-size: 18px;
+  color: var(--bnd-pale-green);
 }
 
 .Characters .Container .Text p {
-  margin-top: 2em;
-  font-family: 'raleway_semibold';
-  color: var(--bnd-palegreen);
+  margin: 0;
+  margin-top: 4px;
+  font-family: 'raleway_medium';
+  font-size: 14px;
+  color: var(--bnd-white);
 }
 
-@media (max-width: 768px) {
-  .Characters .Container .Text p {
-    margin-top: 1.5em;
-    font-size: 14px;
-  }
+.Characters .Container .Viewer {
+  margin: 0;
+  margin-top: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
-.Characters .Container .Characters-All .Row {
-  margin-top: 1em;
+.Characters .Container .Poster1_viewer {
+  margin-bottom: 22px;
 }
 
-@media (min-width: 768px) {
-  .Characters .Container .Characters-All .Row {
-    margin-left: 0.5em;
-    margin-top: 2em;
-    margin-right: 0.5em;
-  }
-}
-
-.Characters .Container .Characters-All .Center {
+.Characters .Container button {
+  margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
 }
 
+.Characters .Container img {
+  width: 63vw;
+}
+
+/* Set responsive style for tablet devices */
 @media (min-width: 768px) {
-  .Characters .Container .Characters-All .Center {
-    padding-left: 1em;
-    padding-right: 1em;
+  .Characters .Container {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 31px;
+  }
+  
+  .Characters .Container .Text {
+    padding-left: 75px;
+    padding-top: 75px;
+    padding-right: 75px;
+    padding-bottom: 75px;
+  }
+  
+  .Characters .Container .Text h1 {
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 24px;
+  }
+
+  .Characters .Container .Text p {
+    margin-top: 16px;
+    font-size: 20px;
+  }
+
+  .Characters .Container .Viewer {
+    margin: 0;
+    margin-top: 44px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .Characters .Container .Poster1_viewer {
+    margin-bottom: 44px;
+  }
+
+  .Characters .Container img {
+    width: 516px;
   }
 }
 
-.Characters .Container .Characters-All .Viewer {
-  padding-left: 1em;
-  padding-right: 1em;
-}
+/* Set responsive style for desktop devices */
+@media (min-width: 1366px) {
+  .Characters .Container {
+    margin-left: 136px;
+    margin-right: 136px;
+    margin-bottom: 30px;
+  }
 
-@media (min-width: 768px) {
-  .Characters .Container .Characters-All .Viewer {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+  .Characters .Container .Text {
+    padding: 0;
+    padding-left: 75px;
+    padding-top: 135px;
+    padding-right: 40px;
+    text-align: right;
+  }
+
+  .Characters .Container .Text h1 {
+    padding: 0;
+  }
+
+  .Characters .Container .Text p {
+    margin-top: 24px;
+  }
+
+  .Characters .Container .Characters-All {
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .Characters .Container .Row1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Characters .Container .Row2 {
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .Characters .Container .Row3 {
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .Characters .Container .Row4 {
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .Characters .Container .Viewer {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+
+  .Characters .Container button {
+    width: 100%;
+    background-color: var(--bnd-white);
+  }
+
+  .Characters .Container img {
+    width: 91%;
+    opacity: 0.91;
+
+    transition: 0.3s;
+  }
+
+  .Characters .Container img:hover {
+    width: 100%;
+    opacity: 1;
   }
 }
 
-.Characters .Container .Characters-All .Poster1_viewer {
-  margin-bottom: 1em;
-}
+/* Set responsive style for large desktop devices */
+@media (min-width: 1920px) {
+  .Characters .Container {
+    margin-left: 271px;
+    margin-right: 271px;
+    margin-bottom: 30px;
+  }
 
-@media (min-width: 768px) {
-  .Characters .Container .Characters-All .Poster1_viewer {
-    margin-bottom: 2em;
+  .Characters .Container .Text {
+    padding-left: 75px;
+    padding-top: 175px;
+    padding-right: 50px;
+  }
+
+  .Characters .Container .Text h1 {
+    font-size: 32px;
+  }
+
+  .Characters .Container .Text p {
+    margin-top: 24px;
+    font-size: 24px;
   }
 }

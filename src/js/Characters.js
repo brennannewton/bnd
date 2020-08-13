@@ -39,7 +39,7 @@ export default class Characters extends React.Component {
         return (
             <div className="Characters">
                 <Row className="Container">
-                    <Col md={4} className="Text">
+                    <Col xl={4} className="Text">
                         <h1>the creep beaters</h1>
                         <p>The Creep Beaters is a concept series depicting a group of friends who
                             protect the Earth. Each one has a unique ability to manipulate nature -
@@ -48,8 +48,8 @@ export default class Characters extends React.Component {
                         </p>
                     </Col>
                     <Col className="Characters-All">
-                        <Row className="Row">
-                            <Col className="B_viewer Viewer">
+                        <Row className="Row1">
+                            <Col xl={4} xs={12} className="B_viewer Viewer Left">
                                 <button onClick={() => {this.setState({B_visible: true});}}>
                                     <img src={B} alt=""/>
                                 </button>
@@ -72,7 +72,7 @@ export default class Characters extends React.Component {
                                     noImgDetails={true}
                                 />
                             </Col>
-                            <Col className="Mads_viewer Center">
+                            <Col xl={4} xs={12} className="Mads_viewer Viewer Center">
                                 <button onClick={() => {this.setState({Mads_visible: true});}}>
                                     <img src={Mads} alt=""/>
                                 </button>
@@ -95,7 +95,7 @@ export default class Characters extends React.Component {
                                     noImgDetails={true}
                                 />
                             </Col>
-                            <Col className="Cal_viewer Viewer">
+                            <Col xl={4} xs={12} className="Cal_viewer Viewer Right">
                                 <button onClick={() => {this.setState({Cal_visible: true});}}>
                                     <img src={Cal} alt=""/>
                                 </button>
@@ -119,8 +119,8 @@ export default class Characters extends React.Component {
                                 />
                             </Col>
                         </Row>
-                        <Row className="Row">
-                            <Col className="Lana_viewer Viewer">
+                        <Row className="Row2">
+                            <Col xl={4} xs={12} className="Lana_viewer Viewer Left">
                                 <button onClick={() => {this.setState({Lana_visible: true});}}>
                                     <img src={Lana} alt=""/>
                                 </button>
@@ -143,7 +143,7 @@ export default class Characters extends React.Component {
                                     noImgDetails={true}
                                 />
                             </Col>
-                            <Col className="Kate_viewer Center">
+                            <Col xl={4} xs={12} className="Kate_viewer Viewer Center">
                                 <button onClick={() => {this.setState({Kate_visible: true});}}>
                                     <img src={Kate} alt=""/>
                                 </button>
@@ -166,7 +166,7 @@ export default class Characters extends React.Component {
                                     noImgDetails={true}
                                 />
                             </Col>
-                            <Col className="Maggie_viewer Viewer">
+                            <Col xl={4} xs={12} className="Maggie_viewer Viewer Right">
                                 <button onClick={() => {this.setState({Maggie_visible: true});}}>
                                     <img src={Maggie} alt=""/>
                                 </button>
@@ -190,8 +190,8 @@ export default class Characters extends React.Component {
                                 />
                             </Col>
                         </Row>
-                        <Row className="Row">
-                            <Col className="Bridge_viewer Viewer">
+                        <Row className="Row3">
+                            <Col xl={4} xs={12} className="Bridge_viewer Viewer Left">
                                 <button onClick={() => {this.setState({Bridge_visible: true});}}>
                                     <img src={Bridge} alt=""/>
                                 </button>
@@ -214,7 +214,7 @@ export default class Characters extends React.Component {
                                     noImgDetails={true}
                                 />
                             </Col>
-                            <Col className="Miuna_viewer Center">
+                            <Col xl={4} xs={12} className="Miuna_viewer Viewer Center">
                                 <button onClick={() => {this.setState({Miuna_visible: true});}}>
                                     <img src={Miuna} alt=""/>
                                 </button>
@@ -237,7 +237,7 @@ export default class Characters extends React.Component {
                                     noImgDetails={true}
                                 />
                             </Col>
-                            <Col className="Michalah_viewer Viewer">
+                            <Col xl={4} xs={12} className="Michalah_viewer Viewer Right">
                                 <button onClick={() => {this.setState({Michalah_visible: true});}}>
                                     <img src={Michalah} alt=""/>
                                 </button>
@@ -261,8 +261,8 @@ export default class Characters extends React.Component {
                                 />
                             </Col>
                         </Row>
-                        <Row className="Row">
-                            <Col className="Poster1_viewer Viewer">
+                        <Row className="Row4">
+                            <Col xs={12} className="Poster1_viewer Viewer">
                                 <button onClick={() => {this.setState({Poster1_visible: true});}}>
                                     <img src={Poster1} alt=""/>
                                 </button>
