@@ -7,6 +7,17 @@
   margin-right: 37px;
   margin-bottom: 22px;
   background-color: var(--bnd-white);
+
+  -webkit-animation-name: fadein;
+	-webkit-animation-duration: 2s;
+	-moz-animation-name: fadein;
+	-moz-animation-duration: 2s;
+	-ms-animation-name: fadein;
+	-ms-animation-duration: 2s;
+	-o-animation-name: fadein;
+	-o-animation-duration: 2s;
+	animation-name: fadein;
+	animation-duration: 2s;
 }
 
 .Fonts .Container .Text {
@@ -117,7 +128,7 @@
   .Fonts .Container .Text {
     padding: 0;
     padding-left: 75px;
-    padding-top: 135px;
+    padding-top: 70px;
     padding-right: 40px;
     text-align: right;
   }
@@ -170,11 +181,12 @@
     margin-left: 271px;
     margin-right: 271px;
     margin-bottom: 30px;
+    height: 77.2vh;
   }
   
   .Fonts .Container .Text {
     padding-left: 75px;
-    padding-top: 175px;
+    padding-top: 80px;
     padding-right: 50px;
   }
 
@@ -184,7 +196,6 @@
 
   .Fonts .Container .Text p {
     margin-top: 24px;
-    margin-bottom: 275px;
     font-size: 24px;
   }
 }
