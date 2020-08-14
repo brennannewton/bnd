@@ -21,7 +21,7 @@ export default class Navigation extends React.Component {
       <div className="Navigation w-100">
         <Navbar collapseOnSelect expand="lg" className="Bar m-0 p-0">
           <Navbar.Toggle aria-controls="responsive-navbar-nav" className="Menu m-auto">
-            <img src={Menu}/>
+            <img src={Menu} alt="Menu icon"/>
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="Internal mr-auto align-items-center">
@@ -43,10 +43,10 @@ export default class Navigation extends React.Component {
                 <img id="ig" src={Instagram} alt="Instagram icon"/>
               </a>
               <a href="https://github.com/brennannewton" target="_blank" rel="noopener noreferrer">
-                <img id="gh" src={Github} alt="Github icon"/>
+                <img id="gh" src={Github} alt="GitHub icon"/>
               </a>
               <a href="https://www.linkedin.com/in/brennan-newton-075238145/" target="_blank" rel="noopener noreferrer">
-                <img id="li" src={Linkedin} alt="Linkedin icon"/>
+                <img id="li" src={Linkedin} alt="LinkedIn icon"/>
               </a>
             </Nav>
           </Navbar.Collapse>

@@ -91,6 +91,7 @@ export default class UX extends React.Component {
     }
 
     // Open modal functions
+    // Fix background position to top & prevent scrolling
     handleOpenModal1() {
         document.body.style.position = 'fixed';
         document.body.style.top = `-${window.scrollY}px`;
@@ -113,6 +114,7 @@ export default class UX extends React.Component {
     }
 
     // Close modal functions
+    // Allow scrolling
     handleCloseModal1() {
         const scrollY = document.body.style.top;
         document.body.style.position = '';
@@ -188,7 +190,12 @@ export default class UX extends React.Component {
                                         <div className="ScrollArea">
                                             <div className="bnDesigns_Home_viewer">
                                                 <button onClick={() => {this.setState({bnDesigns_Home_visible: true});}}>
-                                                    <img src={bnDesigns_Home} alt=""/>
+                                                    <img
+                                                        src={bnDesigns_Home}
+                                                        alt="bnDesigns 1.0 home prototype, which
+                                                        displays a welcome message over a sunset
+                                                        background"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.bnDesigns_Home_visible}
@@ -204,7 +211,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="bnDesigns_UX_viewer">
                                                 <button onClick={() => {this.setState({bnDesigns_UX_visible: true});}}>
-                                                    <img src={bnDesigns_UX} alt=""/>
+                                                    <img
+                                                        src={bnDesigns_UX}
+                                                        alt="bnDesigns 1.0 UX prototype, which
+                                                        shows a image carousel and some links
+                                                        floating up in the clouds"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.bnDesigns_UX_visible}
@@ -223,7 +235,12 @@ export default class UX extends React.Component {
                                                     className="LastBtn"
                                                     onClick={() => {this.setState({bnDesigns_Contact_visible: true});}}
                                                 >
-                                                    <img src={bnDesigns_Contact} alt=""/>
+                                                    <img
+                                                        src={bnDesigns_Contact}
+                                                        alt="bnDesigns contact prototype, which
+                                                        shows a profile image, some social icons,
+                                                        and contact info over a sunrise background"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.bnDesigns_Contact_visible}
@@ -287,7 +304,12 @@ export default class UX extends React.Component {
                                         <div className="ScrollArea">
                                             <div className="ELECTRA_Comments_viewer">
                                                 <button onClick={() => {this.setState({ELECTRA_Comments_visible: true});}}>
-                                                    <img src={ELECTRA_Comments} alt=""/>
+                                                    <img
+                                                        src={ELECTRA_Comments}
+                                                        alt="ELECTRA comments prototype, a modal
+                                                        with an image, post info, and comments
+                                                        section"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.ELECTRA_Comments_visible}
@@ -303,7 +325,13 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="ELECTRA_Profile_viewer">
                                                 <button onClick={() => {this.setState({ELECTRA_Profile_visible: true});}}>
-                                                    <img src={ELECTRA_Profile} alt=""/>
+                                                    <img
+                                                        src={ELECTRA_Profile}
+                                                        alt="ELECTRA profile prototype, which
+                                                        displays the user's photo, name, pronouns,
+                                                        location, username, bio, and posts (called
+                                                        sparks)"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.ELECTRA_Profile_visible}
@@ -322,7 +350,11 @@ export default class UX extends React.Component {
                                                     className="LastBtn"
                                                     onClick={() => {this.setState({ELECTRA_Sketches_visible: true});}}
                                                 >
-                                                    <img src={ELECTRA_Sketches} alt=""/>
+                                                    <img
+                                                        src={ELECTRA_Sketches}
+                                                        alt="Sketches of ELECTRA's, Instagram's,
+                                                        and Behance's profile features"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.ELECTRA_Sketches_visible}
@@ -386,7 +418,13 @@ export default class UX extends React.Component {
                                         <div className="ScrollArea">
                                             <div className="Topple_Main_viewer">
                                                 <button onClick={() => {this.setState({Topple_Main_visible: true});}}>
-                                                    <img src={Topple_Main} alt=""/>
+                                                    <img
+                                                        src={Topple_Main}
+                                                        alt="Topple landing prototype, which
+                                                        displays a welcome message, the logo,
+                                                        slogan, and buttons for different users
+                                                        (organizers and supporters)"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.Topple_Main_visible}
@@ -407,7 +445,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="Topple_Signup_viewer">
                                                 <button onClick={() => {this.setState({Topple_Signup_visible: true});}}>
-                                                    <img src={Topple_Signup} alt=""/>
+                                                    <img
+                                                        src={Topple_Signup}
+                                                        alt="Topple signup prototype, a singup form
+                                                        with inputs for name, contact info,
+                                                        organization info, and pin"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.Topple_Signup_visible}
@@ -428,7 +471,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="Topple_Feed_viewer">
                                                 <button onClick={() => {this.setState({Topple_Feed_visible: true});}}>
-                                                    <img src={Topple_Feed} alt=""/>
+                                                    <img
+                                                        src={Topple_Feed}
+                                                        alt="Topple feed prototype, with posts for
+                                                        each event containing an image and event
+                                                        info"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.Topple_Feed_visible}
@@ -449,7 +497,13 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="Topple_Event_viewer">
                                                 <button onClick={() => {this.setState({Topple_Event_visible: true});}}>
-                                                    <img src={Topple_Event} alt=""/>
+                                                    <img
+                                                        src={Topple_Event}
+                                                        alt="Topple event prototype, which displays
+                                                        all the event's info including name,
+                                                        organization, organizers, location, date,
+                                                        time, description, and messages"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.Topple_Event_visible}
@@ -470,7 +524,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="Topple_NewEvent_viewer">
                                                 <button onClick={() => {this.setState({Topple_NewEvent_visible: true});}}>
-                                                    <img src={Topple_NewEvent} alt=""/>
+                                                    <img
+                                                        src={Topple_NewEvent}
+                                                        alt="Topple new event prototype, a form
+                                                        requesting all necessary info for an
+                                                        event"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.Topple_NewEvent_visible}
@@ -491,7 +550,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="Topple_Profile_viewer">
                                                 <button onClick={() => {this.setState({Topple_Profile_visible: true});}}>
-                                                    <img src={Topple_Profile} alt=""/>
+                                                    <img
+                                                        src={Topple_Profile}
+                                                        alt="Topple profile prototype, which
+                                                        displays organizer and organization
+                                                        contact info"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.Topple_Profile_visible}
@@ -512,7 +576,13 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="Topple_LogoSketches_viewer">
                                                 <button onClick={() => {this.setState({Topple_LogoSketches_visible: true});}}>
-                                                    <img src={Topple_LogoSketches} alt=""/>
+                                                    <img
+                                                        src={Topple_LogoSketches}
+                                                        alt="Sketches of ideas for Topple's logo,
+                                                        including a pyramid's top falling off, a
+                                                        fist holding a sign, a t, and some
+                                                        people"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.Topple_LogoSketches_visible}
@@ -536,7 +606,12 @@ export default class UX extends React.Component {
                                                     className="LastBtn"
                                                     onClick={() => {this.setState({Topple_Sketches_visible: true});}}
                                                 >
-                                                    <img src={Topple_Sketches} alt=""/>
+                                                    <img
+                                                        src={Topple_Sketches}
+                                                        alt="Sketches of Topple's layout, including
+                                                        a welcome page, signup form, event feed,
+                                                        and event page"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.Topple_Sketches_visible}
@@ -591,7 +666,11 @@ export default class UX extends React.Component {
                                         <div className="ScrollArea">
                                             <div className="SSD_DisplayD_viewer">
                                                 <button onClick={() => {this.setState({SSD_DisplayD_visible: true});}}>
-                                                    <img src={SSD_DisplayD} alt=""/>
+                                                    <img
+                                                        src={SSD_DisplayD}
+                                                        alt="Secnd Sight Design landing page
+                                                        displayed on a laptop"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_DisplayD_visible}
@@ -614,7 +693,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="SSD_PrototypeDLanding_viewer">
                                                 <button onClick={() => {this.setState({SSD_PrototypeDLanding_visible: true});}}>
-                                                    <img src={SSD_PrototypeDLanding} alt=""/>
+                                                    <img
+                                                        src={SSD_PrototypeDLanding}
+                                                        alt="Second Sight Design desktop landing
+                                                        page prototype, which shows the name of the
+                                                        business over a pendant made by the owner"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_PrototypeDLanding_visible}
@@ -637,7 +721,13 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="SSD_PrototypeDItem_viewer">
                                                 <button onClick={() => {this.setState({SSD_PrototypeDItem_visible: true});}}>
-                                                    <img src={SSD_PrototypeDItem} alt=""/>
+                                                    <img
+                                                        src={SSD_PrototypeDItem}
+                                                        alt="Second Sight Design desktop item page
+                                                        prototype, which displays a carousel of
+                                                        images, name, description, and price of the
+                                                        product"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_PrototypeDItem_visible}
@@ -660,7 +750,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="SSD_WireframeDItem_viewer">
                                                 <button onClick={() => {this.setState({SSD_WireframeDItem_visible: true});}}>
-                                                    <img src={SSD_WireframeDItem} alt=""/>
+                                                    <img
+                                                        src={SSD_WireframeDItem}
+                                                        alt="Second Sight Design desktop item page
+                                                        wireframe, which shows placeholders for
+                                                        product images, name, descrption, and price"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_WireframeDItem_visible}
@@ -683,7 +778,11 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="SSD_DisplayM_viewer">
                                                 <button onClick={() => {this.setState({SSD_DisplayM_visible: true});}}>
-                                                    <img src={SSD_DisplayM} alt=""/>
+                                                    <img
+                                                        src={SSD_DisplayM}
+                                                        alt="Second Sight Design landing page
+                                                        displayed on a phone"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_DisplayM_visible}
@@ -706,7 +805,13 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="SSD_PrototypeMLanding_viewer">
                                                 <button onClick={() => {this.setState({SSD_PrototypeMLanding_visible: true});}}>
-                                                    <img src={SSD_PrototypeMLanding} alt=""/>
+                                                    <img
+                                                        src={SSD_PrototypeMLanding}
+                                                        alt="second Sight Design mobile landing
+                                                        page prototype, which displays the name of
+                                                        the business over a pendant made by the
+                                                        owner"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_PrototypeMLanding_visible}
@@ -729,7 +834,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="SSD_PrototypeMMenu_viewer">
                                                 <button onClick={() => {this.setState({SSD_PrototypeMMenu_visible: true});}}>
-                                                    <img src={SSD_PrototypeMMenu} alt=""/>
+                                                    <img
+                                                        src={SSD_PrototypeMMenu}
+                                                        alt="Second Sight Design mobile menu
+                                                        prototype, which shows a list of pages and
+                                                        social icons under a menu icon"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_PrototypeMMenu_visible}
@@ -752,7 +862,13 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="SSD_PrototypeMItem_viewer">
                                                 <button onClick={() => {this.setState({SSD_PrototypeMItem_visible: true});}}>
-                                                    <img src={SSD_PrototypeMItem} alt=""/>
+                                                    <img
+                                                        src={SSD_PrototypeMItem}
+                                                        alt="Second Sight Design mobile item page
+                                                        prototype, which is a carousel of images 
+                                                        over the name, description, and price of
+                                                        the product"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_PrototypeMItem_visible}
@@ -775,7 +891,12 @@ export default class UX extends React.Component {
                                             </div>
                                             <div className="SSD_WireframeMMenu_viewer">
                                                 <button onClick={() => {this.setState({SSD_WireframeMMenu_visible: true});}}>
-                                                    <img src={SSD_WireframeMMenu} alt=""/>
+                                                    <img
+                                                        src={SSD_WireframeMMenu}
+                                                        alt="Second Sight Design mobile menu
+                                                        wireframe, which lists pages and social
+                                                        icons under a menu icon"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_WireframeMMenu_visible}
@@ -801,7 +922,13 @@ export default class UX extends React.Component {
                                                     className="LastBtn"
                                                     onClick={() => {this.setState({SSD_WireframeMItem_visible: true});}}
                                                 >
-                                                    <img src={SSD_WireframeMItem} alt=""/>
+                                                    <img
+                                                        src={SSD_WireframeMItem}
+                                                        alt="Second Sight Design mobile item
+                                                        wireframe, which shows placeholders for a
+                                                        carousel of images, title, description, and
+                                                        price of a product"
+                                                    />
                                                 </button>
                                                 <Viewer
                                                     visible={this.state.SSD_WireframeMItem_visible}

@@ -11,7 +11,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className="Home">
-                <img src={Logo} alt="bnDesigns logo" className="Logo"/>
+                <img src={Logo} alt="bnDesigns logo, which reads Brennan Newton Designs" className="Logo"/>
             </div>
         )
     }

@@ -35,7 +35,11 @@ export default class Graphics extends React.Component {
           <Col xl={4} className="Fonts-Digital">
             <div className="bnDLogo_viewer">
               <button onClick={() => {this.setState({bnDLogo_visible: true});}}>
-                <img src={bnDLogo} alt=""/>
+                <img
+                  src={bnDLogo}
+                  alt="bnDesigns logo, which reads Brennan Newton Designs in green text over a
+                  black background"
+                />
               </button>
               <Viewer
                 visible={this.state.bnDLogo_visible}
@@ -46,7 +50,11 @@ export default class Graphics extends React.Component {
             </div>
             <div className="emo_viewer">
               <button onClick={() => {this.setState({emo_visible: true});}}>
-                <img src={emo} alt=""/>
+                <img
+                  src={emo}
+                  alt="A variety of horror fonts reading e.mo in white over magenta and navy
+                  backgrounds"
+                />
               </button>
               <Viewer
                 visible={this.state.emo_visible}
@@ -59,7 +67,10 @@ export default class Graphics extends React.Component {
           <Col xl={4} className="Fonts-Analog">
             <div className="THECREEPBEATERS_viewer">
               <button onClick={() => {this.setState({THECREEPBEATERS_visible: true});}}>
-                <img src={THECREEPBEATERS} alt=""/>
+                <img
+                  src={THECREEPBEATERS}
+                  alt="Block print reading The Creep Beaters in an all-caps organge stencil font"
+                />
               </button>
               <Viewer
                 visible={this.state.THECREEPBEATERS_visible}
