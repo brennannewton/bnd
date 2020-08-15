@@ -263,6 +263,7 @@ export default class UX extends React.Component {
                                         <a
                                             href="https://bndesign.netlify.app/"
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="Link d-inline-block"
                                         >
                                             bndesign.netlify.app
@@ -271,6 +272,7 @@ export default class UX extends React.Component {
                                         <a
                                             href="https://github.com/brennannewton/bndesign"
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="Link d-inline-block"
                                         >
                                             GitHub Repository 
@@ -379,6 +381,7 @@ export default class UX extends React.Component {
                                         <a
                                             href="https://electrala.netlify.app/"
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="Link d-inline-block"
                                         >
                                             electrala.netlify.app
@@ -387,6 +390,7 @@ export default class UX extends React.Component {
                                         <a
                                             href="https://github.com/electrala"
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="Link d-inline-block"
                                         >
                                             GitHub Organization
@@ -966,6 +970,7 @@ export default class UX extends React.Component {
                                         <a
                                             href="https://github.com/brennannewton/secondsightdesign"
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="Link d-inline-block"
                                         >
                                             GitHub Repository 
