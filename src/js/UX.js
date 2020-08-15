@@ -219,7 +219,7 @@ export default class UX extends React.Component {
                                                     <img
                                                         src={bnDesigns_UX}
                                                         alt="bnDesigns 1.0 UX prototype, which
-                                                        shows a image carousel and some links
+                                                        shows a carousel and some links
                                                         floating up in the clouds"
                                                     />
                                                 </button>
@@ -243,7 +243,7 @@ export default class UX extends React.Component {
                                                     <img
                                                         src={bnDesigns_Contact}
                                                         alt="bnDesigns contact prototype, which
-                                                        shows a profile image, some social icons,
+                                                        shows a profile icon, some social icons,
                                                         and contact info over a sunrise background"
                                                     />
                                                 </button>
@@ -316,7 +316,7 @@ export default class UX extends React.Component {
                                                     <img
                                                         src={ELECTRA_Comments}
                                                         alt="ELECTRA comments prototype, a modal
-                                                        with an image, post info, and comments
+                                                        with a post, post info, and comments
                                                         section"
                                                     />
                                                 </button>
@@ -337,7 +337,7 @@ export default class UX extends React.Component {
                                                     <img
                                                         src={ELECTRA_Profile}
                                                         alt="ELECTRA profile prototype, which
-                                                        displays the user's photo, name, pronouns,
+                                                        displays the user's icon, name, pronouns,
                                                         location, username, bio, and posts (called
                                                         sparks)"
                                                     />
@@ -489,7 +489,7 @@ export default class UX extends React.Component {
                                                     <img
                                                         src={Topple_Feed}
                                                         alt="Topple feed prototype, with posts for
-                                                        each event containing an image and event
+                                                        each event containing event
                                                         info"
                                                     />
                                                 </button>
