@@ -154,7 +154,9 @@ export default class UX extends React.Component {
                         <h1>technology</h1>
                         <p>My goal as a designer is to humanize the technology we use on a daily
                             basis. I want to create interfaces, color palettes, and interactions
-                            that mimic our physical world. Right now accessibiligy is a major issue
+                            that mimic our physical world.
+                        </p>
+                        <p>Right now accessibiligy is a major issue
                             impeding human-computer interaction. Our natural world is multimoal by
                             design, so our virtual one should be too. My designs aim to be
                             accesible to a variety of users and responsive across a variety of
@@ -179,9 +181,12 @@ export default class UX extends React.Component {
                                         <p>
                                             bnDesigns is both a way to showcase my work as a
                                             designer and create a user experience in the process.
+                                        <br/><br/>
                                             The concept behind my first iteration was to create an
-                                            emotionally engaging experience that was hospitable
-                                            and encouraged exploration. To create the prototypes I
+                                            emotionally engaging experience that was both hospitable
+                                            and encouraged exploration.
+                                        <br/><br/>
+                                            To create the prototypes I
                                             used Adobe XD and Photoshop. Next I built the site in
                                             React. Finally I deployed the site with Netlify. 
                                         </p>
@@ -290,10 +295,12 @@ export default class UX extends React.Component {
                                         <h1>ELECTRA</h1>
                                         <p>
                                             ELECTRA is where digital artists
-                                            collaborate and receive feedback on their work. I was
-                                            the Project Manager for ELECTRA, so I oversaw the
-                                            product from concept to release. We started by
-                                            generating user flows and personas. Then we created the
+                                            collaborate and receive feedback on their work.
+                                        <br/><br/>
+                                            I was the Project Manager for ELECTRA, so I oversaw the
+                                            product from concept to release.
+                                        <br/><br/>
+                                            We started by generating user flows and personas. Then we created the
                                             brand identity and designed features in Adobe XD that
                                             would bring the concept to life. Next we developed the
                                             product using the PERN stack. Finally we released a
@@ -404,9 +411,13 @@ export default class UX extends React.Component {
                                         <h1>Topple</h1>
                                         <p>
                                             Topple is a event organizing app that protects users'
-                                            identities. Inspired by the 2020 BLM protests and
+                                            identities.
+                                        <br/><br/>
+                                            Inspired by the 2020 BLM protests and
                                             apps like Citizen and Signal, I designed this app
-                                            independently. I started by listing features,
+                                            independently.
+                                        <br/><br/>
+                                            I started by listing features,
                                             researching competitors, and creating the brand
                                             identity. Once I had a logo and an MVP, I began sketching
                                             out wireframes and user flows. Next I designed hi-fidelity
@@ -652,7 +663,9 @@ export default class UX extends React.Component {
                                         <p>
                                             Second Sight Design is a small business e-commerce site
                                             and the first project I landed as a
-                                            freelance designer. The owner needs a user-friendly
+                                            freelance designer.
+                                        <br/><br/>
+                                            The owner needs a user-friendly
                                             website for her business, so I started by learning about
                                             her mission and vision, which I used
                                             to inspire the brand identity. After creating a style

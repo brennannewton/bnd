@@ -287,7 +287,7 @@
 
   .UX .Container .Text p {
     margin: 0;
-    margin-top: 12px;
+    margin-top: 18px;
     font-size: 20px;
   }
 
@@ -338,7 +338,7 @@
     padding-bottom: 10px;
     font-size: 20px;
 
-    height: 168px;
+    height: 165px;
   }
 
   .Modal .Content {
@@ -392,7 +392,7 @@
   .UX .Container .Text {
     padding: 0;
     padding-left: 45px;
-    padding-top: 70px;
+    padding-top: 60px;
     padding-right: 40px;
     text-align: right;
   }
@@ -537,8 +537,8 @@
 
   .UX .Container .Text p {
     margin: 0;
-    margin-top: 36px;
-    font-size: 24px;
+    margin-top: 24px;
+    font-size: 23px;
   }
 
   .UX .Container .Projects button {
@@ -571,11 +571,11 @@
     margin-left: 85px;
     margin-top: 36px;
     margin-right: 43px;
-    margin-bottom: 115px;
+    margin-bottom: 123px;
     padding-right: 10px;
     font-size: 24px;
 
-    height: 580px;
+    height: 560px;
   }
 
   .Modal .Content {
