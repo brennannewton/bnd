@@ -429,7 +429,7 @@ export default class UX extends React.Component {
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
-                                        <div className="ScrollArea">
+                                        <div className="ScrollArea" id="ToppleSA">
                                             <div className="Topple_Main_viewer">
                                                 <button onClick={() => {this.setState({Topple_Main_visible: true});}}>
                                                     <img
@@ -677,7 +677,7 @@ export default class UX extends React.Component {
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
-                                        <div className="ScrollArea">
+                                        <div className="ScrollArea" id="SSDSA">
                                             <div className="SSD_DisplayD_viewer">
                                                 <button onClick={() => {this.setState({SSD_DisplayD_visible: true});}}>
                                                     <img

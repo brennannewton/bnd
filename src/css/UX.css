@@ -129,8 +129,8 @@
 
 .Modal {
   margin: auto;
-  margin-top: 50px;
-  width: 286px;
+  margin-top: 40px;
+  width: 290px;
   border: 0;
   outline: 0;
 }
@@ -222,6 +222,14 @@
   overflow-x: hidden;
   overflow-y: auto;
   text-align: center;
+}
+
+.Modal .Content #ToppleSA {
+  height: 327px;
+}
+
+.Modal .Content #SSDSA {
+  height: 242px;
 }
 
 .Modal .Content .ScrollArea button {
@@ -354,6 +362,14 @@
     box-shadow: 0 0 25px rgba(5, 6, 1, 0.7);
   }
 
+  .Modal .Content #ToppleSA {
+    height: 506px;
+  }
+  
+  .Modal .Content #SSDSA {
+    height: 394px;
+  }
+
   .Modal .Content .ScrollArea button {
     margin-left: 15px;
     margin-top: 15px;
@@ -470,6 +486,14 @@
     box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   }
 
+  .Modal .Content #ToppleSA {
+    height: 555px;
+  }
+  
+  .Modal .Content #SSDSA {
+    height: 444px;
+  }
+
   .Modal .Content .ScrollArea button {
     margin: 0;
     margin-left: 15px;
@@ -492,7 +516,7 @@
 
   .Modal .Content .Link {
     margin: 0;
-    margin-top: 40px;
+    margin-top: 36px;
     padding: 0;
     padding-left: 25px;
     padding-top: 18px;
@@ -588,6 +612,14 @@
     height: 500px;
   }
 
+  .Modal .Content #ToppleSA {
+    height: 785px;
+  }
+  
+  .Modal .Content #SSDSA {
+    height: 632px;
+  }
+
   .Modal .Content .ScrollArea button {
     margin-left: 15px;
     margin-top: 15px;
@@ -606,9 +638,9 @@
   .Modal .Content .Link {
     margin-top: 45px;
     padding-left: 45px;
-    padding-top: 30px;
+    padding-top: 29px;
     padding-right: 45px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
     font-size: 24px;
     border-radius: 64px;
   }
