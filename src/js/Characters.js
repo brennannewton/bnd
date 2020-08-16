@@ -42,9 +42,9 @@ export default class Characters extends React.Component {
                     <Col xl={4} className="Text">
                         <h1>the creep beaters</h1>
                         <p>The Creep Beaters is a concept series depicting a group of friends who
-                            protect the Earth. Each one can manipulate nature in a unique way -
-                            whether it's ice, animals, air, fire, electricity, water, plants,
-                            sound, or earth. Each character also has their own font and style.
+                            protect the Earth. Each one commands a specific aspect of nature - ice,
+                            animals, air, fire, electricity, water, plants, sound, and earth.
+                            Each character also has their own font and style.
                         </p>
                     </Col>
                     <Col className="Characters-All">

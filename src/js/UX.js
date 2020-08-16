@@ -153,14 +153,13 @@ export default class UX extends React.Component {
                         <h1>x</h1>
                         <h1>technology</h1>
                         <p>My goal as a designer is to humanize the technology we use on a daily
-                            basis. I want to create interfaces, color palettes, and interactions
-                            that mimic our physical world.
+                            basis. I want to make interfaces, color palettes, and interactions
+                            that mimic our natural world.
                         </p>
-                        <p>Right now accessibiligy is a major issue
-                            impeding human-computer interaction. Our natural world is multimoal by
-                            design, so our virtual one should be too. My designs aim to be
-                            accesible to a variety of users and responsive across a variety of
-                            devices.
+                        <p>Right now accessibility is a major hurdle in human-computer interaction.
+                            Our world is multimoal by design, so our virtual one should be
+                            too if we want it to be user-friendly. My designs aim to be
+                            widely accesible and responsive across a variety of devices.
                         </p>
                     </Col>
                     <Col xl={8} className="Projects">
@@ -179,16 +178,16 @@ export default class UX extends React.Component {
                                         </button>
                                         <h1>bnDesigns</h1>
                                         <p>
-                                            bnDesigns is both a way to showcase my work as a
-                                            designer and create a user experience in the process.
+                                            bnDesigns is both a potfiolo and a user experience
+                                            itself.
                                         <br/><br/>
                                             The concept behind my first iteration was to create an
                                             emotionally engaging experience that was both hospitable
-                                            and encouraged exploration.
+                                            and interesting.
                                         <br/><br/>
-                                            To create the prototypes I
-                                            used Adobe XD and Photoshop. Next I built the site in
-                                            React. Finally I deployed the site with Netlify. 
+                                            To create the prototypes I used Adobe XD and Photoshop.
+                                            Next I developed the site using React and Node.js.
+                                            Finally. I deployed the site on Netlify. 
                                         </p>
                                     </Col>
                                     <Col xl={8} xs={12} className="Content">
@@ -296,17 +295,17 @@ export default class UX extends React.Component {
                                         </button>
                                         <h1>ELECTRA</h1>
                                         <p>
-                                            ELECTRA is where digital artists
-                                            collaborate and receive feedback on their work.
+                                            ELECTRA is where digital artists collaborate and
+                                            receive feedback on their work.
                                         <br/><br/>
                                             I was the Project Manager for ELECTRA, so I oversaw the
-                                            product from concept to release.
+                                            project from concept to release.
                                         <br/><br/>
-                                            We started by generating user flows and personas. Then we created the
-                                            brand identity and designed features in Adobe XD that
-                                            would bring the concept to life. Next we developed the
-                                            product using the PERN stack. Finally we released a
-                                            beta-stage product with Netlify.
+                                            We started by generating user flows and personas. Next
+                                            we created the brand identity and designed features in
+                                            Adobe XD that would bring the concept to life. Then we
+                                            developed the product using the PERN stack. Finally we
+                                            released a beta-stage application with Netlify.
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
@@ -414,11 +413,11 @@ export default class UX extends React.Component {
                                         </button>
                                         <h1>Topple</h1>
                                         <p>
-                                            Topple is a event organizing app that protects users'
+                                            Topple is an event organizing app that protects users'
                                             identities.
                                         <br/><br/>
-                                            Inspired by the 2020 BLM protests and
-                                            apps like Citizen and Signal, I designed this app
+                                            Inspired by the 2020 BLM protests and apps like Citizen
+                                            and Signal, Topple is the first app I designed
                                             independently.
                                         <br/><br/>
                                             I started by listing features,
@@ -665,17 +664,15 @@ export default class UX extends React.Component {
                                         </button>
                                         <h1>SSD</h1>
                                         <p>
-                                            Second Sight Design is a small business e-commerce site
-                                            and the first project I landed as a
-                                            freelance designer.
+                                            Second Sight Design is a small business site and the
+                                            first project I landed as a freelance designer.
                                         <br/><br/>
-                                            The owner needs a user-friendly
-                                            website for her business, so I started by learning about
-                                            her mission and vision, which I used
-                                            to inspire the brand identity. After creating a style
-                                            guide, I designed basic wireframes. Then I created
-                                            hi-fidelity prototypes and presentation materials
-                                            to show the client. Now the project is in
+                                            The owner asked for a user-friendly website, so I
+                                            started by learning about her background and vision,
+                                            which I then used to inspire the brand identity. After
+                                            creating a style guide, I designed basic wireframes.
+                                            Next I created hi-fidelity prototypes and presentation
+                                            materials in Adobe XD. Now the project is in
                                             development.
                                         </p>
                                     </Col>

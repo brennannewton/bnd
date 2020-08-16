@@ -27,7 +27,7 @@ export default class Graphics extends React.Component {
         <Row className="Container">
           <Col xl={4} className="Text">
             <h1>back to the future</h1>
-            <p>My fonts bring a vintage feel to the modern digital space. I find inspiration in old
+            <p>My fonts bring a vintage feel to the digital space. I find inspiration in old
               video games, anime, & pop culture. As technology rapidly advances, I want
               us to appreciate how far we've come.
             </p>
