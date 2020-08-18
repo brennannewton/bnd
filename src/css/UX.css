@@ -220,6 +220,10 @@
   text-align: center;
 }
 
+.Modal .Content #bndSA {
+  height: 242px;
+}
+
 .Modal .Content #ToppleSA {
   height: 327px;
 }
@@ -358,6 +362,10 @@
     box-shadow: 0 0 25px rgba(5, 6, 1, 0.7);
   }
 
+  .Modal .Content #bndSA {
+    height: 394px;
+  }
+
   .Modal .Content #ToppleSA {
     height: 506px;
   }
@@ -480,6 +488,10 @@
     padding: 0;
     height: 350px;
     box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  }
+
+  .Modal .Content #bndSA {
+    height: 444px;
   }
 
   .Modal .Content #ToppleSA {
@@ -606,6 +618,10 @@
 
   .Modal .Content .ScrollArea {
     height: 500px;
+  }
+
+  .Modal .Content #bndSA {
+    height: 632px;
   }
 
   .Modal .Content #ToppleSA {

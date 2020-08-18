@@ -6,9 +6,17 @@ import Modal from 'react-modal';
 import Viewer from 'react-viewer';
 
 // bnDesigns images
-import bnDesigns_Home from '../img/Prototypes/bnDesigns_Home.png';
-import bnDesigns_UX from '../img/Prototypes/bnDesigns_UX.png';
-import bnDesigns_Contact from '../img/Prototypes/bnDesigns_Contact.png';
+import bnd_W_D_UX from '../img/Prototypes/bnd/W_D_UX.png';
+import bnd_W_D_Fonts from '../img/Prototypes/bnd/W_D_Fonts.png';
+import bnd_P_D_UX from '../img/Prototypes/bnd/P_D_UX.png';
+import bnd_P_D_Modal from '../img/Prototypes/bnd/P_D_Modal.png';
+import bnd_P_D_Fonts from '../img/Prototypes/bnd/P_D_Fonts.png';
+import bnd_P_T_UX from '../img/Prototypes/bnd/P_T_UX.png';
+import bnd_P_T_Modal from '../img/Prototypes/bnd/P_T_Modal.png';
+import bnd_P_T_Fonts from '../img/Prototypes/bnd/P_T_Fonts.png';
+import bnd_P_M_UX from '../img/Prototypes/bnd/P_M_UX.png';
+import bnd_P_M_Modal from '../img/Prototypes/bnd/P_M_Modal.png';
+import bnd_P_M_Fonts from '../img/Prototypes/bnd/P_M_Fonts.png';
 
 // Topple images
 import Topple_Main from '../img/Prototypes/Topple_Main.png';
@@ -48,9 +56,17 @@ export default class UX extends React.Component {
             showModal2: false,
             showModal3: false,
 
-            bnDesigns_Home_visible: false,
-            bnDesigns_UX_visible: false,
-            bnDesigns_Contact_visible: false,
+            bnd_W_D_UX_visible: false,
+            bnd_W_D_Fonts_visible: false,
+            bnd_P_D_UX_visible: false,
+            bnd_P_D_Modal_visible: false,
+            bnd_P_D_Fonts_visible: false,
+            bnd_P_T_UX_visible: false,
+            bnd_P_T_Modal_visible: false,
+            bnd_P_T_Fonts_visible: false,
+            bnd_P_M_UX_visible: false,
+            bnd_P_M_Modal_visible: false,
+            bnd_P_M_Fonts_visible: false,
 
             Topple_Main_visible: false,
             Topple_Signup_visible: false,
@@ -144,7 +160,7 @@ export default class UX extends React.Component {
                     </Col>
                     <Col xl={8} className="Projects">
                         <Row className="Project Project1">
-                            <button onClick={this.handleOpenModal1}>bnDesigns 1.0</button>
+                            <button onClick={this.handleOpenModal1}>bnDesigns</button>
                             <Modal
                                 className="Modal"
                                 overlayClassName="Overlay"
@@ -161,95 +177,361 @@ export default class UX extends React.Component {
                                             bnDesigns is both a potfiolo and a user experience
                                             itself.
                                         <br/><br/>
-                                            The concept behind my first iteration was to create an
-                                            emotionally engaging experience that was both hospitable
-                                            and interesting.
+                                            The concept was to create an emotionally engaging user
+                                            experience that was both hospitable and interesting.
                                         <br/><br/>
-                                            To create the prototypes I used Adobe XD and Photoshop.
-                                            Next I developed the site using React and Node.js.
-                                            Finally. I deployed the site on Netlify. 
+                                            To materialize the concept, I started with simple
+                                            wireframes. Then, I selected a color palette and fonts
+                                            that really captured the mood of my work. Next, I
+                                            created hi-fidelity prototypes with Adobe XD and
+                                            Photoshop. Once I was satisfied with the design, I
+                                            developed the site in React and Node.js. Finally, I
+                                            deployed on Netlify. 
                                         </p>
                                     </Col>
                                     <Col xl={8} xs={12} className="Content">
-                                        <div className="ScrollArea">
-                                            <div className="bnDesigns_Home_viewer">
-                                                <button onClick={() => {this.setState({bnDesigns_Home_visible: true});}}>
+                                        <div className="ScrollArea" id="bndSA">
+                                            <div className="bnd_W_D_UX_viewer">
+                                                <button onClick={() => {this.setState({bnd_W_D_UX_visible: true});}}>
                                                     <img
-                                                        src={bnDesigns_Home}
-                                                        alt="bnDesigns 1.0 home prototype, which
-                                                        displays a welcome message over a sunset
-                                                        background"
+                                                        src={bnd_W_D_UX}
+                                                        alt="UX page desktop wireframe, which shows
+                                                        a top navbar, large paceholder on the left,
+                                                        and list of placeholders on the right"
                                                     />
                                                 </button>
                                                 <Viewer
-                                                    visible={this.state.bnDesigns_Home_visible}
-                                                    onClose={() => {this.setState({bnDesigns_Home_visible: false});}}
+                                                    visible={this.state.bnd_W_D_UX_visible}
+                                                    onClose={() => {this.setState({bnd_W_D_UX_visible: false});}}
                                                     images={[
-                                                        {src: bnDesigns_Home},
-                                                        {src: bnDesigns_UX},
-                                                        {src: bnDesigns_Contact}
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
                                                     ]}
                                                     activeIndex={0}
                                                     noImgDetails={true}
                                                 />
                                             </div>
-                                            <div className="bnDesigns_UX_viewer">
-                                                <button onClick={() => {this.setState({bnDesigns_UX_visible: true});}}>
+                                            <div className="bnd_W_D_Fonts_viewer">
+                                                <button onClick={() => {this.setState({bnd_W_D_Fonts_visible: true});}}>
                                                     <img
-                                                        src={bnDesigns_UX}
-                                                        alt="bnDesigns 1.0 UX prototype, which
-                                                        shows a carousel and some links
-                                                        floating up in the clouds"
+                                                        src={bnd_W_D_Fonts}
+                                                        alt="Fonts page desktop wireframe, which
+                                                        displays a top navbar, block of text on
+                                                        the left, and gallery on the right"
                                                     />
                                                 </button>
                                                 <Viewer
-                                                    visible={this.state.bnDesigns_UX_visible}
-                                                    onClose={() => {this.setState({bnDesigns_UX_visible: false});}}
+                                                    visible={this.state.bnd_W_D_Fonts_visible}
+                                                    onClose={() => {this.setState({bnd_W_D_Fonts_visible: false});}}
                                                     images={[
-                                                        {src: bnDesigns_Home},
-                                                        {src: bnDesigns_UX},
-                                                        {src: bnDesigns_Contact}
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
                                                     ]}
                                                     activeIndex={1}
                                                     noImgDetails={true}
                                                 />
                                             </div>
-                                            <div className="bnDesigns_Contact_viewer">
-                                                <button
-                                                    className="LastBtn"
-                                                    onClick={() => {this.setState({bnDesigns_Contact_visible: true});}}
-                                                >
+                                            <div className="bnd_P_D_UX_viewer">
+                                                <button onClick={() => {this.setState({bnd_P_D_UX_visible: true});}}>
                                                     <img
-                                                        src={bnDesigns_Contact}
-                                                        alt="bnDesigns contact prototype, which
-                                                        shows a profile icon, some social icons,
-                                                        and contact info over a sunrise background"
+                                                        src={bnd_P_D_UX}
+                                                        alt="UX page desktop prototype, which shows
+                                                        a top navbar with pixelated page links, a text
+                                                        section on the left, and a list of buttons
+                                                        for each project on the right"
                                                     />
                                                 </button>
                                                 <Viewer
-                                                    visible={this.state.bnDesigns_Contact_visible}
-                                                    onClose={() => {this.setState({bnDesigns_Contact_visible: false});}}
+                                                    visible={this.state.bnd_P_D_UX_visible}
+                                                    onClose={() => {this.setState({bnd_P_D_UX_visible: false});}}
                                                     images={[
-                                                        {src: bnDesigns_Home},
-                                                        {src: bnDesigns_UX},
-                                                        {src: bnDesigns_Contact}
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
                                                     ]}
                                                     activeIndex={2}
                                                     noImgDetails={true}
                                                 />
                                             </div>
+                                            <div className="bnd_P_D_Modal_viewer">
+                                                <button onClick={() => {this.setState({bnd_P_D_Modal_visible: true});}}>
+                                                    <img
+                                                        src={bnd_P_D_Modal}
+                                                        alt="Desktop modal prototype, which has a
+                                                        brown translucent overlay, a text section
+                                                        on the left, and a carousel of prototypes
+                                                        on the right"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.bnd_P_D_Modal_visible}
+                                                    onClose={() => {this.setState({bnd_P_D_Modal_visible: false});}}
+                                                    images={[
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
+                                                    ]}
+                                                    activeIndex={3}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="bnd_P_D_Fonts_viewer">
+                                                <button onClick={() => {this.setState({bnd_P_D_Fonts_visible: true});}}>
+                                                    <img
+                                                        src={bnd_P_D_Fonts}
+                                                        alt="Fonts page desktop prototype, which
+                                                        displays a top navbar, text section on
+                                                        the left, and gallery on the right"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.bnd_P_D_Fonts_visible}
+                                                    onClose={() => {this.setState({bnd_P_D_Fonts_visible: false});}}
+                                                    images={[
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
+                                                    ]}
+                                                    activeIndex={4}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="bnd_P_T_UX_viewer">
+                                                <button onClick={() => {this.setState({bnd_P_T_UX_visible: true});}}>
+                                                    <img
+                                                        src={bnd_P_T_UX}
+                                                        alt="UX page tablet prototype, which shows
+                                                        a top menu button, text section, and list
+                                                        of buttons for each project"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.bnd_P_T_UX_visible}
+                                                    onClose={() => {this.setState({bnd_P_T_UX_visible: false});}}
+                                                    images={[
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
+                                                    ]}
+                                                    activeIndex={5}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="bnd_P_T_Modal_viewer">
+                                                <button onClick={() => {this.setState({bnd_P_T_Modal_visible: true});}}>
+                                                    <img
+                                                        src={bnd_P_T_Modal}
+                                                        alt="Tablet modal prototype, which shows a
+                                                        brown translucent overly and a text
+                                                        section over a carousel of
+                                                        prototypes"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.bnd_P_T_Modal_visible}
+                                                    onClose={() => {this.setState({bnd_P_T_Modal_visible: false});}}
+                                                    images={[
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
+                                                    ]}
+                                                    activeIndex={6}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="bnd_P_T_Fonts_viewer">
+                                                <button onClick={() => {this.setState({bnd_P_T_Fonts_visible: true});}}>
+                                                    <img
+                                                        src={bnd_P_T_Fonts}
+                                                        alt="Fonts page tablet prototype, which
+                                                        shows a top menu button over a text
+                                                        section and a gallery"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.bnd_P_T_Fonts_visible}
+                                                    onClose={() => {this.setState({bnd_P_T_Fonts_visible: false});}}
+                                                    images={[
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
+                                                    ]}
+                                                    activeIndex={7}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="bnd_P_M_UX_viewer">
+                                                <button onClick={() => {this.setState({bnd_P_M_UX_visible: true});}}>
+                                                    <img
+                                                        src={bnd_P_M_UX}
+                                                        alt="UX page mobile prototype, which
+                                                        displays a top menu button, a text
+                                                        section, and a list of buttons for
+                                                        each project"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.bnd_P_M_UX_visible}
+                                                    onClose={() => {this.setState({bnd_P_M_UX_visible: false});}}
+                                                    images={[
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
+                                                    ]}
+                                                    activeIndex={8}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="bnd_P_M_Modal_viewer">
+                                                <button onClick={() => {this.setState({bnd_P_M_Modal_visible: true});}}>
+                                                    <img
+                                                        src={bnd_P_M_Modal}
+                                                        alt="Mobile modal prototype, which has a
+                                                        brown translucent overlay and a text
+                                                        section over a carousel of
+                                                        prototypes"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.bnd_P_M_Modal_visible}
+                                                    onClose={() => {this.setState({bnd_P_M_Modal_visible: false});}}
+                                                    images={[
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
+                                                    ]}
+                                                    activeIndex={9}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="bnd_P_M_Fonts_viewer">
+                                                <button
+                                                    onClick={() => {this.setState({bnd_P_M_Fonts_visible: true});}}
+                                                    className="LastBtn"
+                                                >
+                                                    <img
+                                                        src={bnd_P_M_Fonts}
+                                                        alt="Fonts page mobile prototype, which
+                                                        displays a top menu button over a text
+                                                        section and a gallery"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.bnd_P_M_Fonts_visible}
+                                                    onClose={() => {this.setState({bnd_P_M_Fonts_visible: false});}}
+                                                    images={[
+                                                        {src: bnd_W_D_UX},
+                                                        {src: bnd_W_D_Fonts},
+                                                        {src: bnd_P_D_UX},
+                                                        {src: bnd_P_D_Modal},
+                                                        {src: bnd_P_D_Fonts},
+                                                        {src: bnd_P_T_UX},
+                                                        {src: bnd_P_T_Modal},
+                                                        {src: bnd_P_T_Fonts},
+                                                        {src: bnd_P_M_UX},
+                                                        {src: bnd_P_M_Modal},
+                                                        {src: bnd_P_M_Fonts}
+                                                        
+                                                    ]}
+                                                    activeIndex={10}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
                                         </div>
                                         <a
-                                            href="https://bndesign.netlify.app/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="Link d-inline-block"
-                                        >
-                                            bndesign.netlify.app
-                                        </a>
-                                        <br/>
-                                        <a
-                                            href="https://github.com/brennannewton/bndesign"
+                                            href="https://github.com/brennannewton/bnd"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="Link d-inline-block"
@@ -385,7 +667,7 @@ export default class UX extends React.Component {
                                                 >
                                                     <img
                                                         src={Topple_WFEvent}
-                                                        alt="Wireframe of Topple's Event feature"
+                                                        alt="Wireframe of Topple's event feature"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -413,8 +695,8 @@ export default class UX extends React.Component {
                                                         src={Topple_Main}
                                                         alt="Topple landing prototype, which
                                                         displays a welcome message, the logo,
-                                                        slogan, and buttons for different users
-                                                        (organizers and supporters)"
+                                                        slogan, and buttons for different users -
+                                                        organizers and supporters"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -469,8 +751,7 @@ export default class UX extends React.Component {
                                                     <img
                                                         src={Topple_Feed}
                                                         alt="Topple feed prototype, with posts for
-                                                        each event containing event
-                                                        info"
+                                                        each event containing event info"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -526,8 +807,8 @@ export default class UX extends React.Component {
                                                     <img
                                                         src={Topple_NewEvent}
                                                         alt="Topple new event prototype, a form
-                                                        requesting all necessary info for an
-                                                        event"
+                                                        requesting all the necessary info for
+                                                        an event"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -620,7 +901,8 @@ export default class UX extends React.Component {
                                                         src={SSD_WireframeDItem}
                                                         alt="Second Sight Design desktop item page
                                                         wireframe, which shows placeholders for
-                                                        product images, name, descrption, and price"
+                                                        product images, name, descrption, and
+                                                        price"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -647,8 +929,8 @@ export default class UX extends React.Component {
                                                     <img
                                                         src={SSD_WireframeMMenu}
                                                         alt="Second Sight Design mobile menu
-                                                        wireframe, which lists pages and social
-                                                        icons under a menu icon"
+                                                        overaly wireframe, which lists pages and
+                                                        social icons under a menu icon"
                                                     />
                                                 </button>
                                                 <Viewer
