@@ -19,16 +19,16 @@ import bnd_P_M_Modal from '../img/Prototypes/bnd/P_M_Modal.png';
 import bnd_P_M_Fonts from '../img/Prototypes/bnd/P_M_Fonts.png';
 
 // Topple images
-import Topple_Main from '../img/Prototypes/Topple_Main.png';
-import Topple_Signup from '../img/Prototypes/Topple_Signup.png';
-import Topple_Feed from '../img/Prototypes/Topple_Feed.png';
-import Topple_Event from '../img/Prototypes/Topple_Event.png';
-import Topple_NewEvent from '../img/Prototypes/Topple_NewEvent.png';
-import Topple_Profile from '../img/Prototypes/Topple_Profile.png';
-import Topple_LogoSketches from '../img/Prototypes/Topple_LogoSketches.jpg';
-import Topple_Sketches from '../img/Prototypes/Topple_Sketches.png';
-import Topple_WFFeed from '../img/Prototypes/Topple_WFFeed.png';
-import Topple_WFEvent from '../img/Prototypes/Topple_WFEvent.png';
+import Topple_Main from '../img/Prototypes/Topple/Topple_Main.png';
+import Topple_Signup from '../img/Prototypes/Topple/Topple_Signup.png';
+import Topple_Feed from '../img/Prototypes/Topple/Topple_Feed.png';
+import Topple_Event from '../img/Prototypes/Topple/Topple_Event.png';
+import Topple_NewEvent from '../img/Prototypes/Topple/Topple_NewEvent.png';
+import Topple_Profile from '../img/Prototypes/Topple/Topple_Profile.png';
+import Topple_LogoSketches from '../img/Prototypes/Topple/Topple_LogoSketches.jpg';
+import Topple_Sketches from '../img/Prototypes/Topple/Topple_Sketches.png';
+import Topple_WFFeed from '../img/Prototypes/Topple/Topple_WFFeed.png';
+import Topple_WFEvent from '../img/Prototypes/Topple/Topple_WFEvent.png';
 
 // Second Sight Design images
 import SSD_DisplayD from '../img/Prototypes/SSD/Display_Desk.png';
@@ -578,10 +578,10 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({Topple_LogoSketches_visible: true});}}>
                                                     <img
                                                         src={Topple_LogoSketches}
-                                                        alt="Sketches of ideas for Topple's logo,
-                                                        including a pyramid's top falling off, a
-                                                        fist holding a sign, a t, and some
-                                                        people"
+                                                        alt="Sketches of logo ideas, including a
+                                                        pyramid's top falling off, a fist holding
+                                                        up a sign, a lowercase t, and some people
+                                                        lined up next to each other"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -609,8 +609,8 @@ export default class UX extends React.Component {
                                                 >
                                                     <img
                                                         src={Topple_Sketches}
-                                                        alt="Sketches of Topple's layout, including
-                                                        a welcome page, signup form, event feed,
+                                                        alt="Sketches of the layout, including a
+                                                        welcome page, signup form, event feed,
                                                         and event page"
                                                     />
                                                 </button>
@@ -639,7 +639,8 @@ export default class UX extends React.Component {
                                                 >
                                                     <img
                                                         src={Topple_WFFeed}
-                                                        alt="Wireframe of Topple's feed feature"
+                                                        alt="Feed wireframe, which shows a location
+                                                        at the top and placeholders for posts"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -667,7 +668,8 @@ export default class UX extends React.Component {
                                                 >
                                                     <img
                                                         src={Topple_WFEvent}
-                                                        alt="Wireframe of Topple's event feature"
+                                                        alt="Event wireframe, which shows the
+                                                        layout for all the event info"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -693,7 +695,7 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({Topple_Main_visible: true});}}>
                                                     <img
                                                         src={Topple_Main}
-                                                        alt="Topple landing prototype, which
+                                                        alt="Landing page prototype, which
                                                         displays a welcome message, the logo,
                                                         slogan, and buttons for different users -
                                                         organizers and supporters"
@@ -722,7 +724,7 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({Topple_Signup_visible: true});}}>
                                                     <img
                                                         src={Topple_Signup}
-                                                        alt="Topple signup prototype, a singup form
+                                                        alt="Signup page prototype, a singup form
                                                         with inputs for name, contact info,
                                                         organization info, and pin"
                                                     />
@@ -750,7 +752,7 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({Topple_Feed_visible: true});}}>
                                                     <img
                                                         src={Topple_Feed}
-                                                        alt="Topple feed prototype, with posts for
+                                                        alt="Feed prototype, with posts for
                                                         each event containing event info"
                                                     />
                                                 </button>
@@ -777,7 +779,7 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({Topple_Event_visible: true});}}>
                                                     <img
                                                         src={Topple_Event}
-                                                        alt="Topple event prototype, which displays
+                                                        alt="Event page prototype, which displays
                                                         all the event's info including name,
                                                         organization, organizers, location, date,
                                                         time, description, and messages"
@@ -806,7 +808,7 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({Topple_NewEvent_visible: true});}}>
                                                     <img
                                                         src={Topple_NewEvent}
-                                                        alt="Topple new event prototype, a form
+                                                        alt="New event page prototype, a form
                                                         requesting all the necessary info for
                                                         an event"
                                                     />
@@ -837,7 +839,7 @@ export default class UX extends React.Component {
                                                 >
                                                     <img
                                                         src={Topple_Profile}
-                                                        alt="Topple profile prototype, which
+                                                        alt="Profile overlay prototype, which
                                                         displays organizer and organization
                                                         contact info"
                                                     />
@@ -899,10 +901,9 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({SSD_WireframeDItem_visible: true});}}>
                                                     <img
                                                         src={SSD_WireframeDItem}
-                                                        alt="Second Sight Design desktop item page
-                                                        wireframe, which shows placeholders for
-                                                        product images, name, descrption, and
-                                                        price"
+                                                        alt="Item page desktop wireframe, which
+                                                        shows placeholders for product images,
+                                                        name, descrption, and price"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -928,9 +929,9 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({SSD_WireframeMMenu_visible: true});}}>
                                                     <img
                                                         src={SSD_WireframeMMenu}
-                                                        alt="Second Sight Design mobile menu
-                                                        overaly wireframe, which lists pages and
-                                                        social icons under a menu icon"
+                                                        alt="Menu overlay mobile wireframe, which
+                                                        lists pages and social icons under a menu
+                                                        icon"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -958,9 +959,9 @@ export default class UX extends React.Component {
                                                 >
                                                     <img
                                                         src={SSD_WireframeMItem}
-                                                        alt="Second Sight Design mobile item
-                                                        wireframe, which shows placeholders for a
-                                                        carousel of images, title, description, and
+                                                        alt="Item page mobile wireframe, which
+                                                        shows placeholders for a carousel of
+                                                        images, title, description, and
                                                         price of a product"
                                                     />
                                                 </button>
@@ -987,9 +988,9 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({SSD_PrototypeDLanding_visible: true});}}>
                                                     <img
                                                         src={SSD_PrototypeDLanding}
-                                                        alt="Second Sight Design desktop landing
-                                                        page prototype, which shows the name of the
-                                                        business over a pendant made by the owner"
+                                                        alt="Landing page desktop prototype, which
+                                                        shows the name of the business over a
+                                                        pendant made by the owner"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -1015,9 +1016,9 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({SSD_PrototypeDItem_visible: true});}}>
                                                     <img
                                                         src={SSD_PrototypeDItem}
-                                                        alt="Second Sight Design desktop item page
-                                                        prototype, which displays a carousel of
-                                                        images, name, description, and price of the
+                                                        alt="Item page desktop prototype, which
+                                                        displays a carousel of images, name,
+                                                        description, and price of the
                                                         product"
                                                     />
                                                 </button>
@@ -1044,10 +1045,9 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({SSD_PrototypeMLanding_visible: true});}}>
                                                     <img
                                                         src={SSD_PrototypeMLanding}
-                                                        alt="second Sight Design mobile landing
-                                                        page prototype, which displays the name of
-                                                        the business over a pendant made by the
-                                                        owner"
+                                                        alt="Landing page mobile prototype, which
+                                                        displays the name ofvthe business over a
+                                                        pendant made by the owner"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -1073,9 +1073,9 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({SSD_PrototypeMMenu_visible: true});}}>
                                                     <img
                                                         src={SSD_PrototypeMMenu}
-                                                        alt="Second Sight Design mobile menu
-                                                        prototype, which shows a list of pages and
-                                                        social icons under a menu icon"
+                                                        alt="Menu overlay mobile prototype, which
+                                                        shows a list of pages and social icons
+                                                        under a menu icon"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -1101,10 +1101,10 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({SSD_PrototypeMItem_visible: true});}}>
                                                     <img
                                                         src={SSD_PrototypeMItem}
-                                                        alt="Second Sight Design mobile item page
-                                                        prototype, which is a carousel of images 
-                                                        over the name, description, and price of
-                                                        the product"
+                                                        alt="Item page mobile prototype, which is a
+                                                        carousel of images over the name,
+                                                        description, and price of the
+                                                        product"
                                                     />
                                                 </button>
                                                 <Viewer
@@ -1130,7 +1130,7 @@ export default class UX extends React.Component {
                                                 <button onClick={() => {this.setState({SSD_DisplayD_visible: true});}}>
                                                     <img
                                                         src={SSD_DisplayD}
-                                                        alt="Secnd Sight Design landing page
+                                                        alt="Landing page desktop prototype
                                                         displayed on a laptop"
                                                     />
                                                 </button>
@@ -1160,7 +1160,7 @@ export default class UX extends React.Component {
                                                 >
                                                     <img
                                                         src={SSD_DisplayM}
-                                                        alt="Second Sight Design landing page
+                                                        alt="Landing page mobile prototype
                                                         displayed on a phone"
                                                     />
                                                 </button>
