@@ -310,6 +310,28 @@ export default class UX extends React.Component {
                                     </Col>
                                     <Col xl={8} className="Content">
                                         <div className="ScrollArea">
+                                            <div className="ELECTRA_Sketches_viewer">
+                                                <button
+                                                    onClick={() => {this.setState({ELECTRA_Sketches_visible: true});}}
+                                                >
+                                                    <img
+                                                        src={ELECTRA_Sketches}
+                                                        alt="Sketches of ELECTRA's, Instagram's,
+                                                        and Behance's profile features"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.ELECTRA_Sketches_visible}
+                                                    onClose={() => {this.setState({ELECTRA_Sketches_visible: false});}}
+                                                    images={[
+                                                        {src: ELECTRA_Sketches},
+                                                        {src: ELECTRA_Comments},
+                                                        {src: ELECTRA_Profile}
+                                                    ]}
+                                                    activeIndex={0}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
                                             <div className="ELECTRA_Comments_viewer">
                                                 <button onClick={() => {this.setState({ELECTRA_Comments_visible: true});}}>
                                                     <img
@@ -323,16 +345,19 @@ export default class UX extends React.Component {
                                                     visible={this.state.ELECTRA_Comments_visible}
                                                     onClose={() => {this.setState({ELECTRA_Comments_visible: false});}}
                                                     images={[
+                                                        {src: ELECTRA_Sketches},
                                                         {src: ELECTRA_Comments},
-                                                        {src: ELECTRA_Profile},
-                                                        {src: ELECTRA_Sketches}
+                                                        {src: ELECTRA_Profile}
                                                     ]}
-                                                    activeIndex={0}
+                                                    activeIndex={1}
                                                     noImgDetails={true}
                                                 />
                                             </div>
                                             <div className="ELECTRA_Profile_viewer">
-                                                <button onClick={() => {this.setState({ELECTRA_Profile_visible: true});}}>
+                                                <button
+                                                    onClick={() => {this.setState({ELECTRA_Profile_visible: true});}}
+                                                    className="LastBtn"
+                                                >
                                                     <img
                                                         src={ELECTRA_Profile}
                                                         alt="ELECTRA profile prototype, which
@@ -345,32 +370,9 @@ export default class UX extends React.Component {
                                                     visible={this.state.ELECTRA_Profile_visible}
                                                     onClose={() => {this.setState({ELECTRA_Profile_visible: false});}}
                                                     images={[
+                                                        {src: ELECTRA_Sketches},
                                                         {src: ELECTRA_Comments},
-                                                        {src: ELECTRA_Profile},
-                                                        {src: ELECTRA_Sketches}
-                                                    ]}
-                                                    activeIndex={1}
-                                                    noImgDetails={true}
-                                                />
-                                            </div>
-                                            <div className="ELECTRA_Sketches_viewer">
-                                                <button
-                                                    className="LastBtn"
-                                                    onClick={() => {this.setState({ELECTRA_Sketches_visible: true});}}
-                                                >
-                                                    <img
-                                                        src={ELECTRA_Sketches}
-                                                        alt="Sketches of ELECTRA's, Instagram's,
-                                                        and Behance's profile features"
-                                                    />
-                                                </button>
-                                                <Viewer
-                                                    visible={this.state.ELECTRA_Sketches_visible}
-                                                    onClose={() => {this.setState({ELECTRA_Sketches_visible: false});}}
-                                                    images={[
-                                                        {src: ELECTRA_Comments},
-                                                        {src: ELECTRA_Profile},
-                                                        {src: ELECTRA_Sketches}
+                                                        {src: ELECTRA_Profile}
                                                     ]}
                                                     activeIndex={2}
                                                     noImgDetails={true}
@@ -430,6 +432,61 @@ export default class UX extends React.Component {
                                     </Col>
                                     <Col xl={8} className="Content">
                                         <div className="ScrollArea" id="ToppleSA">
+                                            <div className="Topple_LogoSketches_viewer">
+                                                <button onClick={() => {this.setState({Topple_LogoSketches_visible: true});}}>
+                                                    <img
+                                                        src={Topple_LogoSketches}
+                                                        alt="Sketches of ideas for Topple's logo,
+                                                        including a pyramid's top falling off, a
+                                                        fist holding a sign, a t, and some
+                                                        people"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.Topple_LogoSketches_visible}
+                                                    onClose={() => {this.setState({Topple_LogoSketches_visible: false});}}
+                                                    images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
+                                                        {src: Topple_Main},
+                                                        {src: Topple_Signup},
+                                                        {src: Topple_Feed},
+                                                        {src: Topple_Event},
+                                                        {src: Topple_NewEvent},
+                                                        {src: Topple_Profile}
+                                                    ]}
+                                                    activeIndex={0}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="Topple_Sketches_viewer">
+                                                <button
+                                                    onClick={() => {this.setState({Topple_Sketches_visible: true});}}
+                                                >
+                                                    <img
+                                                        src={Topple_Sketches}
+                                                        alt="Sketches of Topple's layout, including
+                                                        a welcome page, signup form, event feed,
+                                                        and event page"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.Topple_Sketches_visible}
+                                                    onClose={() => {this.setState({Topple_Sketches_visible: false});}}
+                                                    images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
+                                                        {src: Topple_Main},
+                                                        {src: Topple_Signup},
+                                                        {src: Topple_Feed},
+                                                        {src: Topple_Event},
+                                                        {src: Topple_NewEvent},
+                                                        {src: Topple_Profile}
+                                                    ]}
+                                                    activeIndex={1}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
                                             <div className="Topple_Main_viewer">
                                                 <button onClick={() => {this.setState({Topple_Main_visible: true});}}>
                                                     <img
@@ -444,16 +501,16 @@ export default class UX extends React.Component {
                                                     visible={this.state.Topple_Main_visible}
                                                     onClose={() => {this.setState({Topple_Main_visible: false});}}
                                                     images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
                                                         {src: Topple_Event},
                                                         {src: Topple_NewEvent},
-                                                        {src: Topple_Profile},
-                                                        {src: Topple_LogoSketches},
-                                                        {src: Topple_Sketches}
+                                                        {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={0}
+                                                    activeIndex={2}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -470,16 +527,16 @@ export default class UX extends React.Component {
                                                     visible={this.state.Topple_Signup_visible}
                                                     onClose={() => {this.setState({Topple_Signup_visible: false});}}
                                                     images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
                                                         {src: Topple_Event},
                                                         {src: Topple_NewEvent},
-                                                        {src: Topple_Profile},
-                                                        {src: Topple_LogoSketches},
-                                                        {src: Topple_Sketches}
+                                                        {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={1}
+                                                    activeIndex={3}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -496,16 +553,16 @@ export default class UX extends React.Component {
                                                     visible={this.state.Topple_Feed_visible}
                                                     onClose={() => {this.setState({Topple_Feed_visible: false});}}
                                                     images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
                                                         {src: Topple_Event},
                                                         {src: Topple_NewEvent},
-                                                        {src: Topple_Profile},
-                                                        {src: Topple_LogoSketches},
-                                                        {src: Topple_Sketches}
+                                                        {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={2}
+                                                    activeIndex={4}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -523,16 +580,16 @@ export default class UX extends React.Component {
                                                     visible={this.state.Topple_Event_visible}
                                                     onClose={() => {this.setState({Topple_Event_visible: false});}}
                                                     images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
                                                         {src: Topple_Event},
                                                         {src: Topple_NewEvent},
-                                                        {src: Topple_Profile},
-                                                        {src: Topple_LogoSketches},
-                                                        {src: Topple_Sketches}
+                                                        {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={3}
+                                                    activeIndex={5}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -549,21 +606,24 @@ export default class UX extends React.Component {
                                                     visible={this.state.Topple_NewEvent_visible}
                                                     onClose={() => {this.setState({Topple_NewEvent_visible: false});}}
                                                     images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
                                                         {src: Topple_Event},
                                                         {src: Topple_NewEvent},
-                                                        {src: Topple_Profile},
-                                                        {src: Topple_LogoSketches},
-                                                        {src: Topple_Sketches}
+                                                        {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={4}
+                                                    activeIndex={6}
                                                     noImgDetails={true}
                                                 />
                                             </div>
                                             <div className="Topple_Profile_viewer">
-                                                <button onClick={() => {this.setState({Topple_Profile_visible: true});}}>
+                                                <button
+                                                    onClick={() => {this.setState({Topple_Profile_visible: true});}}
+                                                    className="LastBtn"
+                                                >
                                                     <img
                                                         src={Topple_Profile}
                                                         alt="Topple profile prototype, which
@@ -575,75 +635,19 @@ export default class UX extends React.Component {
                                                     visible={this.state.Topple_Profile_visible}
                                                     onClose={() => {this.setState({Topple_Profile_visible: false});}}
                                                     images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
                                                         {src: Topple_Event},
                                                         {src: Topple_NewEvent},
-                                                        {src: Topple_Profile},
-                                                        {src: Topple_LogoSketches},
-                                                        {src: Topple_Sketches}
-                                                    ]}
-                                                    activeIndex={5}
-                                                    noImgDetails={true}
-                                                />
-                                            </div>
-                                            <div className="Topple_LogoSketches_viewer">
-                                                <button onClick={() => {this.setState({Topple_LogoSketches_visible: true});}}>
-                                                    <img
-                                                        src={Topple_LogoSketches}
-                                                        alt="Sketches of ideas for Topple's logo,
-                                                        including a pyramid's top falling off, a
-                                                        fist holding a sign, a t, and some
-                                                        people"
-                                                    />
-                                                </button>
-                                                <Viewer
-                                                    visible={this.state.Topple_LogoSketches_visible}
-                                                    onClose={() => {this.setState({Topple_LogoSketches_visible: false});}}
-                                                    images={[
-                                                        {src: Topple_Main},
-                                                        {src: Topple_Signup},
-                                                        {src: Topple_Feed},
-                                                        {src: Topple_Event},
-                                                        {src: Topple_NewEvent},
-                                                        {src: Topple_Profile},
-                                                        {src: Topple_LogoSketches},
-                                                        {src: Topple_Sketches}
-                                                    ]}
-                                                    activeIndex={6}
-                                                    noImgDetails={true}
-                                                />
-                                            </div>            
-                                            <div className="Topple_Sketches_viewer">
-                                                <button
-                                                    className="LastBtn"
-                                                    onClick={() => {this.setState({Topple_Sketches_visible: true});}}
-                                                >
-                                                    <img
-                                                        src={Topple_Sketches}
-                                                        alt="Sketches of Topple's layout, including
-                                                        a welcome page, signup form, event feed,
-                                                        and event page"
-                                                    />
-                                                </button>
-                                                <Viewer
-                                                    visible={this.state.Topple_Sketches_visible}
-                                                    onClose={() => {this.setState({Topple_Sketches_visible: false});}}
-                                                    images={[
-                                                        {src: Topple_Main},
-                                                        {src: Topple_Signup},
-                                                        {src: Topple_Feed},
-                                                        {src: Topple_Event},
-                                                        {src: Topple_NewEvent},
-                                                        {src: Topple_Profile},
-                                                        {src: Topple_LogoSketches},
-                                                        {src: Topple_Sketches}
+                                                        {src: Topple_Profile}
                                                     ]}
                                                     activeIndex={7}
                                                     noImgDetails={true}
                                                 />
-                                            </div>
+                                            </div>           
                                         </div>
                                     </Col>
                                 </Row>
@@ -678,30 +682,90 @@ export default class UX extends React.Component {
                                     </Col>
                                     <Col xl={8} className="Content">
                                         <div className="ScrollArea" id="SSDSA">
-                                            <div className="SSD_DisplayD_viewer">
-                                                <button onClick={() => {this.setState({SSD_DisplayD_visible: true});}}>
+                                            <div className="SSD_WireframeDItem_viewer">
+                                                <button onClick={() => {this.setState({SSD_WireframeDItem_visible: true});}}>
                                                     <img
-                                                        src={SSD_DisplayD}
-                                                        alt="Secnd Sight Design landing page
-                                                        displayed on a laptop"
+                                                        src={SSD_WireframeDItem}
+                                                        alt="Second Sight Design desktop item page
+                                                        wireframe, which shows placeholders for
+                                                        product images, name, descrption, and price"
                                                     />
                                                 </button>
                                                 <Viewer
-                                                    visible={this.state.SSD_DisplayD_visible}
-                                                    onClose={() => {this.setState({SSD_DisplayD_visible: false});}}
+                                                    visible={this.state.SSD_WireframeDItem_visible}
+                                                    onClose={() => {this.setState({SSD_WireframeDItem_visible: false});}}
                                                     images={[
-                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
                                                         {src: SSD_PrototypeDLanding},
                                                         {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
                                                         {src: SSD_PrototypeMLanding},
                                                         {src: SSD_PrototypeMMenu},
                                                         {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
                                                     ]}
                                                     activeIndex={0}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="SSD_WireframeMMenu_viewer">
+                                                <button onClick={() => {this.setState({SSD_WireframeMMenu_visible: true});}}>
+                                                    <img
+                                                        src={SSD_WireframeMMenu}
+                                                        alt="Second Sight Design mobile menu
+                                                        wireframe, which lists pages and social
+                                                        icons under a menu icon"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.SSD_WireframeMMenu_visible}
+                                                    onClose={() => {this.setState({SSD_WireframeMMenu_visible: false});}}
+                                                    images={[
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_PrototypeDLanding},
+                                                        {src: SSD_PrototypeDItem},
+                                                        {src: SSD_PrototypeMLanding},
+                                                        {src: SSD_PrototypeMMenu},
+                                                        {src: SSD_PrototypeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
+                                                    ]}
+                                                    activeIndex={1}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="SSD_WireframeMItem_viewer">
+                                                <button
+                                                    onClick={() => {this.setState({SSD_WireframeMItem_visible: true});}}
+                                                >
+                                                    <img
+                                                        src={SSD_WireframeMItem}
+                                                        alt="Second Sight Design mobile item
+                                                        wireframe, which shows placeholders for a
+                                                        carousel of images, title, description, and
+                                                        price of a product"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.SSD_WireframeMItem_visible}
+                                                    onClose={() => {this.setState({SSD_WireframeMItem_visible: false});}}
+                                                    images={[
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_PrototypeDLanding},
+                                                        {src: SSD_PrototypeDItem},
+                                                        {src: SSD_PrototypeMLanding},
+                                                        {src: SSD_PrototypeMMenu},
+                                                        {src: SSD_PrototypeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
+                                                    ]}
+                                                    activeIndex={2}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -718,18 +782,18 @@ export default class UX extends React.Component {
                                                     visible={this.state.SSD_PrototypeDLanding_visible}
                                                     onClose={() => {this.setState({SSD_PrototypeDLanding_visible: false});}}
                                                     images={[
-                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
                                                         {src: SSD_PrototypeDLanding},
                                                         {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
                                                         {src: SSD_PrototypeMLanding},
                                                         {src: SSD_PrototypeMMenu},
                                                         {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
                                                     ]}
-                                                    activeIndex={1}
+                                                    activeIndex={3}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -747,71 +811,16 @@ export default class UX extends React.Component {
                                                     visible={this.state.SSD_PrototypeDItem_visible}
                                                     onClose={() => {this.setState({SSD_PrototypeDItem_visible: false});}}
                                                     images={[
-                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
                                                         {src: SSD_PrototypeDLanding},
                                                         {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
                                                         {src: SSD_PrototypeMLanding},
                                                         {src: SSD_PrototypeMMenu},
                                                         {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
-                                                    ]}
-                                                    activeIndex={2}
-                                                    noImgDetails={true}
-                                                />
-                                            </div>
-                                            <div className="SSD_WireframeDItem_viewer">
-                                                <button onClick={() => {this.setState({SSD_WireframeDItem_visible: true});}}>
-                                                    <img
-                                                        src={SSD_WireframeDItem}
-                                                        alt="Second Sight Design desktop item page
-                                                        wireframe, which shows placeholders for
-                                                        product images, name, descrption, and price"
-                                                    />
-                                                </button>
-                                                <Viewer
-                                                    visible={this.state.SSD_WireframeDItem_visible}
-                                                    onClose={() => {this.setState({SSD_WireframeDItem_visible: false});}}
-                                                    images={[
                                                         {src: SSD_DisplayD},
-                                                        {src: SSD_PrototypeDLanding},
-                                                        {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
-                                                        {src: SSD_PrototypeMLanding},
-                                                        {src: SSD_PrototypeMMenu},
-                                                        {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
-                                                    ]}
-                                                    activeIndex={3}
-                                                    noImgDetails={true}
-                                                />
-                                            </div>
-                                            <div className="SSD_DisplayM_viewer">
-                                                <button onClick={() => {this.setState({SSD_DisplayM_visible: true});}}>
-                                                    <img
-                                                        src={SSD_DisplayM}
-                                                        alt="Second Sight Design landing page
-                                                        displayed on a phone"
-                                                    />
-                                                </button>
-                                                <Viewer
-                                                    visible={this.state.SSD_DisplayM_visible}
-                                                    onClose={() => {this.setState({SSD_DisplayM_visible: false});}}
-                                                    images={[
-                                                        {src: SSD_DisplayD},
-                                                        {src: SSD_PrototypeDLanding},
-                                                        {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
-                                                        {src: SSD_PrototypeMLanding},
-                                                        {src: SSD_PrototypeMMenu},
-                                                        {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_DisplayM}
                                                     ]}
                                                     activeIndex={4}
                                                     noImgDetails={true}
@@ -831,16 +840,16 @@ export default class UX extends React.Component {
                                                     visible={this.state.SSD_PrototypeMLanding_visible}
                                                     onClose={() => {this.setState({SSD_PrototypeMLanding_visible: false});}}
                                                     images={[
-                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
                                                         {src: SSD_PrototypeDLanding},
                                                         {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
                                                         {src: SSD_PrototypeMLanding},
                                                         {src: SSD_PrototypeMMenu},
                                                         {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
                                                     ]}
                                                     activeIndex={5}
                                                     noImgDetails={true}
@@ -859,16 +868,16 @@ export default class UX extends React.Component {
                                                     visible={this.state.SSD_PrototypeMMenu_visible}
                                                     onClose={() => {this.setState({SSD_PrototypeMMenu_visible: false});}}
                                                     images={[
-                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
                                                         {src: SSD_PrototypeDLanding},
                                                         {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
                                                         {src: SSD_PrototypeMLanding},
                                                         {src: SSD_PrototypeMMenu},
                                                         {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
                                                     ]}
                                                     activeIndex={6}
                                                     noImgDetails={true}
@@ -888,76 +897,73 @@ export default class UX extends React.Component {
                                                     visible={this.state.SSD_PrototypeMItem_visible}
                                                     onClose={() => {this.setState({SSD_PrototypeMItem_visible: false});}}
                                                     images={[
-                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
                                                         {src: SSD_PrototypeDLanding},
                                                         {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
                                                         {src: SSD_PrototypeMLanding},
                                                         {src: SSD_PrototypeMMenu},
                                                         {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
                                                     ]}
                                                     activeIndex={7}
                                                     noImgDetails={true}
                                                 />
                                             </div>
-                                            <div className="SSD_WireframeMMenu_viewer">
-                                                <button onClick={() => {this.setState({SSD_WireframeMMenu_visible: true});}}>
+                                            <div className="SSD_DisplayD_viewer">
+                                                <button onClick={() => {this.setState({SSD_DisplayD_visible: true});}}>
                                                     <img
-                                                        src={SSD_WireframeMMenu}
-                                                        alt="Second Sight Design mobile menu
-                                                        wireframe, which lists pages and social
-                                                        icons under a menu icon"
+                                                        src={SSD_DisplayD}
+                                                        alt="Secnd Sight Design landing page
+                                                        displayed on a laptop"
                                                     />
                                                 </button>
                                                 <Viewer
-                                                    visible={this.state.SSD_WireframeMMenu_visible}
-                                                    onClose={() => {this.setState({SSD_WireframeMMenu_visible: false});}}
+                                                    visible={this.state.SSD_DisplayD_visible}
+                                                    onClose={() => {this.setState({SSD_DisplayD_visible: false});}}
                                                     images={[
-                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
                                                         {src: SSD_PrototypeDLanding},
                                                         {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
                                                         {src: SSD_PrototypeMLanding},
                                                         {src: SSD_PrototypeMMenu},
                                                         {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
                                                     ]}
                                                     activeIndex={8}
                                                     noImgDetails={true}
                                                 />
                                             </div>
-                                            <div className="SSD_WireframeMItem_viewer">
+                                            <div className="SSD_DisplayM_viewer">
                                                 <button
+                                                    onClick={() => {this.setState({SSD_DisplayM_visible: true});}}
                                                     className="LastBtn"
-                                                    onClick={() => {this.setState({SSD_WireframeMItem_visible: true});}}
                                                 >
                                                     <img
-                                                        src={SSD_WireframeMItem}
-                                                        alt="Second Sight Design mobile item
-                                                        wireframe, which shows placeholders for a
-                                                        carousel of images, title, description, and
-                                                        price of a product"
+                                                        src={SSD_DisplayM}
+                                                        alt="Second Sight Design landing page
+                                                        displayed on a phone"
                                                     />
                                                 </button>
                                                 <Viewer
-                                                    visible={this.state.SSD_WireframeMItem_visible}
-                                                    onClose={() => {this.setState({SSD_WireframeMItem_visible: false});}}
+                                                    visible={this.state.SSD_DisplayM_visible}
+                                                    onClose={() => {this.setState({SSD_DisplayM_visible: false});}}
                                                     images={[
-                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_WireframeDItem},
+                                                        {src: SSD_WireframeMMenu},
+                                                        {src: SSD_WireframeMItem},
                                                         {src: SSD_PrototypeDLanding},
                                                         {src: SSD_PrototypeDItem},
-                                                        {src: SSD_WireframeDItem},
-                                                        {src: SSD_DisplayM},
                                                         {src: SSD_PrototypeMLanding},
                                                         {src: SSD_PrototypeMMenu},
                                                         {src: SSD_PrototypeMItem},
-                                                        {src: SSD_WireframeMMenu},
-                                                        {src: SSD_WireframeMItem},
+                                                        {src: SSD_DisplayD},
+                                                        {src: SSD_DisplayM}
                                                     ]}
                                                     activeIndex={9}
                                                     noImgDetails={true}
