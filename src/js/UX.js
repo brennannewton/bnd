@@ -10,11 +10,6 @@ import bnDesigns_Home from '../img/Prototypes/bnDesigns_Home.png';
 import bnDesigns_UX from '../img/Prototypes/bnDesigns_UX.png';
 import bnDesigns_Contact from '../img/Prototypes/bnDesigns_Contact.png';
 
-// ELECTRA images
-import ELECTRA_Comments from '../img/Prototypes/ELECTRA_Comments.png';
-import ELECTRA_Profile from '../img/Prototypes/ELECTRA_Profile.png';
-import ELECTRA_Sketches from '../img/Prototypes/ELECTRA_ProfileSketches.jpg';
-
 // Topple images
 import Topple_Main from '../img/Prototypes/Topple_Main.png';
 import Topple_Signup from '../img/Prototypes/Topple_Signup.png';
@@ -52,15 +47,10 @@ export default class UX extends React.Component {
             showModal1: false,
             showModal2: false,
             showModal3: false,
-            showModal4: false,
 
             bnDesigns_Home_visible: false,
             bnDesigns_UX_visible: false,
             bnDesigns_Contact_visible: false,
-
-            ELECTRA_Profile_visible: false,
-            ELECTRA_Comments_visible: false,
-            ELECTRA_Sketches_visible: false,
 
             Topple_Main_visible: false,
             Topple_Signup_visible: false,
@@ -87,11 +77,9 @@ export default class UX extends React.Component {
         this.handleOpenModal1 = this.handleOpenModal1.bind(this);
         this.handleOpenModal2 = this.handleOpenModal2.bind(this);
         this.handleOpenModal3 = this.handleOpenModal3.bind(this);
-        this.handleOpenModal4 = this.handleOpenModal4.bind(this);
         this.handleCloseModal1 = this.handleCloseModal1.bind(this);
         this.handleCloseModal2 = this.handleCloseModal2.bind(this);
         this.handleCloseModal3 = this.handleCloseModal3.bind(this);
-        this.handleCloseModal4 = this.handleCloseModal4.bind(this);
     }
 
     // Open modal functions
@@ -110,11 +98,6 @@ export default class UX extends React.Component {
         document.body.style.position = 'fixed';
         document.body.style.top = `-${window.scrollY}px`;
         this.setState({showModal3: true});
-    }
-    handleOpenModal4() {
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${window.scrollY}px`;
-        this.setState({showModal4: true});
     }
 
     // Close modal functions
@@ -139,13 +122,6 @@ export default class UX extends React.Component {
         document.body.style.top = '';
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
         this.setState({showModal3: false});
-    }
-    handleCloseModal4() {
-        const scrollY = document.body.style.top;
-        document.body.style.position = '';
-        document.body.style.top = '';
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
-        this.setState({showModal4: false});
     }
 
     render() {
@@ -285,7 +261,7 @@ export default class UX extends React.Component {
                             </Modal>
                         </Row>
                         <Row className="Project Project2">
-                            <button onClick={this.handleOpenModal2}>ELECTRA</button>
+                            <button onClick={this.handleOpenModal2}>Topple</button>
                             <Modal
                                 className="Modal"
                                 overlayClassName="Overlay"
@@ -295,126 +271,6 @@ export default class UX extends React.Component {
                                 <Row>
                                     <Col xl={4} className="Text">
                                         <button onClick={this.handleCloseModal2}>
-                                            <img src={Close} alt="Exit icon"/>
-                                        </button>
-                                        <h1>ELECTRA</h1>
-                                        <p>
-                                            ELECTRA is where digital artists collaborate and
-                                            receive feedback on their work.
-                                        <br/><br/>
-                                            I was the Project Manager for ELECTRA, so I oversaw the
-                                            project from concept to release.
-                                        <br/><br/>
-                                            We started by generating user flows and personas. Next
-                                            we created the brand identity and designed features in
-                                            Adobe XD that would bring the concept to life. Then we
-                                            developed the product using the PERN stack. Finally we
-                                            released a beta-stage application with Netlify.
-                                        </p>
-                                    </Col>
-                                    <Col xl={8} className="Content">
-                                        <div className="ScrollArea">
-                                            <div className="ELECTRA_Sketches_viewer">
-                                                <button
-                                                    onClick={() => {this.setState({ELECTRA_Sketches_visible: true});}}
-                                                >
-                                                    <img
-                                                        src={ELECTRA_Sketches}
-                                                        alt="Sketches of ELECTRA's, Instagram's,
-                                                        and Behance's profile features"
-                                                    />
-                                                </button>
-                                                <Viewer
-                                                    visible={this.state.ELECTRA_Sketches_visible}
-                                                    onClose={() => {this.setState({ELECTRA_Sketches_visible: false});}}
-                                                    images={[
-                                                        {src: ELECTRA_Sketches},
-                                                        {src: ELECTRA_Comments},
-                                                        {src: ELECTRA_Profile}
-                                                    ]}
-                                                    activeIndex={0}
-                                                    noImgDetails={true}
-                                                />
-                                            </div>
-                                            <div className="ELECTRA_Comments_viewer">
-                                                <button onClick={() => {this.setState({ELECTRA_Comments_visible: true});}}>
-                                                    <img
-                                                        src={ELECTRA_Comments}
-                                                        alt="ELECTRA comments prototype, a modal
-                                                        with a post, post info, and comments
-                                                        section"
-                                                    />
-                                                </button>
-                                                <Viewer
-                                                    visible={this.state.ELECTRA_Comments_visible}
-                                                    onClose={() => {this.setState({ELECTRA_Comments_visible: false});}}
-                                                    images={[
-                                                        {src: ELECTRA_Sketches},
-                                                        {src: ELECTRA_Comments},
-                                                        {src: ELECTRA_Profile}
-                                                    ]}
-                                                    activeIndex={1}
-                                                    noImgDetails={true}
-                                                />
-                                            </div>
-                                            <div className="ELECTRA_Profile_viewer">
-                                                <button
-                                                    onClick={() => {this.setState({ELECTRA_Profile_visible: true});}}
-                                                    className="LastBtn"
-                                                >
-                                                    <img
-                                                        src={ELECTRA_Profile}
-                                                        alt="ELECTRA profile prototype, which
-                                                        displays the user's icon, name, pronouns,
-                                                        location, username, bio, and posts (called
-                                                        sparks)"
-                                                    />
-                                                </button>
-                                                <Viewer
-                                                    visible={this.state.ELECTRA_Profile_visible}
-                                                    onClose={() => {this.setState({ELECTRA_Profile_visible: false});}}
-                                                    images={[
-                                                        {src: ELECTRA_Sketches},
-                                                        {src: ELECTRA_Comments},
-                                                        {src: ELECTRA_Profile}
-                                                    ]}
-                                                    activeIndex={2}
-                                                    noImgDetails={true}
-                                                />
-                                            </div>
-                                        </div>
-                                        <a
-                                            href="https://electrala.netlify.app/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="Link d-inline-block"
-                                        >
-                                            electrala.netlify.app
-                                        </a>
-                                        <br/>
-                                        <a
-                                            href="https://github.com/electrala"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="Link d-inline-block"
-                                        >
-                                            GitHub Organization
-                                        </a>
-                                    </Col>
-                                </Row>
-                            </Modal>
-                        </Row>
-                        <Row className="Project Project3">
-                            <button onClick={this.handleOpenModal3}>Topple</button>
-                            <Modal
-                                className="Modal"
-                                overlayClassName="Overlay"
-                                isOpen={this.state.showModal3}
-                                onRequestClose={this.handleCloseModal3}
-                            >
-                                <Row>
-                                    <Col xl={4} className="Text">
-                                        <button onClick={this.handleCloseModal3}>
                                             <img src={Close} alt="Exit icon"/>
                                         </button>
                                         <h1>Topple</h1>
@@ -729,22 +585,22 @@ export default class UX extends React.Component {
                                 </Row>
                             </Modal>
                         </Row>
-                        <Row className="Project Project4">
-                            <button onClick={this.handleOpenModal4}>Second Sight Design</button>
+                        <Row className="Project Project3">
+                            <button onClick={this.handleOpenModal3}>Second Sight Design</button>
                             <Modal
                                 className="Modal"
                                 overlayClassName="Overlay"
-                                isOpen={this.state.showModal4}
-                                onRequestClose={this.handleCloseModal4}
+                                isOpen={this.state.showModal3}
+                                onRequestClose={this.handleCloseModal3}
                             >
                                 <Row>
                                     <Col xl={4} className="Text">
-                                        <button onClick={this.handleCloseModal4}>
+                                        <button onClick={this.handleCloseModal3}>
                                             <img src={Close} alt="Exit icon"/>
                                         </button>
                                         <h1>SSD</h1>
                                         <p>
-                                            Second Sight Design is a small business site and the
+                                            Second Sight Design is a small business website and the
                                             first project I landed as a freelance designer.
                                         <br/><br/>
                                             The owner asked for a user-friendly website, so I
@@ -752,8 +608,8 @@ export default class UX extends React.Component {
                                             which I then used to inspire the brand identity. After
                                             creating a style guide, I designed basic wireframes.
                                             Next I created hi-fidelity prototypes and presentation
-                                            materials in Adobe XD. Now the project is in
-                                            development.
+                                            materials with Adobe XD and Photoshop. Now the project
+                                            is in development.
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
