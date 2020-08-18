@@ -24,6 +24,8 @@ import Topple_NewEvent from '../img/Prototypes/Topple_NewEvent.png';
 import Topple_Profile from '../img/Prototypes/Topple_Profile.png';
 import Topple_LogoSketches from '../img/Prototypes/Topple_LogoSketches.jpg';
 import Topple_Sketches from '../img/Prototypes/Topple_Sketches.png';
+import Topple_WFFeed from '../img/Prototypes/Topple_WFFeed.png';
+import Topple_WFEvent from '../img/Prototypes/Topple_WFEvent.png';
 
 // Second Sight Design images
 import SSD_DisplayD from '../img/Prototypes/SSD/Display_Desk.png';
@@ -68,6 +70,8 @@ export default class UX extends React.Component {
             Topple_Profile_visible: false,
             Topple_LogoSketches_visible: false,
             Topple_Sketches_visible: false,
+            Topple_WFFeed_visible: false,
+            Topple_WFEvent_visible: false,
 
             SSD_DisplayD_visible: false,
             SSD_PrototypeDLanding_visible: false,
@@ -448,6 +452,8 @@ export default class UX extends React.Component {
                                                     images={[
                                                         {src: Topple_LogoSketches},
                                                         {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
@@ -476,6 +482,8 @@ export default class UX extends React.Component {
                                                     images={[
                                                         {src: Topple_LogoSketches},
                                                         {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
@@ -484,6 +492,62 @@ export default class UX extends React.Component {
                                                         {src: Topple_Profile}
                                                     ]}
                                                     activeIndex={1}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="Topple_WFFeed_viewer">
+                                                <button
+                                                    onClick={() => {this.setState({Topple_WFFeed_visible: true});}}
+                                                >
+                                                    <img
+                                                        src={Topple_WFFeed}
+                                                        alt="Wireframe of Topple's feed feature"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.Topple_WFFeed_visible}
+                                                    onClose={() => {this.setState({Topple_WFFeed_visible: false});}}
+                                                    images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
+                                                        {src: Topple_Main},
+                                                        {src: Topple_Signup},
+                                                        {src: Topple_Feed},
+                                                        {src: Topple_Event},
+                                                        {src: Topple_NewEvent},
+                                                        {src: Topple_Profile}
+                                                    ]}
+                                                    activeIndex={2}
+                                                    noImgDetails={true}
+                                                />
+                                            </div>
+                                            <div className="Topple_WFEvent_viewer">
+                                                <button
+                                                    onClick={() => {this.setState({Topple_WFEvent_visible: true});}}
+                                                >
+                                                    <img
+                                                        src={Topple_WFEvent}
+                                                        alt="Wireframe of Topple's Event feature"
+                                                    />
+                                                </button>
+                                                <Viewer
+                                                    visible={this.state.Topple_WFEvent_visible}
+                                                    onClose={() => {this.setState({Topple_WFEvent_visible: false});}}
+                                                    images={[
+                                                        {src: Topple_LogoSketches},
+                                                        {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
+                                                        {src: Topple_Main},
+                                                        {src: Topple_Signup},
+                                                        {src: Topple_Feed},
+                                                        {src: Topple_Event},
+                                                        {src: Topple_NewEvent},
+                                                        {src: Topple_Profile}
+                                                    ]}
+                                                    activeIndex={3}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -503,6 +567,8 @@ export default class UX extends React.Component {
                                                     images={[
                                                         {src: Topple_LogoSketches},
                                                         {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
@@ -510,7 +576,7 @@ export default class UX extends React.Component {
                                                         {src: Topple_NewEvent},
                                                         {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={2}
+                                                    activeIndex={4}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -529,6 +595,8 @@ export default class UX extends React.Component {
                                                     images={[
                                                         {src: Topple_LogoSketches},
                                                         {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
@@ -536,7 +604,7 @@ export default class UX extends React.Component {
                                                         {src: Topple_NewEvent},
                                                         {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={3}
+                                                    activeIndex={5}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -555,6 +623,8 @@ export default class UX extends React.Component {
                                                     images={[
                                                         {src: Topple_LogoSketches},
                                                         {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
@@ -562,7 +632,7 @@ export default class UX extends React.Component {
                                                         {src: Topple_NewEvent},
                                                         {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={4}
+                                                    activeIndex={6}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -582,6 +652,8 @@ export default class UX extends React.Component {
                                                     images={[
                                                         {src: Topple_LogoSketches},
                                                         {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
@@ -589,7 +661,7 @@ export default class UX extends React.Component {
                                                         {src: Topple_NewEvent},
                                                         {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={5}
+                                                    activeIndex={7}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -608,6 +680,8 @@ export default class UX extends React.Component {
                                                     images={[
                                                         {src: Topple_LogoSketches},
                                                         {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
@@ -615,7 +689,7 @@ export default class UX extends React.Component {
                                                         {src: Topple_NewEvent},
                                                         {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={6}
+                                                    activeIndex={8}
                                                     noImgDetails={true}
                                                 />
                                             </div>
@@ -637,6 +711,8 @@ export default class UX extends React.Component {
                                                     images={[
                                                         {src: Topple_LogoSketches},
                                                         {src: Topple_Sketches},
+                                                        {src: Topple_WFFeed},
+                                                        {src: Topple_WFEvent},
                                                         {src: Topple_Main},
                                                         {src: Topple_Signup},
                                                         {src: Topple_Feed},
@@ -644,7 +720,7 @@ export default class UX extends React.Component {
                                                         {src: Topple_NewEvent},
                                                         {src: Topple_Profile}
                                                     ]}
-                                                    activeIndex={7}
+                                                    activeIndex={9}
                                                     noImgDetails={true}
                                                 />
                                             </div>           
