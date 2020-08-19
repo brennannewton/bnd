@@ -558,13 +558,13 @@ export default class UX extends React.Component {
                                         <p>
                                             Inspired by the 2020 BLM protests and apps like Citizen
                                             and Signal, Topple is an event-organizing app with the
-                                            mission to protect users' identities.
+                                            mission to protect the user's identity.
                                         <br/><br/>
                                             I started the process by listing features,
                                             researching competitors, and creating the app's
                                             identity. Once I had a logo and an MVP, I began sketching
-                                            wireframes and user flows. Next I designed hi-fidelity
-                                            prototypes in Adobe XD.
+                                            wireframes and user flows. Finally, I designed
+                                            hi-fidelity prototypes in Adobe XD.
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
@@ -878,16 +878,15 @@ export default class UX extends React.Component {
                                         </button>
                                         <h1>SSD</h1>
                                         <p>
-                                            Second Sight Design is a small business site and the
-                                            first project I landed as a freelance designer.
+                                            Second Sight Design is a small business website.
                                         <br/><br/>
-                                            The owner asked for a user-friendly website, so I kept
-                                            that in mind throughout the process. I started by
+                                            The owner asked me to design a user-friendly site, so I
+                                            kept that in mind throughout the process. I started by
                                             learning about her background and her vision for the
-                                            business, which inspired her brand identity. After
-                                            creating a style guide, I designed simple wireframes.
-                                            Next, I created hi-fidelity prototypes and presentation
-                                            graphics in Adobe XD and Photoshop.
+                                            business, which then inspired her brand's identity and
+                                            style. After creating a style guide, I designed simple
+                                            wireframes. Finally, I created hi-fidelity prototypes
+                                            and presentation graphics in Adobe XD and Photoshop.
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
