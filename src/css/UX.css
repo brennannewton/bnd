@@ -2,6 +2,10 @@
 @import "Palette.css";
 @import "Font.css";
 
+hr {
+  background-color: var(--bnd-white);
+}
+
 .UX .Container {
   margin: 0;
   margin-left: 37px;
@@ -85,10 +89,10 @@
 
 .UX .Container .Text {
   padding: 0;
-  padding-left: 37px;
-  padding-top: 33px;
-  padding-right: 37px;
-  padding-bottom: 33px;
+  padding-left: 40px;
+  padding-top: 35px;
+  padding-right: 40px;
+  padding-bottom: 35px;
   text-align: center;
 }
 
@@ -98,8 +102,9 @@
 
 .UX .Container .Text p {
   margin: 0;
-  margin-top: 12px;
+  margin-top: 20px;
   font-size: 14px;
+  line-height: 175%;
 }
 
 .UX .Container .Projects {
@@ -182,16 +187,16 @@
 
 .Modal .Text p {
   margin: 0;
-  margin-left: 37px;
-  margin-top: 12px;
-  margin-right: 37px;
-  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 45px;
   padding: 0;
-  padding-bottom: 10px;
   font-family: 'raleway_medium';
   font-size: 14px;
   color: var(--bnd-white);
-  text-align: center;
+  text-align: left;
+  line-height: 175%;
 
   height: 157px;
   overflow-x: hidden;
@@ -234,9 +239,7 @@
 
 .Modal .Content .ScrollArea button {
   margin: 0;
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-right: 15px;
+  margin-top: 30px;
   width: 80%;
   padding: 0;
   border: 0;
@@ -244,7 +247,7 @@
 }
 
 .Modal .Content .ScrollArea .LastBtn {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .Modal .Content .ScrollArea img {
@@ -253,7 +256,7 @@
 
 .Modal .Content .Link {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 0;
   padding-left: 25px;
   padding-top: 15px;
@@ -283,10 +286,10 @@
 
   .UX .Container .Text {
     padding: 0;
-    padding-left: 78px;
-    padding-top: 36px;
-    padding-right: 78px;
-    padding-bottom: 36px;
+    padding-left: 110px;
+    padding-top: 60px;
+    padding-right: 110px;
+    padding-bottom: 60px;
   }
 
   .UX .Container .Text h1 {
@@ -295,7 +298,7 @@
 
   .UX .Container .Text p {
     margin: 0;
-    margin-top: 18px;
+    margin-top: 25px;
     font-size: 20px;
   }
 
@@ -335,11 +338,10 @@
   }
 
   .Modal .Text p {
-    margin-left: 78px;
-    margin-top: 20px;
-    margin-right: 78px;
-    margin-bottom: 78px;
-    padding-bottom: 10px;
+    margin-left: 90px;
+    margin-top: 35px;
+    margin-right: 90px;
+    margin-bottom: 70px;
     font-size: 20px;
 
     height: 165px;
@@ -370,18 +372,16 @@
   }
 
   .Modal .Content .ScrollArea button {
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-right: 15px;
-    width: 66%;
+    margin-top: 50px;
+    width: 70%;
   }
 
   .Modal .Content .ScrollArea .LastBtn {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
   }
 
   .Modal .Content .Link {
-    margin-top: 30px;
+    margin-top: 35px;
     padding-left: 30px;
     padding-top: 18px;
     padding-right: 30px;
@@ -401,20 +401,20 @@
     margin: 0;
     margin-left: 136px;
     margin-right: 136px;
-    height: 73.05vh;
   }
 
   .UX .Container .Text {
     padding: 0;
-    padding-left: 45px;
-    padding-top: 60px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-top: 55px;
+    padding-right: 45px;
     text-align: right;
   }
 
   .UX .Container .Text p {
     margin: 0;
     margin-top: 18px;
+    margin-bottom: 60px;
     font-size: 16px;
   }
 
@@ -445,10 +445,10 @@
   .Modal .Text h1 {
     margin: 0;
     margin-left: 85px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-right: 43px;
     font-size: 24px;
-    text-align: right;
+    text-align: left;
   }
 
   .Modal .Text p {
@@ -456,11 +456,10 @@
     margin-left: 85px;
     margin-top: 36px;
     margin-right: 43px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
     padding: 0;
-    padding-right: 10px;
+    padding-right: 25px;
     font-size: 16px;
-    text-align: right;
 
     height: 350px;
   }
@@ -493,10 +492,6 @@
   }
 
   .Modal .Content .ScrollArea button {
-    margin: 0;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-right: 15px;
     width: 60%;
     opacity: 0.91;
 
@@ -506,10 +501,6 @@
   .Modal .Content .ScrollArea button:hover {
     width: 66%;
     opacity: 1;
-  }
-
-  .Modal .Content .ScrollArea .LastBtn {
-    margin-bottom: 15px;
   }
 
   .Modal .Content .Link {
@@ -542,13 +533,12 @@
     margin: 0;
     margin-left: 271px;
     margin-right: 271px;
-    height: 76.75vh;
   }
 
   .UX .Container .Text {
     padding: 0;
-    padding-left: 45px;
-    padding-top: 80px;
+    padding-left: 60px;
+    padding-top: 82.5px;
     padding-right: 50px;
     text-align: right;
   }
@@ -560,6 +550,7 @@
   .UX .Container .Text p {
     margin: 0;
     margin-top: 24px;
+    margin-bottom: 82.5px;
     font-size: 23px;
   }
 
@@ -584,7 +575,7 @@
 
   .Modal .Text h1 {
     margin-left: 85px;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-right: 43px;
     font-size: 32px;
   }
@@ -593,8 +584,8 @@
     margin-left: 85px;
     margin-top: 36px;
     margin-right: 43px;
-    margin-bottom: 123px;
-    padding-right: 10px;
+    margin-bottom: 115px;
+    padding-right: 35px;
     font-size: 24px;
 
     height: 560px;
@@ -623,9 +614,7 @@
   }
 
   .Modal .Content .ScrollArea button {
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-right: 15px;
+    margin-top: 100px;
     width: 60%;
   }
 
@@ -634,11 +623,11 @@
   }
 
   .Modal .Content .ScrollArea .LastBtn {
-    margin-bottom: 15px;
+    margin-bottom: 100px;
   }
 
   .Modal .Content .Link {
-    margin-top: 45px;
+    margin-top: 50px;
     padding-left: 45px;
     padding-top: 29px;
     padding-right: 45px;

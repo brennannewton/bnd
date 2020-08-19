@@ -148,11 +148,12 @@ export default class UX extends React.Component {
                         <h1>humanity</h1>
                         <h1>x</h1>
                         <h1>technology</h1>
-                        <p>My goal as a designer is to humanize the technology we use on a daily
+                        <p>
+                            My goal as a designer is to humanize the technology we use on a daily
                             basis. I want to make interfaces, color palettes, and interactions
                             that mimic our natural world.
-                        </p>
-                        <p>Right now accessibility is a major hurdle in human-computer interaction.
+                        <hr/>
+                            Right now accessibility is a major hurdle in human-computer interaction.
                             Our world is multimoal by design, so our virtual one should be too. My
                             designs aim to be widely accesible and responsive across a variety of
                             devices.
@@ -175,10 +176,10 @@ export default class UX extends React.Component {
                                         <h1>bnDesigns</h1>
                                         <p>
                                             bnDesigns is both a potfiolo and a user experience.
-                                        <br/><br/>
+                                        <hr/>
                                             The vision was to create something emotional, engaging,
                                             hospitable, and interesting.
-                                        <br/><br/>
+                                        <hr/>
                                             To start materializing that vision, I made simple
                                             wireframes. Then, I selected colors and fonts
                                             that really capture the mood of my work. Next, I
@@ -559,7 +560,7 @@ export default class UX extends React.Component {
                                             Inspired by the 2020 BLM protests and apps like Citizen
                                             and Signal, Topple is an event-organizing app with the
                                             mission to protect the user's identity.
-                                        <br/><br/>
+                                        <hr/>
                                             I started the process by listing features,
                                             researching competitors, and creating the app's
                                             identity. Once I had a logo and an MVP, I began sketching
@@ -879,7 +880,7 @@ export default class UX extends React.Component {
                                         <h1>SSD</h1>
                                         <p>
                                             Second Sight Design is a small business website.
-                                        <br/><br/>
+                                        <hr/>
                                             The owner asked me to design a user-friendly site, so I
                                             kept that in mind throughout the process. I started by
                                             learning about her background and her vision for the
