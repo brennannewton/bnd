@@ -160,7 +160,7 @@
 
   .Fonts .Container .Fonts-Digital {
     padding-left: 50px;
-    padding-right: 25px;
+    padding-right: 50px;
     padding-bottom: 50px;
   }
 
@@ -171,7 +171,7 @@
   .Fonts .Container .Fonts-Analog {
     padding: 0;
     padding-top: 50px;
-    padding-right: 25px;
+    padding-right: 50px;
   }
 }
 
