@@ -153,9 +153,9 @@ export default class UX extends React.Component {
                             that mimic our natural world.
                         </p>
                         <p>Right now accessibility is a major hurdle in human-computer interaction.
-                            Our world is multimoal by design, so our virtual one should be
-                            too if we want it to be user-friendly. My designs aim to be
-                            widely accesible and responsive across a variety of devices.
+                            Our world is multimoal by design, so our virtual one should be too. My
+                            designs aim to be widely accesible and responsive across a variety of
+                            devices.
                         </p>
                     </Col>
                     <Col xl={8} className="Projects">
@@ -174,19 +174,18 @@ export default class UX extends React.Component {
                                         </button>
                                         <h1>bnDesigns</h1>
                                         <p>
-                                            bnDesigns is both a potfiolo and a user experience
-                                            itself.
+                                            bnDesigns is both a potfiolo and a user experience.
                                         <br/><br/>
-                                            The concept was to create an emotionally engaging user
-                                            experience that was both hospitable and interesting.
+                                            The vision was to create something emotional, engaging,
+                                            hospitable, and interesting.
                                         <br/><br/>
-                                            To materialize the concept, I started with simple
-                                            wireframes. Then, I selected a color palette and fonts
-                                            that really captured the mood of my work. Next, I
-                                            created hi-fidelity prototypes with Adobe XD and
+                                            To start materializing that vision, I made simple
+                                            wireframes. Then, I selected colors and fonts
+                                            that really capture the mood of my work. Next, I
+                                            created hi-fidelity prototypes using Adobe XD and
                                             Photoshop. Once I was satisfied with the design, I
-                                            developed the site in React and Node.js. Finally, I
-                                            deployed on Netlify. 
+                                            developed it using React and Node.js. Finally, I
+                                            deployed it on Netlify.
                                         </p>
                                     </Col>
                                     <Col xl={8} xs={12} className="Content">
@@ -557,19 +556,15 @@ export default class UX extends React.Component {
                                         </button>
                                         <h1>Topple</h1>
                                         <p>
-                                            Topple is an event organizing app that protects users'
-                                            identities.
-                                        <br/><br/>
                                             Inspired by the 2020 BLM protests and apps like Citizen
-                                            and Signal, Topple is the first app I designed
-                                            independently.
+                                            and Signal, Topple is an event-organizing app with the
+                                            mission to protect users' identities.
                                         <br/><br/>
-                                            I started by listing features,
-                                            researching competitors, and creating the brand
+                                            I started the process by listing features,
+                                            researching competitors, and creating the app's
                                             identity. Once I had a logo and an MVP, I began sketching
-                                            out wireframes and user flows. Next I designed hi-fidelity
-                                            prototypes in Adobe XD. Now the app is
-                                            in development.
+                                            wireframes and user flows. Next I designed hi-fidelity
+                                            prototypes in Adobe XD.
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
@@ -883,16 +878,16 @@ export default class UX extends React.Component {
                                         </button>
                                         <h1>SSD</h1>
                                         <p>
-                                            Second Sight Design is a small business website and the
+                                            Second Sight Design is a small business site and the
                                             first project I landed as a freelance designer.
                                         <br/><br/>
-                                            The owner asked for a user-friendly website, so I
-                                            started by learning about her background and vision,
-                                            which I then used to inspire the brand identity. After
-                                            creating a style guide, I designed basic wireframes.
-                                            Next I created hi-fidelity prototypes and presentation
-                                            materials with Adobe XD and Photoshop. Now the project
-                                            is in development.
+                                            The owner asked for a user-friendly website, so I kept
+                                            that in mind throughout the process. I started by
+                                            learning about her background and her vision for the
+                                            business, which inspired her brand identity. After
+                                            creating a style guide, I designed simple wireframes.
+                                            Next, I created hi-fidelity prototypes and presentation
+                                            graphics in Adobe XD and Photoshop.
                                         </p>
                                     </Col>
                                     <Col xl={8} className="Content">
