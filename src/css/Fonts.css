@@ -159,19 +159,19 @@
   }
 
   .Fonts .Container .Fonts-Digital {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 25px;
+    padding-bottom: 50px;
   }
 
   .Fonts .Container .Fonts-Digital button {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .Fonts .Container .Fonts-Analog {
     padding: 0;
-    padding-top: 30px;
-    padding-right: 30px;
+    padding-top: 50px;
+    padding-right: 25px;
   }
 }
 

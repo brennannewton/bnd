@@ -116,7 +116,7 @@
 
   .Characters .Container .Text {
     padding: 0;
-    padding-left: 50px;
+    padding-left: 55px;
     padding-top: 55px;
     padding-right: 45px;
     text-align: right;
@@ -132,10 +132,10 @@
   }
 
   .Characters .Container .Characters-All {
-    margin-left: 24px;
-    margin-top: 24px;
-    margin-right: 24px;
-    margin-bottom: 24px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
     padding: 0;
   }
 
@@ -146,19 +146,19 @@
 
   .Characters .Container .Row2 {
     margin: 0;
-    margin-top: 24px;
+    margin-top: 50px;
     padding: 0;
   }
 
   .Characters .Container .Row3 {
     margin: 0;
-    margin-top: 24px;
+    margin-top: 50px;
     padding: 0;
   }
 
   .Characters .Container .Row4 {
     margin: 0;
-    margin-top: 24px;
+    margin-top: 50px;
     padding: 0;
   }
 
@@ -195,7 +195,7 @@
   }
 
   .Characters .Container .Text {
-    padding-left: 60px;
+    padding-left: 70px;
     padding-top: 82.5px;
     padding-right: 50px;
   }
