@@ -120,7 +120,7 @@
   padding-right: 15px;
   padding-bottom: 11px;
   font-size: 10px;
-  box-shadow: 0 0 12px var(--bnd-black);
+  box-shadow: 0 0 15px rgba(5, 6, 1, 0.7);
 }
 
 .Modal {
@@ -310,16 +310,12 @@
     padding-right: 30px;
     padding-bottom: 20px;
     font-size: 16px;
-    box-shadow: 0 0 20px var(--bnd-black);
+    box-shadow: 0 0 20px rgba(5, 6, 1, 0.7);
   }
 
   .Modal {
     margin-top: 55px;
     width: 600px;
-  }
-
-  .Modal .Text {
-    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   }
 
   .Modal .Text button {
@@ -354,12 +350,11 @@
     padding-top: 20px;
     padding-right: 20px;
     height: 550px;
-    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   }
 
   .Modal .Content .ScrollArea {
     height: 300px;
-    box-shadow: 0 0 25px rgba(5, 6, 1, 0.7);
+    box-shadow: 0 0 20px rgba(5, 6, 1, 0.7);
   }
 
   .Modal .Content #bndSA {
@@ -392,7 +387,7 @@
     padding-right: 30px;
     padding-bottom: 18px;
     font-size: 20px;
-    box-shadow: 0 0 25px rgba(5, 6, 1, 0.7);
+    box-shadow: 0 0 20px rgba(5, 6, 1, 0.7);
   }
 }
 
@@ -434,16 +429,12 @@
     padding-right: 35px;
     padding-bottom: 25px;
     font-size: 16px;
-    box-shadow: 0 0 30px var(--bnd-black);
+    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   }
 
   .Modal {
     margin-top: 65px;
     width: 1100px;
-  }
-
-  .Modal .Text {
-    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   }
 
   .Modal .Text button {
@@ -480,7 +471,6 @@
     padding-top: 30px;
     padding-right: 30px;
     height: auto;
-    box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   }
 
   .Modal .Content .ScrollArea {
