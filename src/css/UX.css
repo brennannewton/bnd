@@ -193,6 +193,7 @@ hr {
   margin-right: 40px;
   margin-bottom: 5.263vh;
   padding: 0;
+  padding-right: 10px;
   font-family: 'raleway_medium';
   font-size: 14px;
   color: var(--bnd-white);
@@ -212,6 +213,7 @@ hr {
   background-color: var(--bnd-white);
   border: 0;
   box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  text-align: center;
 }
 
 .Modal .Content .ScrollArea {
@@ -229,7 +231,8 @@ hr {
 }
 
 .Modal .Content #ToppleSA {
-  height: 41.776vh;
+  margin-bottom: 16px;
+  height: 40.776vh;
 }
 
 .Modal .Content #SSDSA {
@@ -363,6 +366,7 @@ hr {
   }
 
   .Modal .Content #ToppleSA {
+    margin: 0;
     height: 506px;
   }
   
