@@ -18,6 +18,7 @@
 
 .Navigation .Bar .Menu {
   border-color: transparent;
+  outline: 0;
 }
 
 .Navigation .Bar .Internal p {
