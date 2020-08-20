@@ -5,7 +5,7 @@
 .Fonts .Container {
   margin-left: 37px;
   margin-right: 37px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   background-color: var(--bnd-white);
 
   -webkit-animation-name: fadein;
@@ -76,7 +76,7 @@
   .Fonts .Container {
     margin-left: 80px;
     margin-right: 80px;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   .Fonts .Container .Text {
@@ -121,7 +121,6 @@
   .Fonts .Container {
     margin-left: 136px;
     margin-right: 136px;
-    margin-bottom: 30px;
   }
 
   .Fonts .Container .Text {
@@ -180,7 +179,8 @@
   .Fonts .Container {
     margin-left: 271px;
     margin-right: 271px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    height: 77.2vh;
   }
   
   .Fonts .Container .Text {

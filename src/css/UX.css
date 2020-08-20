@@ -78,7 +78,7 @@ hr {
 
 /* Set responsive style for mobile devices */
 .UX {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .UX .Container {
@@ -275,7 +275,7 @@ hr {
 /* Set responsive style for tablet devices */
 @media (min-width: 768px) {
   .UX {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   .UX .Container {
@@ -392,9 +392,6 @@ hr {
 
 /* Set responsive style for desktop devices */
 @media (min-width: 1366px) {
-  .UX {
-    margin-bottom: 30px;
-  }
 
   .UX .Container {
     margin: 0;

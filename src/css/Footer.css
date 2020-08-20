@@ -8,7 +8,7 @@
 
 #Email {
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
   font-family: 'pokemon_gbregular';
   font-size: 12px;
   color: var(--bnd-white);
@@ -17,6 +17,7 @@
 
 @media (min-width: 768px) {
   #Email {
+    padding-bottom: 30px;
     font-size: 20px;
   }
 }
@@ -29,6 +30,7 @@
 
 @media (min-width: 1920px) {
   #Email {
+    padding-bottom: 35px;
     font-size: 20px;
   }
 }
