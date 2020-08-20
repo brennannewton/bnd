@@ -15,36 +15,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class App extends React.Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      isHome: true,
-      homeStyle: "View",
-    };
-  }
-
-  setIsHome = (x) => {
-    this.setState({isHome: x});
-  }
-
-  setHomeStyle = (y) => {
-    this.setState({homeStyle: y});
-  }
-
-  onComponentDidMount() {
-    if (this.state.isHome) {
-      this.setHomeStyle("Veiw");
-    }
-    else {
-      this.setHomeStyle("Content");
-    }
-  }
-
   render() {
     return (
-      <div className={`${this.state.homeStyle}`}>
+      <div className="App">
         <BrowserRouter>
-          <Navigation setIsHome={this.setIsHome}/>
+          <Navigation/>
             <Route path="/" exact render={() => <Home/>}/>
             <Route path="/ux" exact render={() => <UX/>}/>
             <Route path="/fonts" exact render={() => <Fonts/>}/>

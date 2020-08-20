@@ -16,6 +16,21 @@ import Menu from '../img/menu.png';
 import '../css/Navigation.css';
 
 export default class Navigation extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      currPage: "HomePg",
+    };
+  }
+
+  setCurrPage = (x) => {
+    this.setState({currPage: x});
+  }
+
+  handleClick = (y) => {
+    this.setCurrPage(y);
+  }
+
   render() {
     return (
       <div className="Navigation w-100">
@@ -24,18 +39,18 @@ export default class Navigation extends React.Component {
             <img src={Menu} alt="Menu icon"/>
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="Internal mr-auto align-items-center">
-              <Nav.Link as={Link} to="/" onClick={() => this.props.setIsHome(true)}>
-                <p>bn</p>
+            <Nav className={`Internal ${this.state.currPage} mr-auto align-items-center`}>
+              <Nav.Link as={Link} to="/" onClick={() => this.handleClick("HomePg")}>
+                <p id="HomeLink">bn</p>
               </Nav.Link>
-              <Nav.Link as={Link} to="ux" onClick={() => this.props.setIsHome(false)}>
-                <p>ux</p>
+              <Nav.Link as={Link} to="ux" onClick={() => this.handleClick("UXPg")}>
+                <p id="UXLink">ux</p>
               </Nav.Link>
-              <Nav.Link as={Link} to="fonts" onClick={() => this.props.setIsHome(false)}>
-                <p>fonts</p>
+              <Nav.Link as={Link} to="fonts" onClick={() => this.handleClick("FontsPg")}>
+                <p id="FontsLink">fonts</p>
               </Nav.Link>
-              <Nav.Link as={Link} to="characters" onClick={() => this.props.setIsHome(false)}>
-                <p>characters</p>
+              <Nav.Link as={Link} to="characters" onClick={() => this.handleClick("CharactersPg")}>
+                <p id="CharactersLink">characters</p>
               </Nav.Link>
             </Nav>
             <Nav className="External ml-auto align-items-center">

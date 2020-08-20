@@ -1,14 +1,8 @@
 @import "./css/Palette.css";
 
-.View {
+.App {
   min-height: 100vh;
   background-image: linear-gradient(var(--bnd-light-green), var(--bnd-green));
-  text-align: center;
-}
-
-.Content {
-  height: auto;
-  background-image: linear-gradient(var(--bnd-lightgreen), var(--bnd-deepgreen));
   text-align: center;
 }
 

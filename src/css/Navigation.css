@@ -29,6 +29,22 @@
   color: var(--bnd-white);
 }
 
+.Navigation .Bar .HomePg #HomeLink {
+  color: var(--bnd-black);
+}
+
+.Navigation .Bar .UXPg #UXLink {
+  color: var(--bnd-black);
+}
+
+.Navigation .Bar .FontsPg #FontsLink {
+  color: var(--bnd-black);
+}
+
+.Navigation .Bar .CharactersPg #CharactersLink {
+  color: var(--bnd-black);
+}
+
 .Navigation .Bar .External img {
   margin: 0;
   margin-top: 32px;
