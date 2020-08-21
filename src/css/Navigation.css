@@ -95,7 +95,7 @@
     margin-right: 37px;
     font-size: 24px;
 
-    transition: 0.3s;
+    transition: 0.5s;
   }
 
   .Navigation .Bar .Internal p:hover {
@@ -111,11 +111,11 @@
     margin-left: 46px;
     height: 32px;
 
-    transition: 0.3s;
+    transition: 0.5s;
   }
 
   .Navigation .Bar .External img:hover {
-    height: 40px;
+    height: 42px;
   }
 
   .Navigation .Bar .External #li {
@@ -144,6 +144,6 @@
   }
 
   .Navigation .Bar .External img:hover {
-    height: 48px;
+    height: 50px;
   }
 }
