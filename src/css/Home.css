@@ -2,15 +2,15 @@
 
 /* Set vendor-specific animation name and duration on .Logo class */
 .Logo {
-	-webkit-animation-name: fadein;
+	-webkit-animation-name: DelayFadeIn;
 	-webkit-animation-duration: 2s;
-	-moz-animation-name: fadein;
+	-moz-animation-name: DelayFadeIn;
 	-moz-animation-duration: 2s;
-	-ms-animation-name: fadein;
+	-ms-animation-name: DelayFadeIn;
 	-ms-animation-duration: 2s;
-	-o-animation-name: fadein;
+	-o-animation-name: DelayFadeIn;
 	-o-animation-duration: 2s;
-	animation-name: fadein;
+	animation-name: DelayFadeIn;
 	animation-duration: 2s;
 }
 
