@@ -1,50 +1,70 @@
-/* Set vendor-specific keyframes for animation on load */
 /* Delay then slowly fade in */
-@-webkit-keyframes fadein {
+@-webkit-keyframes DelayFadeIn {
     0% { opacity: 0; }
     30% { opacity: 0; }
     100% { opacity: 1; }
 }
-@-moz-keyframes fadein {
+@-moz-keyframes DelayFadeIn {
     0% { opacity: 0; }
     30% { opacity: 0; }
 	100% { opacity: 1; }
 }
-@-ms-keyframes fadein {
+@-ms-keyframes DelayFadeIn {
     0% { opacity: 0; }
     30% { opacity: 0; }
 	100% { opacity: 1; }
 }
-@-o-keyframes fadein {
+@-o-keyframes DelayFadeIn {
     0% { opacity: 0; }
     30% { opacity: 0; }
 	100% { opacity: 1; }
 }
-@keyframes fadein {
+@keyframes DelayFadeIn {
     0% { opacity: 0; }
     30% { opacity: 0; }
 	100% { opacity: 1; }
 }
 
-/* Set vendor-specific keyframes for modal animation */
-/* Fade in */
-@-webkit-keyframes modalfadein {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+/* Fade in transluscent brown background */
+@-webkit-keyframes OverlayFadeIn {
+    0% { background:rgba(129, 83, 72,.0) }
+    100% { background:rgba(129, 83, 72,.7); }
 }
-@-moz-keyframes modalfadein {
-    0% { opacity: 0; }
-	100% { opacity: 1; }
+@-moz-keyframes OverlayFadeIn {
+    0% { background:rgba(129, 83, 72,.0) }
+    100% { background:rgba(129, 83, 72,.7); }
 }
-@-ms-keyframes modalfadein {
-    0% { opacity: 0; }
-	100% { opacity: 1; }
+@-ms-keyframes OverlayFadeIn {
+    0% { background:rgba(129, 83, 72,.0) }
+    100% { background:rgba(129, 83, 72,.7); }
 }
-@-o-keyframes modalfadein {
-    0% { opacity: 0; }
-	100% { opacity: 1; }
+@-o-keyframes OverlayFadeIn {
+    0% { background:rgba(129, 83, 72,.0) }
+    100% { background:rgba(129, 83, 72,.7); }
 }
-@keyframes modalfadein {
-    0% { opacity: 0; }
-	100% { opacity: 1; }
+@keyframes OverlayFadeIn {
+    0% { background:rgba(129, 83, 72,.0) }
+    100% { background:rgba(129, 83, 72,.7); }
+}
+
+/* Fade and slide in modal */
+@-webkit-keyframes ModalContentFadeIn {
+    0% { opacity:0; top:-20px; }
+    100% { opacity:1; top:0; }
+}
+@-moz-keyframes ModalContentFadeIn {
+    0% { opacity:0; top:-20px; }
+    100% { opacity:1; top:0; }
+}
+@-ms-keyframes ModalContentFadeIn {
+    0% { opacity:0; top:-20px; }
+    100% { opacity:1; top:0; }
+}
+@-o-keyframes ModalContentFadeIn {
+    0% { opacity:0; top:-20px; }
+    100% { opacity:1; top:0; }
+}
+@keyframes ModalContentFadeIn {
+    0% { opacity:0; top:-20px; }
+    100% { opacity:1; top:0; }
 }
