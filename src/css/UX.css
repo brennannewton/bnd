@@ -12,16 +12,16 @@ hr {
   margin-right: 37px;
   background-color: var(--bnd-white);
 
-  -webkit-animation-name: fadein;
-	-webkit-animation-duration: 2s;
-	-moz-animation-name: fadein;
-	-moz-animation-duration: 2s;
-	-ms-animation-name: fadein;
-	-ms-animation-duration: 2s;
-	-o-animation-name: fadein;
-	-o-animation-duration: 2s;
-	animation-name: fadein;
-	animation-duration: 2s;
+  -webkit-animation-name: DelayFadeIn;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-name: DelayFadeIn;
+	-moz-animation-duration: 1.5s;
+	-ms-animation-name: DelayFadeIn;
+	-ms-animation-duration: 1.5s;
+	-o-animation-name: DelayFadeIn;
+	-o-animation-duration: 1.5s;
+	animation-name: DelayFadeIn;
+	animation-duration: 1.5s;
 }
 
 .UX .Container .Text {
@@ -46,7 +46,7 @@ hr {
   font-family: 'pokemon_gbregular';
   color: var(--bnd-black);
 
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .UX .Container .Projects button:hover {
@@ -142,25 +142,26 @@ hr {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(129, 83, 72, 0.5);
   backdrop-filter: blur(5px);
 
-  -webkit-animation-name: modalfadein;
-  -webkit-animation-duration: 0.1s;
-  -moz-animation-name: modalfadein;
-  -moz-animation-duration: 0.1s;
-  -ms-animation-name: modalfadein;
-  -ms-animation-duration: 0.1s;
-  -o-animation-name: modalfadein;
-  -o-animation-duration: 0.1s;
-  animation-name: modalfadein;
-  animation-duration: 0.1s;
+  -webkit-animation: OverlayFadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -moz-animation: OverlayFadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -ms-animation: OverlayFadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -o-animation: OverlayFadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  animation: OverlayFadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 .Modal .Text {
   background-color: var(--bnd-black);
   border: 0;
   box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
+  opacity: 0;
+
+  -webkit-animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -moz-animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -ms-animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -o-animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 .Modal .Text button {
@@ -214,6 +215,13 @@ hr {
   border: 0;
   box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
   text-align: center;
+  opacity: 0;
+
+  -webkit-animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -moz-animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -ms-animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  -o-animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  animation: ModalContentFadeIn .5s .6s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 .Modal .Content .ScrollArea {
@@ -494,7 +502,7 @@ hr {
     width: 60%;
     opacity: 0.91;
 
-    transition: 0.2s;
+    transition: 0.3s;
   }
 
   .Modal .Content .ScrollArea button:hover {
@@ -513,7 +521,7 @@ hr {
     font-size: 16px;
     box-shadow: 0 0 30px rgba(5, 6, 1, 0.7);
 
-    transition: 0.2s;
+    transition: 0.3s;
   }
 
   .Modal .Content .Link:hover {
