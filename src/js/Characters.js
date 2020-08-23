@@ -308,7 +308,11 @@ export default class Characters extends React.Component {
                         <Row className="Row4">
                             <Col xs={12} className="Poster1_viewer Viewer">
                                 <button onClick={() => {this.setState({Poster1_visible: true});}}>
-                                    <img src={Poster1} alt=""/>
+                                    <img
+                                        src={Poster1}
+                                        alt="All the Creep Beaters together"
+                                        id="CBPoster1"
+                                    />
                                 </button>
                                 <Viewer
                                     visible={this.state.Poster1_visible}

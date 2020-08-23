@@ -183,6 +183,14 @@
     width: 100%;
     opacity: 1;
   }
+
+  .Characters .Container #CBPoster1 {
+    width: 94%;
+  }
+
+  .Characters .Container #CBPoster1:hover {
+    width: 100%;
+  }
 }
 
 /* Set responsive style for large desktop devices */
