@@ -559,7 +559,7 @@ export default class UX extends React.Component {
                                         <p>
                                             Inspired by the 2020 BLM protests and apps like Citizen
                                             and Signal, Topple is an event-organizing app with the
-                                            mission to protect the user's identity.
+                                            mission to protect its user's privacy.
                                         <hr/>
                                             I started the process by listing features,
                                             researching competitors, and creating the app's
