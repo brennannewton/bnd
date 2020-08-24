@@ -60,7 +60,7 @@ export default class Navigation extends React.Component {
               <a href="https://github.com/brennannewton" target="_blank" rel="noopener noreferrer">
                 <img id="gh" src={Github} alt="GitHub icon"/>
               </a>
-              <a href="https://www.linkedin.com/in/brennan-newton-075238145/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/bndesigns/" target="_blank" rel="noopener noreferrer">
                 <img id="li" src={Linkedin} alt="LinkedIn icon"/>
               </a>
             </Nav>
